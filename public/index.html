@@ -10,34 +10,185 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/img/logo.png">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Alan Nhan</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- INTRO LOADING PAGE -->
+    <!-- <div id="overlay">
+      <div class="loader">
+        <img src="img/logo.png" alt="Logo" class="logo-img">
+      </div>
+    </div> -->
+    <!-- <div id="prompt">
+      Toggle night mode! ↗
+    </div>       -->
+    <div id="backgroundOverlay"></div>
+    <!-- NAVIGATION BAR -->
+    <div class="container">
+      <div class="nav-container">
+        <div class="nav-right" id="navContainer">
+          <a href="" target="">
+            About
+          </a>
+          <a href="" target="">
+            Projects
+          </a>
+          <a href="" target="">
+            Resume
+          </a>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/alannhans" target="_blank">
+              <!-- <i class="fab fa-linkedin"></i> -->
+            </a>
+            <a href="https://github.com/nhvn" target="_blank">
+              <!-- <i class="fab fa-github"></i> -->
+            </a>
+            <a href="mailto:alannhan443@gmail.com" target="_blank">
+              <!-- <i class="fas fa-envelope"></i> -->
+            </a>
+          </div>
+          <!-- HAMBURGER MENU -->
+          <!-- <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+            <div class="nav-menu">
+              <ul class="no-dot">
+                <li>
+                  <a href="#about">
+                    ABOUT
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects">
+                    PROJECTS
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact">
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <!-- NIGHT MODE ICON -->
+          <!-- <i class="fas fa-moon night-mode-icon" id="moonIcon"></i>
+          <i class="fas fa-sun night-mode-icon" id="sunIcon"></i> -->
+        </div>
+      </div>
+      <header id="home">
+        <div class="intro">
+          <div class="head-name">
+            <h1> Hi there! 👋</h1>
+          </div>
+          <div class="my-intro">
+            My name is <span class="name-text">Alan Nhan.</span> I am a dedicated <span class="highlight-text">full-stack software engineer</span> who's skilled in frontend and backend technologies.
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- ABOUT -->
+        <section id="about">
+          <div class="about-me">
+            <h2> About. </h2>
+            <div class="abouts">
+              <div class="get-to-know-me">
+                <h3> Get to Know Me </h3>
+                <!-- <p> I discovered my passion for software development from the thrill of solving a complex puzzle. It all began with a simple algorithm problem from a mobile app, a challenge I stumbled upon before I had even dipped my toes into the realm of programming languages. The challenge was like a puzzle, but the reward was in creating something that just worked. </p> -->
+                <p> As a recent graduate of CSULB's bootcamp program, I'm transitioning from the healthcare field to software development with eagerness to apply my acquired skills and knowledge in this dynamic domain. My proficiency extends across multiple languages, but my true joy lies in tackling complex problems and crafting innovative solutions. </p>
+                <p> Outside of my professional life, I enjoy staying active through simple exercises like walks or a quick run. I cherish quality time with friends and family, exploring new restaurants, and traveling to experience different cultures and sights. These diverse interests fuel my creativity and passion for problem-solving in the tech industry 👨‍💻. </p>
+              </div>
+              <div class="my-skills">
+                <h3> My Skills </h3>
+                <ul>
+                  <li> HTML </li>
+                  <li> CSS </li>
+                  <li> SASS </li>
+                  <li> JavaScript </li>
+                  <li> React </li>
+                  <li> TypeScript</li>
+                  <li> UX/UI Design </li>
+                  <li> Node.js </li>
+                  <li> Python </li>
+                  <li> Java </li>
+                  <li> C++ </li>
+                  <li> Git </li>
+                  <li> MongoDB </li>
+                  <li> PostgreSQL </li>
+                  <li> Firebase </li>
+                  <li> AWS </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects">
+          <h2> Projects.</h2>
+          <h3>What I've Worked On </h3>
+          <p> As a full-stack software engineer, I have successfully completed various software development projects, which you can find in the section below. This website is one of my latest creations, showcasing my skills and abilities in web development. Besides working on more personal projects to expand my portfolio, I am also learning more about algorithms and data structures to enhance my technical expertise. You can also visit my GitHub to see some of my latest work. </p>
+          <div class="all-projects">
+            <a href="https://github.com/nhvn/to-do-list" target="_blank">
+              <div class="proj">
+                <img src="img/todo.png" alt="Screenshot of To-Do-List App">
+                <div class="overlay"></div>
+                <div class="project-info">
+                  <h3> Task Master: <br> Productivity Tool </h3>
+                  <p> Manage your tasks efficiently and effectively with our task app built using HTML, CSS, JavaScript, React, Node.js, MongoDB, PostgreSQL. Create, edit, and delete tasks with deadlines and priorities, and mark them as done or undone. Sign up, log in, and log out easily, and rest assured that your tasks are stored safely in a PostgreSQL database. </p>
+                  <a href="https://github.com/nhvn/first-browser-game" target="_blank"></a>
+                </div>
+              </div>
+            </a>
+            <a href="https://pumpkin-lost-te.web.app/" target="_blank">
+              <div class="proj">
+                <img src="img/pumpkin.png" alt="Screenshot of Pumpkin Lost-te Game">
+                <div class="overlay"></div>
+                <div class="project-info">
+                  <h3> “Pumpkin Lost-te” Browser Game </h3>
+                  <p> Introducing 'Pumpkin Lost-te,' my inaugural game project, which draws inspiration from classics like 'Flappy Bird' and 'Super Mario.' This game was crafted using HTML, CSS, and JavaScript, and deployed seamlessly with Firebase. The objective is to dodge barriers and reach a destination, capturing the essence of classic games. Note: Currently optimized for Windows only. </p>
+                  <a href="https://github.com/nhvn/first-browser-game" target="_blank"></a>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/nhvn/budget-app" target="_blank">
+              <div class="proj">
+                <img src="/img/comingSoon.png" alt="Placeholder image for upcoming Budget App">
+                <div class="overlay"></div>
+                <div class="project-info">
+                  <h3> Budget App (TBD) </h3>
+                  <p> Effortlessly track your spending and savings with our budget app. Set budgets, categorize expenses, and receive limit notifications. Stay in control of your finances, achieve your goals with our intuitive tool. Your data is securely stored in PostgreSQL. Follow my progress as I shape the app in the near future. </p>
+                  <a href="https://github.com/nhvn/first-browser-game" target="_blank"></a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact">
+          <h2> Contact. </h2>
+          <h3> Let's Chat </h3>
+          <p> I am an enthusiastic full-stack software engineer actively seeking new opportunities and challenges. I am passionate about problem-solving and innovation, and I thrive in collaborative environments where I can work with like-minded professionals. While I may not have many years under my belt, I am a fast learner and am eager to contribute to the success of your team or project. </p>
+          <p> Please feel free to reach out to me via LinkedIn, through email, or give me a call to discuss your requirements. I am excited to learn more about how my skills and expertise can help drive your organization and projects moving forward. If you would like to review my resume, I am happy to provide it upon request. Looking forward to connecting with you! </p>
+          <div class="connect-box">
+            <div class="connect-links">
+              <a href="https://www.linkedin.com/in/alannhans/" target="_blank">
+                <i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/nhvn" target="_blank">
+                <i class="fab fa-github"></i></a>
+              <a href="mailto:alannhan443@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p> Designed & Built by Alan Nhan </p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
