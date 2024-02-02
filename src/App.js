@@ -1,6 +1,7 @@
 import Navbar from './Navbar.js';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { ThemeProvider, theme, GlobalStyle } from './ThemeProvider';
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,16 +14,28 @@ const Logo = styled.img`
   max-width: 100%; 
 `;
 
+// Add this styled component
+const Title = styled.h1`
+  color: ${(props) => props.theme.color};
+`;
+
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
   return (
-    <div className="App">
-      <Navbar />
-      <Wrapper>
-      <h1>Hello there!</h1>
-      {/* Other components */}
-    </Wrapper>
-    </div>
-    
+    <ThemeProvider theme={isDarkMode ? theme.dark : theme.light}>
+      <GlobalStyle />
+      <div className="App">
+        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        <Wrapper>
+          <h2>Hello there!</h2>
+        </Wrapper>
+      </div>
+    </ThemeProvider>
   );
 }
 

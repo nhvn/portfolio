@@ -6,12 +6,12 @@ export const theme = {
     light: {
       background: '#f0f0f0',
       color: '#333',
-      icon: <FiSun />, // Sun icon
+      icon: <FiSun color="#333" />, // Sun icon with color
     },
     dark: {
       background: '#333',
       color: '#f0f0f0',
-      icon: <FiMoon />, // Moon icon
+      icon: <FiMoon color="#f0f0f0" />, // Moon icon with color
     },
   };
 

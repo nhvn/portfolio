@@ -13,6 +13,11 @@ const Logo = styled.img`
   max-width: 10%;
 `;
 
+// Add this styled component
+const Link = styled.a`
+  color: ${(props) => props.theme.color};
+`;
+
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -27,9 +32,11 @@ const Navbar = () => {
           <Logo src="/img/logo.png" alt="Custom logo" />
         </a>
         <div className="links">
-          <a href="/">About</a>
-          <a href="/">Projects</a>
-          <a href="/">Resume</a>
+          <ThemeProvider isDarkMode={isDarkMode}>
+            <Link href="/">About</Link>
+            <Link href="/">Projects</Link>
+            <Link href="/">Resume</Link>
+          </ThemeProvider>
         </div>
         <div>
           <ThemeProvider isDarkMode={isDarkMode}>
@@ -41,10 +48,11 @@ const Navbar = () => {
                   border: 'none',
                   cursor: 'pointer',
                   fontSize: '24px',
-                  marginLeft: '20px',
+                  marginLeft: '2em',
                 }}
               >
-                {theme[isDarkMode ? 'dark' : 'light'].icon}
+                {/* Pass the color prop to the icon here */}
+                {React.cloneElement(theme[isDarkMode ? 'dark' : 'light'].icon, { color: theme[isDarkMode ? 'dark' : 'light'].color })}
               </button>
             </div>
           </ThemeProvider>
