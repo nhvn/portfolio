@@ -3,16 +3,35 @@
 * {
   margin: 0;
   font-family: "Larke Neue Thin", "Roboto", "Arial", sans-serif;
-  /* color: #333; */
 }
+.divider {
+  border-top: 1.5px solid hsla(50,3%,47%,.5);
+  width: 50%;
+}
+h1 {
+  font-size: 3.125rem;
+  line-height: 122%;
+}
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+/* NAVIGATION BAR */
 .navbar {
   display: flex;
   align-items: center;
   max-width: none;
   margin: 0 auto;
-  height: 5em;
+  padding: 2em 0;
+  height: 3em;
   width: 80%;
-  border-bottom: 1px solid #b9b9b9;
 }
 .navbar .logo {
   margin-left: 0;
@@ -28,10 +47,82 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #6a9b8f;
 }
 .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
+
+/* HOME PAGE */
+.home {
+  margin: 0 auto 10rem;
+  width: 80%;
+}
+.home .flex {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+.fade {
+  width: 80%;
+}
+.left {
+  flex: 4;
+}
+/* .title .description .small-paragraph {
+  color: rgba(51,51,51,.5);
+} */
+.descr-contain p, .overview p {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.highlight {
+  font-weight: bold;
+  color: #6a9b8f; /* You can change this to any color you like */
+  animation: fadeIn 2s ease-in-out 1; /* This will make the text appear out of thin air */
+}
+.right {
+  flex: 2; 
+}
+.contact-contain {
+  background-color: #cccccc; 
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.2); 
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 60rem; 
+  padding: 3rem; 
+  transition: transform .3s ease-in-out; 
+  will-change: transform; 
+}
+@media (prefers-color-scheme: dark) {
+  h2 {
+    color: black !important;
+  }
+}
+.contact-list {
+  display: flex;
+  justify-content: center;
+}
+.contact-list img {
+  width: 3em;
+  height: auto;
+  padding: 30px;
+  transition: opacity 0.3s ease;
+}
+.contact-list img:hover {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
