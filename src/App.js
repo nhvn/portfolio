@@ -1,22 +1,17 @@
+// App.js
 import Navbar from './Navbar.js';
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider, theme, GlobalStyle } from './ThemeProvider';
+import AboutPage from './AboutPage';
+import ProjectsPage from './ProjectsPage';
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50vh;
-`;
-
-const Logo = styled.img`
-  max-width: 100%; 
-`;
-
-// Add this styled component
-const Title = styled.h1`
-  color: ${(props) => props.theme.color};
 `;
 
 function App() {
@@ -29,12 +24,20 @@ function App() {
   return (
     <ThemeProvider theme={isDarkMode ? theme.dark : theme.light}>
       <GlobalStyle />
-      <div className="App">
-        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        <Wrapper>
-          <h2>Hello there!</h2>
-        </Wrapper>
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+          <Routes>
+            <Route path="/" element={
+              <Wrapper>
+                <h1>Hello there!</h1>
+              </Wrapper>
+            } />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+          </Routes>
+        </div>
+      </Router>
     </ThemeProvider>
   );
 }

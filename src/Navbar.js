@@ -1,6 +1,7 @@
 // Navbar.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { ThemeProvider, theme } from './ThemeProvider';
 
 const Wrapper = styled.div`
@@ -14,17 +15,11 @@ const Logo = styled.img`
 `;
 
 // Add this styled component
-const Link = styled.a`
+const StyledLink = styled(Link)`
   color: ${(props) => props.theme.color};
 `;
 
-const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-  };
-
+const Navbar = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <Wrapper>
       <nav className="navbar">
@@ -33,9 +28,9 @@ const Navbar = () => {
         </a>
         <div className="links">
           <ThemeProvider isDarkMode={isDarkMode}>
-            <Link href="/">About</Link>
-            <Link href="/">Projects</Link>
-            <Link href="/">Resume</Link>
+            <StyledLink to="/about">About</StyledLink>
+            <StyledLink to="/projects">Projects</StyledLink>
+            <StyledLink to="/">Resume</StyledLink>
           </ThemeProvider>
         </div>
         <div>
@@ -51,7 +46,6 @@ const Navbar = () => {
                   marginLeft: '2em',
                 }}
               >
-                {/* Pass the color prop to the icon here */}
                 {React.cloneElement(theme[isDarkMode ? 'dark' : 'light'].icon, { color: theme[isDarkMode ? 'dark' : 'light'].color })}
               </button>
             </div>
