@@ -54,7 +54,7 @@ const HomePage = () => {
                           Task Master
                         </h4>
                         <p>
-                          Description for Task Master...
+                          Description...
                         </p>
                       </div>
                     </div>
@@ -65,11 +65,9 @@ const HomePage = () => {
                   <img src={process.env.PUBLIC_URL + '/img/pumpkin.png'} alt="Todo Image" />
                       <div class="card-overlay">
                         <div class="header">
-                          <h4>
-                            Pumpkin
-                          </h4>
+                          <h4>Pumpkin</h4>
                           <p>
-                            Description for Task Master...
+                            Description...
                           </p>
                         </div>
                       </div>
@@ -80,11 +78,9 @@ const HomePage = () => {
                 <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Todo Image" />
                     <div class="card-overlay">
                       <div class="header">
-                        <h4>
-                          Coming Soon
-                        </h4>
+                        <h4>Smart Lighting Control System</h4>
                         <p>
-                          Description for Coming Soon...
+                          Description...
                         </p>
                       </div>
                     </div>
@@ -95,11 +91,9 @@ const HomePage = () => {
                 <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Todo Image" />
                     <div class="card-overlay">
                       <div class="header">
-                        <h4>
-                          Sample
-                        </h4>
+                        <h4>Old Portfolio</h4>
                         <p>
-                          Description for Sample...
+                          Description...
                         </p>
                       </div>
                     </div>
