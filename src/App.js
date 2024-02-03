@@ -1,8 +1,8 @@
 import Navbar from './Navbar.js';
-import Home from './HomePage.js'; // Make sure the component is exported from HomePage.js
-import About from './AboutPage.js'; // Make sure the component is exported from AboutPage.js
-import Projects from './ProjectsPage.js'; // Make sure the component is exported from ProjectsPage.js
-import Footer from './Footer.js'; // Make sure the Footer component is exported from Footer.js
+import Home from './HomePage.js'; 
+import About from './AboutPage.js'; 
+import Projects from './ProjectsPage.js'; 
+import Footer from './Footer.js'; 
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes from react-router-dom
 import { ThemeProvider, theme, GlobalStyle } from './ThemeProvider';

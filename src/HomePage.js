@@ -10,9 +10,7 @@ const HomePage = () => {
                     <p class="small-paragraph">
                       HELLO THERE!
                     </p>
-                    <h1>
-                    I'm <span class="bold-text">Alan</span>.
-                    </h1>
+                    <h1>I'm Alan.</h1>
                     {/* <div class="divider"></div> */}
                     <div class="description descr-contain">
                       <div class="text-contain">
@@ -26,18 +24,18 @@ const HomePage = () => {
               <div className="right">
                 <div class="contact">
                   <div class="contact-contain">
-                    <h2 id="chat">Let's chat</h2>
-                    <div class="contact-list">
-                    <a href="https://www.linkedin.com/in/alannhans" target="_blank">
-                      <img src="/img/linkedin.png" alt="LinkedIn" />
-                    </a>
-                    <a href="https://github.com/nhvn" target="_blank">
-                      <img src="/img/github.png" alt="GitHub" />
-                    </a>
-                    <a href="mailto: alannhan443@gmail.com" target="_blank">
-                      <img src="/img/email.png" alt="Email" />
-                    </a>
-                  </div>
+                  <h2 id="chat">Let's chat</h2>
+                    <div className="contact-list">
+                      <a href="https://www.linkedin.com/in/alannhans" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/linkedin.png" alt="Logo for LinkedIn" />
+                      </a>
+                      <a href="https://github.com/nhvn" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/github.png" alt="Logo for Github" />
+                      </a>
+                      <a href="mailto: alannhan443@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/email.png" alt="Logo for email" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

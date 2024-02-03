@@ -144,8 +144,8 @@ section {
   height: 25em;
   width: 35em;
   position: relative;
-  border-radius: 15px; /* Adjust as needed */
-  overflow: hidden; /* This makes sure the border radius applies to the image as well */
+  border-radius: 15px;
+  overflow: hidden;
 }
 .proj img {
   width: 100%;
@@ -203,7 +203,35 @@ footer {
   width: 80%;
   margin: 20px auto;
 }
+/* ABOUT PAGE */
+.about {
+  margin: 0 auto;
+  width: 80%;
+}
+.about .flex {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+.about .right {
+  max-width: 20rem;
+}
 
+.img-contain {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.img-contain img {
+  border-radius: 15px;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* height: auto; */
+  transition: all .3s ease-in-out;
+  width: 15rem;
+}
 
 
 

@@ -6,7 +6,8 @@ function Footer() {
   return (
     <footer>
       <div class="footer-section">
-        <h3>Designed + Developed by Alan Nhan</h3>
+        <h3>Designed & Developed by</h3>
+        <h3>Alan Nhan</h3>
       </div>
       <hr /> {/* Add this line */}
       <div class="footer-section">
