@@ -23,7 +23,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
         <ThemeProvider isDarkMode={isDarkMode}>
           <StyledLink to="/about">About</StyledLink>
           <StyledLink to="/projects">Projects</StyledLink>
-          <StyledLink to="/">Resume</StyledLink>
+          <StyledLink to="#">Resume</StyledLink>
         </ThemeProvider>
       </div>
       <div>
