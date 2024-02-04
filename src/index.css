@@ -5,7 +5,7 @@
   font-family: "Larke Neue Thin", "Roboto", "Arial", sans-serif;
 }
 .bold-text {
-  font-weight: 900;
+  font-weight: 100;
 }
 .divider {
   border-top: 1.5px solid hsla(50,3%,47%,.5);
@@ -96,8 +96,13 @@ section {
 }
 .highlight {
   font-weight: bold;
-  color: #6a9b8f; /* You can change this to any color you like */
-  animation: fadeIn 2s ease-in-out 1; /* This will make the text appear out of thin air */
+  color: #6a9b8f; 
+  animation: fadeIn 2s ease-in-out 1; 
+}
+.highlight2 {
+  font-weight: 900;
+  color: rgb(51, 116, 149); 
+  /* animation: fadeIn 2s ease-in-out 1;  */
 }
 .right {
   flex: 2; 

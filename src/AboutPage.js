@@ -13,8 +13,9 @@ const AboutPage = () => {
                                 <h1>I'm Alan</h1>
                                 <div class="description descr-contain">
                                     <div class="text-contain">
-                                        <p>I am a dedicated <span class="highlight">full-stack software engineer</span> who's skilled in frontend and backend technologies...</p>
-                                        <p>Currently, I'm expanding my knowledge in the fields of Machine Learning and Artificial Intelligence, while actively seeking new opportunities to apply and grow my skillset.</p>
+                                        <p>I am a <span class="highlight">full-stack software engineer</span> with a passion for problem-solving and a versatile skillset. I graduated from <span class="highlight2">UCI</span> with a Bachelor of Science in Natural Sciences and I also finished a Full-Stack Software Development Program at <span class="highlight2">CSULB</span>.</p>
+                                        <p>I have experience in working with teams, prioritizing tasks, and delivering high-quality results in fast-paced environments. I have also developed a keen interest in healthcare operations and procedures, as I was a former dental student and a dental assistant. I switched careers to pursue software engineering and I have successfully completed several projects using various frontend and backend technologies.</p>
+                                        <p>I am always eager to learn new skills and take on new challenges in software development, and I am actively seeking new opportunities to apply and grow my skillset in different roles.</p>
                                     </div>
                                 </div>
                         </div>
