@@ -29,24 +29,24 @@ const AboutPage = () => {
             </div>
             <div class="divider"></div>
             <section class="hobbies">
-                <h2 id="titles">Current Obsessions</h2>
+                <h2 id="titles">Obsessions</h2>
             <div className="hobbies-contain">
                 <div className="hob" id="foodie">
-                    <h2>foods</h2>
+                    <h2>foods&nbsp;</h2>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                 </div>
                 <div className="hob" id="cafe">
-                <h2>cafes</h2>
+                <h2>cafes&nbsp;</h2>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                 </div>
                 <div className="hob" id="travel">
-                <h2>travel</h2>
+                <h2>travel&nbsp;</h2>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
