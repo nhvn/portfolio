@@ -100,9 +100,9 @@ section {
   animation: fadeIn 2s ease-in-out 1; 
 }
 .highlight2 {
-  font-weight: 900;
+  font-weight: bold;
   color: rgb(51, 116, 149); 
-  /* animation: fadeIn 2s ease-in-out 1;  */
+  animation: fadeIn 2s ease-in-out 1; 
 }
 .right {
   flex: 2; 
@@ -144,6 +144,8 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  justify-content: space-between;
+  justify-items: center;
 }
 .proj {
   height: 25em;
@@ -286,7 +288,7 @@ footer {
   color: white;
 }
 #cafe:hover::after {
-  content: "I love to go cafe hopping. There's nothing like the smell of fresh tea and the ambiance of a cozy cafe to make my day. Whether it's for a quick pick-me-up or a leisurely afternoon, you'll often find me in local cafes in LA or OC, working or just catching up with some friends.";
+  content: "I love to go cafe hopping. There's nothing like the smell of fresh tea and the ambiance of a cozy cafe to make my day. Whether it's for a quick pick-me-up or a leisurely afternoon, you'll often find me in local cafes somewhere in LA/OC, working or just catching up with some friends.";
   color: white;
 }
 #travel:hover::after {
