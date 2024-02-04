@@ -118,11 +118,9 @@ section {
   transition: transform .3s ease-in-out; 
   will-change: transform; 
 }
-/* @media (prefers-color-scheme: dark) {
-  #chat {
-    color: black !important;
-  }
-} */
+#chat {
+  color: black !important;
+}
 .contact-list {
   display: flex;
   justify-content: center;
