@@ -9,7 +9,7 @@ const AboutPage = () => {
                 <div class="left">
                     <section class="title">
                         <div class="description">
-                            <p class="small-paragraph">ABOUT ME...</p>
+                            <p class="small-paragraph">ABOUT ME,</p>
                                 <h1>I'm Alan</h1>
                                 <div class="description descr-contain">
                                     <div class="text-contain">
@@ -26,6 +26,30 @@ const AboutPage = () => {
                     </div>
                 </div>
             </div>
+            <div class="divider"></div>
+            <section class="hobbies">
+                <h2 id="titles">Current Obsessions</h2>
+            <div className="hobbies-contain">
+                <div className="hob" id="foodie">
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                </div>
+                <div className="hob" id="cafe">
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                </div>
+                <div className="hob" id="travel">
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                    <img src={process.env.PUBLIC_URL + '/img/comingSoon.png'} alt="Coming Soon"></img>
+                </div>
+                </div>
+            </section>
         </div>
 
     </div>

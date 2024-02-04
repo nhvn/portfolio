@@ -42,7 +42,7 @@ const HomePage = () => {
           </div>
           <div class="divider"></div>
           <section class="projects">
-            <h2 id="projects">Projects</h2>
+            <h2 id="titles">Projects</h2>
             <div class="projects-contain">
               <div class="project-card-grid">
                 <div class ="proj" id="taskmaster">

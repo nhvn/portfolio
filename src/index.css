@@ -113,11 +113,11 @@ section {
   transition: transform .3s ease-in-out; 
   will-change: transform; 
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   #chat {
     color: black !important;
   }
-}
+} */
 .contact-list {
   display: flex;
   justify-content: center;
@@ -132,7 +132,7 @@ section {
   opacity: 0.6;
 }
 /* PROJECTS */
-#projects {
+#titles {
   padding-bottom: 1em;
 }
 .project-card-grid {
@@ -226,12 +226,76 @@ footer {
 }
 .img-contain img {
   border-radius: 15px;
-  /* flex-grow: 1; */
-  /* flex-shrink: 1; */
-  /* height: auto; */
+  transition: all .3s ease-in-out;
+  width: 18rem;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  height: auto; */
+}
+.hobbies-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.hob {
+  /* border: 1px solid #0000000f; */
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hob img, .hob p {
+  position: relative; 
+  z-index: 2; 
+}
+.hob::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; 
+  transition: background-color 0.7s ease; 
+  z-index: 1;
+  border-radius: 15px;
+}
+.hob:hover::after {
+  content: ""; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: #000;
+  font-size: 20px;
+  z-index: 2;
+}
+.hob:hover::before {
+  background-color: rgba(50, 50, 50, 0.916); 
+}
+#foodie:hover::after {
+  content: "I find joy in exploring the culinary landscape wherever I go, whenever I go. As a fellow Yelp Elite, I love to discover new hidden gems at renowned eateries, as each experience adds a flavorful chapter to my journey. Camera eats first!";
+  color: white;
+}
+#cafe:hover::after {
+  content: "I love to go cafe hopping. There's nothing like the smell of fresh tea and the ambiance of a cozy cafe to make my day. Whether it's for a quick pick-me-up or a leisurely afternoon, you'll often find me in local cafes in LA or OC, working or just catching up with some friends.";
+  color: white;
+}
+#travel:hover::after {
+  content: "Traveling is one of my passions. I love exploring new places, immersing myself in different cultures, and meeting people from all walks of life. Every journey brings with it a wealth of experiences and memories, and I can't wait for my next adventure.";
+  color: white;
+}
+.hob img {
+  border-radius: 15px;
   transition: all .3s ease-in-out;
   width: 15rem;
+  margin: 0 auto;
+  z-index: 0;
 }
+
 
 
 
