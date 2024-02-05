@@ -109,6 +109,7 @@ section {
 }
 .contact-contain {
   background-color: #a0b7b1; 
+  /* background-color: #3C6E71; */
   border-radius: 2rem;
   box-shadow: 0 10px 30px -10px rgba(0,0,0,.2); 
   flex-grow: 1;
@@ -117,9 +118,7 @@ section {
   padding: 3rem; 
   transition: transform .3s ease-in-out; 
   will-change: transform; 
-}
-#h2-black {
-  color: black !important;
+  color: black;
 }
 .contact-list {
   display: flex;
@@ -323,7 +322,7 @@ footer {
   padding-bottom: 2em;
 }
 .project-contain {
-  background-color: #284b63;
+  background-color: #4f6d7a;
   color: white;
   border-radius: 2rem;
   box-shadow: 0 10px 30px -10px rgba(0,0,0,.2); 
