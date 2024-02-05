@@ -231,7 +231,17 @@ footer {
 .about .right {
   max-width: 20rem;
 }
-
+.headshot-contain {
+  background-color: #73685e;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.2); 
+  padding: 2rem; 
+  transition: transform .3s ease-in-out; 
+  will-change: transform;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 60rem;  */
+}
 .img-contain {
   align-content: center;
   display: flex;
