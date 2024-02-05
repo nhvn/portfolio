@@ -6,8 +6,8 @@ function Footer() {
   return (
     <footer>
       <div class="footer-section footer-section-1">
-        <h3>Designed & Developed</h3>
-        <h3>by Alan Nhan</h3>
+        <h3>Designed & developed</h3>
+        <h3>by yours truly.</h3>
       </div>
       <hr />
       <div class="footer-section footer-section-2">

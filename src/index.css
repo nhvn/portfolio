@@ -178,7 +178,7 @@ section {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 3em 0;
+  padding: 2em 0;
   width: 80%;
   margin: 0 auto;
 }
@@ -192,11 +192,9 @@ footer {
 .footer-section-1 {
   flex: 5;
 }
-
 .footer-section-2 {
   flex: 2;
 }
-
 .footer-section-3 {
   flex: 2;
 }
