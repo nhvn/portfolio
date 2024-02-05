@@ -1,6 +1,6 @@
 // ThemeProvider.js
 import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-components';
-import { FiSun, FiMoon } from 'react-icons/fi'; // Import sun and moon icons
+import { FiSun, FiMoon } from 'react-icons/fi'; 
 
 
 export const theme = {
@@ -9,7 +9,7 @@ export const theme = {
     color: '#333',
     linkColor: '#333',
     icon: <FiSun/>,
-    imageFilter: 'none', // No filter for light mode
+    imageFilter: 'none', 
   },
   dark: {
     background: '#333',

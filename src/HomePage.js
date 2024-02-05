@@ -8,7 +8,7 @@ const HomePage = () => {
                 <section class="title">
                   <div class="description">
                     <p class="small-paragraph">
-                      HELLO THERE!
+                      HELLO THERE,
                     </p>
                     <h1>I'm Alan.</h1>
                     {/* <div class="divider"></div> */}
@@ -24,7 +24,7 @@ const HomePage = () => {
               <div className="right">
                 <div class="contact">
                   <div class="contact-contain">
-                  <h2 id="chat">Let's chat</h2>
+                  <h2 id="h2-black">Let's chat</h2>
                     <div className="contact-list">
                       <a href="https://www.linkedin.com/in/alannhans" target="_blank" rel="noopener noreferrer">
                         <img src="/img/linkedin.png" alt="Logo for LinkedIn" />

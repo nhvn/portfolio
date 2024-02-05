@@ -9,8 +9,8 @@ const AboutPage = () => {
                 <div class="left">
                     <section class="title">
                         <div class="description">
-                            <p class="small-paragraph">ABOUT ME,</p>
-                                <h1>I'm Alan.</h1>
+                            <p class="small-paragraph">MY NAME IS</p>
+                                <h1>Alan Nhan.</h1>
                                 <div class="description descr-contain">
                                     <div class="text-contain">
                                         <p>I am a <span class="highlight">full-stack software engineer</span> with a passion for problem-solving and a versatile skillset. I graduated from <span class="highlight2">UCI</span> with a Bachelor of Science in Natural Sciences and I also finished a Full-Stack Software Development Program at <span class="highlight2">CSULB</span>.</p>
