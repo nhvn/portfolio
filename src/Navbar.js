@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { ThemeProvider, theme } from './ThemeProvider';
 
 const Logo = styled.img`
@@ -9,6 +9,13 @@ const Logo = styled.img`
 
 const StyledLink = styled(Link)`
   color: ${(props) => props.theme.linkColor};
+`;
+
+const StyledLink2 = styled(NavLink)`
+  color: ${(props) => props.theme.linkColor};
+  &.active {
+    color: #6a9b8f; 
+  }
 `;
 
 const DropdownMenu = styled.div`
@@ -23,10 +30,10 @@ const DropdownMenu = styled.div`
   border-radius: 0 0 20px 20px;
 `;
 
-const DropdownLink = styled(StyledLink)`
-  display: block;
-  margin: 10px 0;
-`;
+// const DropdownLink = styled(StyledLink)`
+//   display: block;
+//   margin: 10px 0;
+// `;
 
 const DropdownContainer = styled.div`
   position: relative;
@@ -61,9 +68,9 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
       </a>
       <div className="links">
         <ThemeProvider isDarkMode={isDarkMode}>
-          <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="/about">About</StyledLink>
-          <StyledLink to="/projects">Projects</StyledLink>
+          <StyledLink2 to="/">Home</StyledLink2>
+          <StyledLink2 to="/about">About</StyledLink2>
+          <StyledLink2 to="/projects">Projects</StyledLink2>
           <DropdownContainer ref={dropdownRef}>
             <StyledLink onClick={toggleDropdown}>Resume</StyledLink>
             <DropdownMenu isOpen={isOpen}>
