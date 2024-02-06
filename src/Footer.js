@@ -24,7 +24,7 @@ function Footer() {
         <ul>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/projects">Projects</Link></li>
-            <li>Resume</li>
+            <li><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
       </div>
     </footer>

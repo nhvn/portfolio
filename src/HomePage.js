@@ -33,7 +33,7 @@ const HomePage = () => {
                       <a href="https://github.com/nhvn" target="_blank" rel="noopener noreferrer">
                         <img src="/img/github.png" alt="Logo for Github" />
                       </a>
-                      <a href="mailto: alannhan443@gmail.com" target="_blank" rel="noopener noreferrer">
+                      <a href="mailto: alannhan443@gmail.com" rel="noopener noreferrer">
                         <img src="/img/email.png" alt="Logo for email" />
                       </a>
                     </div>
