@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import React, { useState, createContext, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar.js';
 import Home from './HomePage.js'; 
@@ -8,13 +8,14 @@ import ProjPage from './ProjPage';
 import Footer from './Footer.js'; 
 import { ThemeProvider, theme, GlobalStyle } from './ThemeProvider';
 
-export const ProjectsContext = createContext(); // Create the context
+export const ProjectsContext = createContext();
 
 const projects = [
   { 
     id: 'taskmaster', 
     title: 'Task Master', 
-    description: 'Description for Task Master',
+    role: 'FULL-STACK DEVELOPER',
+    description: 'Description for Task Master...',
     technologies: ['React', 'JavaScript', 'CSS'],
     image: '/img/todo.png',
     codeLink: 'https://github.com/nhvn/to-do-list',
@@ -23,7 +24,8 @@ const projects = [
   { 
     id: 'pumpkin', 
     title: 'Pumpkin Latte', 
-    description: 'Description for Project 2',
+    role: 'GAME DEVELOPER',
+    description: 'Description...',
     technologies: ['Node.js', 'Express', 'MongoDB'],
     image: '/img/pumpkin.png',
     codeLink: 'https://github.com/nhvn/first-browser-game',
@@ -32,6 +34,7 @@ const projects = [
   { 
     id: 'comingSoon', 
     title: '', 
+    role: '',
     description: 'Description...',
     technologies: ['', '', ''],
     image: '/img/comingSoon.png',
@@ -41,6 +44,7 @@ const projects = [
   { 
     id: 'comingSoon', 
     title: '', 
+    role: '',
     description: 'Description...',
     technologies: ['', '', ''],
     image: '/img/comingSoon.png',
@@ -51,7 +55,16 @@ const projects = [
 const ProjectsWrapper = (props) => <Projects {...props} />;
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    // Get the initial state from localStorage
+    const savedMode = localStorage.getItem('isDarkMode');
+    return savedMode === 'true' ? true : false; // Convert string to boolean
+  });
+
+  // Use useEffect to update localStorage whenever isDarkMode changes
+  useEffect(() => {
+    localStorage.setItem('isDarkMode', isDarkMode);
+  }, [isDarkMode]);
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
@@ -62,7 +75,7 @@ function App() {
       <GlobalStyle />
       <Router>
         <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        <ProjectsContext.Provider value={projects}> {/* Use the context provider */}
+        <ProjectsContext.Provider value={projects}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
