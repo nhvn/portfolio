@@ -1,5 +1,4 @@
-// App.js
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar.js';
 import Home from './HomePage.js'; 
@@ -9,28 +8,47 @@ import ProjPage from './ProjPage';
 import Footer from './Footer.js'; 
 import { ThemeProvider, theme, GlobalStyle } from './ThemeProvider';
 
+export const ProjectsContext = createContext(); // Create the context
+
 const projects = [
   { 
-    id: 'project1', 
-    title: 'Project 1', 
-    description: 'Description for Project 1',
+    id: 'taskmaster', 
+    title: 'Task Master', 
+    description: 'Description for Task Master',
     technologies: ['React', 'JavaScript', 'CSS'],
-    image: '/path/to/project1/image',
-    codeLink: 'https://github.com/username/project1',
-    liveLink: 'https://www.project1.com'
+    image: '/img/todo.png',
+    codeLink: 'https://github.com/nhvn/to-do-list',
+    liveLink: ''
   },
   { 
-    id: 'project2', 
-    title: 'Project 2', 
+    id: 'pumpkin', 
+    title: 'Pumpkin Latte', 
     description: 'Description for Project 2',
     technologies: ['Node.js', 'Express', 'MongoDB'],
-    image: '/path/to/project2/image',
-    codeLink: 'https://github.com/username/project2',
-    liveLink: 'https://www.project2.com'
+    image: '/img/pumpkin.png',
+    codeLink: 'https://github.com/nhvn/first-browser-game',
+    liveLink: 'https://pumpkin-lost-te.web.app/'
   },
-  // More projects...
+  { 
+    id: 'comingSoon', 
+    title: '', 
+    description: 'Description...',
+    technologies: ['', '', ''],
+    image: '/img/comingSoon.png',
+    codeLink: '',
+    liveLink: ''
+  },
+  { 
+    id: 'comingSoon', 
+    title: '', 
+    description: 'Description...',
+    technologies: ['', '', ''],
+    image: '/img/comingSoon.png',
+    codeLink: '',
+    liveLink: ''
+  },
 ];
-
+const ProjectsWrapper = (props) => <Projects {...props} />;
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -44,12 +62,14 @@ function App() {
       <GlobalStyle />
       <Router>
         <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:projectId" element={<React.Fragment><ProjPage projects={projects} /></React.Fragment>} />
-        </Routes>
+        <ProjectsContext.Provider value={projects}> {/* Use the context provider */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<ProjectsWrapper />} />
+            <Route path="/projects/:projectId" element={<React.Fragment><ProjPage projects={projects} /></React.Fragment>} />
+          </Routes>
+        </ProjectsContext.Provider>
         <hr className="footer-divider" />
         <Footer />
       </Router>
@@ -58,3 +78,4 @@ function App() {
 }
 
 export default App;
+

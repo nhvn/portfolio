@@ -305,19 +305,19 @@ footer {
   z-index: 2;
 }
 .hob:hover::before {
-  background-color: rgba(50, 50, 50, 0.916); 
+  background-color: rgba(50, 50, 50, 0.795); 
+}
+#foodie:hover::after, #cafe:hover::after, #travel:hover::after {
+  color: white;
 }
 #foodie:hover::after {
   content: "I find joy in exploring the culinary landscape wherever I go, whenever I go. As a fellow Yelp Elite, I love to discover new hidden gems at renowned eateries, as each experience adds a flavorful chapter to my journey. Camera eats first!";
-  color: white;
 }
 #cafe:hover::after {
   content: "I love to go cafe hopping. There's nothing like the smell of fresh tea and the ambiance of a cozy cafe to make my day. Whether it's for a quick pick-me-up or a leisurely afternoon, you'll often find me in local cafes somewhere in LA/OC, working or just catching up with some friends.";
-  color: white;
 }
 #travel:hover::after {
   content: "Traveling is one of my passions. I love exploring new places, immersing myself in different cultures, and meeting people from all walks of life. Every journey brings with it a wealth of experiences and memories, and I can't wait for my next adventure.";
-  color: white;
 }
 .hob img {
   border-radius: 15px;
@@ -349,7 +349,7 @@ footer {
   transition: transform .3s ease-in-out; 
   will-change: transform; 
 }
-
+/* INDIVIDUAL PROJ PAGE */
 
 
 
