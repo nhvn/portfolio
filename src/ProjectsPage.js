@@ -29,7 +29,7 @@ const ProjectsPage = () => {
                   <h2>Technologies</h2>
                     <p>HTML, CSS, SASS, JavaScript, React, TypeScript, UX/UI Design, Node.js, Python, Java, C++, Git</p>
                     <p>MongoDB, PostgreSQL</p>
-                    <p>Firebase, Amazon Web Services (AWS)</p>
+                    <p>Firebase, AWS</p>
                   </div>
                 </div>
               </div>
