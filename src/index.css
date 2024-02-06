@@ -107,7 +107,7 @@ section {
 .highlight2 {
   font-weight: bold;
   color: rgb(74, 164, 209); 
-  animation: fadeIn 4s ease-in-out 1; 
+  animation: fadeIn 3s ease-in-out 1; 
 }
 .highlight3 {
   font-weight: bold;
