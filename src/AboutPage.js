@@ -31,7 +31,7 @@ const AboutPage = () => {
             </div>
             <div className="divider"></div>
             <section className="hobbies">
-                <h2 id="titles">Obsessions</h2>
+                <h2 id="titles">Interests</h2>
             <div className="hobbies-contain">
                 <div className="hob" id="foodie">
                     <h2>foods&nbsp;</h2>
