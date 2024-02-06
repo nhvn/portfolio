@@ -6,8 +6,12 @@ function Footer() {
   return (
     <footer>
       <div className="footer-section footer-section-1">
-        <h3>Designed & developed</h3>
-        <h3>by yours truly.</h3>
+        <div className="yoursTruly">
+          <h3>
+            Conceptualized and coded by yours truly. Built with <span className="highlight3">React</span> and <span className="highlight3">Styled Components</span>. 
+            Navigation powered by <span className="highlight3">React Router</span>. 
+          </h3>
+        </div>
       </div>
       <hr />
       <div className="footer-section footer-section-2">
@@ -27,6 +31,7 @@ function Footer() {
             <li><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
       </div>
+      {/* <hr /> */}
     </footer>
   );
 }

@@ -109,6 +109,10 @@ section {
   color: rgb(74, 164, 209); 
   animation: fadeIn 2s ease-in-out 1; 
 }
+.highlight3 {
+  font-weight: bold;
+  color: #6a9b8f; 
+}
 .right {
   flex: 2; 
 }
@@ -183,7 +187,7 @@ section {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 2em 0;
+  padding-bottom: 2em;
   width: 80%;
   margin: 0 auto;
 }
@@ -194,8 +198,14 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.yoursTruly {
+  width: 25em;
+}
+.footer-section-2 h3, .footer-section-3 h3 {
+  color: #778da9;
+}
 .footer-section-1 {
-  flex: 5;
+  flex: 6;
 }
 .footer-section-2 {
   flex: 2;
@@ -204,14 +214,14 @@ footer {
   flex: 2;
 }
 .footer-section h3 {
-  margin-bottom: 15px;
+  /* margin-bottom: 10px; */
 }
 .footer-section ul {
   list-style: none;
   padding: 5px;
 }
 .footer-section ul li {
-  padding: 5px;
+  padding: 3px;
 }
 .footer-section ul li a {
   text-decoration: none;
