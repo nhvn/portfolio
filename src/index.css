@@ -68,6 +68,10 @@ section {
   margin: 40px auto;
   padding: 20px;
 }
+.dropdown-item {
+  margin: 0 !important;
+  text-align: center;
+}
 
 /* HOME PAGE */
 .home {
@@ -109,7 +113,7 @@ section {
 }
 .contact-contain {
   background-color: #a0b7b1; 
-  /* background-color: #3C6E71; */
+  /* background-color: #adb5bd;  */
   border-radius: 2rem;
   box-shadow: 0 10px 30px -10px rgba(0,0,0,.2); 
   flex-grow: 1;
@@ -119,6 +123,7 @@ section {
   transition: transform .3s ease-in-out; 
   will-change: transform; 
   color: black;
+  /* color: white; */
 }
 .contact-list {
   display: flex;
