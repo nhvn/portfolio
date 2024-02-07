@@ -8,8 +8,8 @@ function Footer() {
       <div className="footer-section footer-section-1">
         <div className="yoursTruly">
           <h3>
-            Conceptualized and coded by yours truly. Built with <span className="highlight3">React</span> and <span className="highlight3">Styled Components</span>. 
-            Navigation powered by <span className="highlight3">React Router</span>. 
+            Conceptualized, coded, and deployed with <span className='highlight3'>Vercel</span> by yours truly. 
+            Built with <span className="highlight3">React</span> and <span className="highlight3">Styled Components</span>. 
           </h3>
         </div>
       </div>
