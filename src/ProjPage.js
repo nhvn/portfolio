@@ -6,9 +6,13 @@ export const projects = [
     id: 'taskmaster', 
     title: 'Task Master', 
     role: 'FULL-STACK DEVELOPER',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    technologies: ['React', 'JavaScript', 'CSS'],
+    description: 'To-Do List App app allows users to create, edit, and delete tasks with due dates and priorities, as well as mark tasks as complete or incomplete. Users can register, log in, and log out, and their tasks are stored securely in a PostgreSQL database.',
+    technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB'],
     image: '/img/todo.png',
+    contribution: 'I built a secure PostgreSQL database from scratch and developed a robust API using Node.js and Express. I also created an intuitive user interface using React, integrating it with the back-end for seamless functionality.',
+    team: 'Myself and two other software engineers.',
+    problem: 'Users needed a way to manage tasks efficiently, with the ability to create, edit, delete, and mark tasks with due dates and priorities.',
+    solution: 'We developed a To-Do List App that allows users to perform all these actions. The app also provides secure user registration, login, and logout features, with tasks stored securely in a PostgreSQL database.',
     sketchImage: '/img/comingSoon.png',
     sketch: 'sketch description',
     methodImage: '/img/comingSoon.png',
@@ -25,7 +29,11 @@ export const projects = [
     role: 'GAME DEVELOPER',
     description: 'Description...',
     technologies: ['Node.js', 'Express', 'MongoDB'],
-    image: '/img/comingSoon.png',
+    image: '/img/pumpkin.png',
+    contribution: '',
+    team: '',
+    problem: '',
+    solution: '',
     sketchImage: '/img/comingSoon.png',
     sketch: 'sketch description',
     methodImage: '/img/comingSoon.png',
@@ -43,6 +51,10 @@ export const projects = [
     description: 'Description...',
     technologies: ['', '', ''],
     image: '/img/comingSoon.png',
+    contribution: '',
+    team: '',
+    problem: '',
+    solution: '',
     sketchImage: '/img/comingSoon.png',
     sketch: 'sketch description',
     methodImage: '/img/comingSoon.png',
@@ -54,12 +66,16 @@ export const projects = [
     liveLink: ''
   },
   { 
-    id: 'comingSoon', 
+    id: 'oldPortfolio', 
     title: '', 
     role: '',
     description: 'Description...',
     technologies: ['', '', ''],
     image: '/img/comingSoon.png',
+    contribution: '',
+    team: '',
+    problem: '',
+    solution: '',
     sketchImage: '/img/comingSoon.png',
     sketch: 'sketch description',
     methodImage: '/img/comingSoon.png',
@@ -109,6 +125,28 @@ function ProjPage() {
             </div>
         </div>
         <div className="divider"></div>
+        {/* MIDDLE PORTION */}
+        <div classname="overview">
+          <div className='flex2'>
+            <div className='overview-parts'>
+              <h2>Role</h2>
+              <p>{project.contribution}</p>
+            </div>
+            <div className='overview-parts'>
+              <h2>Team</h2>
+              <p>{project.team}</p>
+            </div>
+            <div className='overview-parts'>
+              <h2>Problem</h2>
+              <p>{project.problem}</p>
+            </div>
+            <div className='overview-parts'>
+              <h2>Solution</h2>
+              <p>{project.solution}</p>
+            </div>
+          </div>
+        </div>
+        <div className="divider"></div>
         {/* BOTTOM PORTION */}
         <div className="proj-content-container">
           <div className="flex">
@@ -116,13 +154,13 @@ function ProjPage() {
               <img src={project.sketchImage} alt={project.title} />
             </div>
             <div className='right-proj'>
-              <h2>Sketches.</h2>
+              <h2>Sketches</h2>
               <p>{project.sketch}</p>
             </div>
           </div>
           <div className="flex">
             <div className="right-proj"> {/* SWAPPED */}
-              <h2>Methodology.</h2>
+              <h2>Methodology</h2>
               <p>{project.method}</p>
             </div>
             <div className='left-proj'> {/* SWAPPED */}
@@ -134,14 +172,14 @@ function ProjPage() {
               <img src={project.resultsImage} alt={project.title} />
             </div>
             <div className='right-proj'>
-              <h2>Results.</h2>
+              <h2>Results</h2>
               <p>{project.results}</p>
             </div>
           </div>
           <div className="flex">
             <div className='right-proj finalThoughts'>
               <div className='final'>
-                <h2>Final Thoughts.</h2>
+                <h2>Final Thoughts</h2>
                 <p>{project.finalThoughts}</p>
               </div>
             </div>

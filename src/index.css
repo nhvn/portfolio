@@ -185,7 +185,7 @@ section {
   z-index: 1; /* Add this line */
 }
 .proj:hover .card-overlay {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 /* FOOTER */
 footer {
@@ -316,8 +316,8 @@ footer {
   font-size: 20px;
   z-index: 2;
 }
-.hob:hover::before {
-  background-color: rgba(50, 50, 50, 0.843); 
+ .hob:hover::before { /* HOVER SHADOW */
+  background-color: rgba(50, 50, 50, 0.9); 
 }
 #foodie:hover::after, #cafe:hover::after, #travel:hover::after {
   color: white;
@@ -384,6 +384,34 @@ footer {
 }
 .link-container {
   margin-bottom: 10px;
+}
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; 
+  padding-bottom: 3em;
+}
+.overview-parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  box-sizing: border-box;
+}
+.overview-parts h2 {
+  height: 50px; 
+  color: #6a9b8f;
+}
+.overview-parts p {
+  height: calc(100% - 50px);
+  padding: 0 5em;
 }
 .proj-content-container {
   display: flex;
