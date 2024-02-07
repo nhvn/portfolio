@@ -15,7 +15,7 @@ function Footer() {
       </div>
       <hr />
       <div className="footer-section footer-section-2">
-        <h3>REACH OUT</h3>
+        <h3>CONTACT</h3>
         <ul>
           <li><a href="https://www.linkedin.com/in/alannhans" target="_blank">LinkedIn</a></li>
           <li><a href="https://github.com/nhvn" target="_blank">GitHub</a></li>

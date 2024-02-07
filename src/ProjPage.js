@@ -129,7 +129,7 @@ function ProjPage() {
         <div classname="overview">
           <div className='flex2'>
             <div className='overview-parts'>
-              <h2>Role</h2>
+              <h2>Contribution</h2>
               <p>{project.contribution}</p>
             </div>
             <div className='overview-parts'>
