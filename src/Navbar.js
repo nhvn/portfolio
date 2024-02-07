@@ -68,7 +68,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
       </a>
       <div className="links">
         <ThemeProvider isDarkMode={isDarkMode}>
-          <StyledLink2 to="/">Home</StyledLink2>
+          {/* <StyledLink2 to="/">Home</StyledLink2> */}
           <StyledLink2 to="/about">About</StyledLink2>
           <StyledLink2 to="/projects">Projects</StyledLink2>
           <DropdownContainer ref={dropdownRef}>
