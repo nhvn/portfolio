@@ -337,9 +337,12 @@ footer {
 .hob img {
   border-radius: 15px;
   transition: all .3s ease-in-out;
-  width: 15rem;
+  width: 18rem;
+  height: 20rem;
   margin: 0 auto;
   z-index: 0;
+  object-fit: cover;
+  object-position: center;
 }
 /* PROJECTS PAGE */
 .projects-box {
