@@ -385,6 +385,10 @@ footer {
 .link-container {
   margin-bottom: 10px;
 }
+.link-container a {
+  text-decoration: none;
+  color:rgb(74, 164, 209);
+}
 .overview {
   display: flex;
   flex-wrap: wrap;
