@@ -65,27 +65,27 @@ export const projects = [
     codeLink: 'https://github.com/nhvn/nhvn.github.io',
     liveLink: 'https://nhvn.github.io/'
   },
-  // { 
-  //   id: 'comingSoon', 
-  //   title: '', 
-  //   role: '',
-  //   description: 'In construction, come back soon!',
-  //   technologies: ['', '', ''],
-  //   image: '/img/comingSoon.png',
-  //   contribution: '-',
-  //   team: '-',
-  //   problem: '-',
-  //   solution: '-',
-  //   sketchImage: '/img/comingSoon.png',
-  //   sketch: 'In construction, come back soon!',
-  //   methodImage: '/img/comingSoon.png',
-  //   method: 'In construction, come back soon!',
-  //   resultsImage: '/img/comingSoon.png',
-  //   results: 'In construction, come back soon!',
-  //   finalThoughts: 'In construction, come back soon!',
-  //   codeLink: '',
-  //   liveLink: ''
-  // },
+  { 
+    id: 'smartLights', 
+    title: 'Smart Lighting Control System', 
+    role: 'IoT Developer',
+    description: 'In construction, come back soon!',
+    technologies: ['', '', ''],
+    image: '/img/comingSoon.png',
+    contribution: '-',
+    team: '-',
+    problem: '-',
+    solution: '-',
+    sketchImage: '/img/comingSoon.png',
+    sketch: 'In construction, come back soon!',
+    methodImage: '/img/comingSoon.png',
+    method: 'In construction, come back soon!',
+    resultsImage: '/img/comingSoon.png',
+    results: 'In construction, come back soon!',
+    finalThoughts: 'In construction, come back soon!',
+    codeLink: '',
+    liveLink: ''
+  },
 ];
 
 function ProjPage() {

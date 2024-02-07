@@ -42,6 +42,9 @@ section {
   flex-direction: row;
   gap: 6rem;
 }
+#titles {
+  color: #6a9b8f;
+}
 /* NAVIGATION BAR */
 .navbar {
   display: flex;
@@ -344,9 +347,6 @@ footer {
   width: 80%;
 }
 .projects-box .flex {
-  /* display: flex;
-  flex-direction: row;
-  gap: 6rem; */
   padding-bottom: 2em;
 }
 .project-contain {
