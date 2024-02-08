@@ -1,22 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Projects from './Projects';
 
 const HomePage = () => {
-  const [showPrompt, setShowPrompt] = useState(true);
-  const [isFading, setIsFading] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsFading(true);
-      const transitionTimer = setTimeout(() => {
-        setShowPrompt(false);
-      }, 4000); // This should match the transition duration
-      return () => clearTimeout(transitionTimer);
-    }, 3000); // Change this to the number of seconds you want
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="home fade">
       <div className="flex">
@@ -37,30 +22,6 @@ const HomePage = () => {
           </section>
         </div>
         <div className="right">
-          {showPrompt && (
-            <div
-              onClick={() => {
-                setIsFading(true);
-                setTimeout(() => setShowPrompt(false), 1000);
-              }}
-              style={{
-                position: 'absolute',
-                fontSize: '18px',
-                top: '10%',
-                right: '10%',
-                padding: '3em',
-                borderRadius: '20px',
-                backgroundColor: 'rgba(112, 128, 144, 0.90)',
-                color: 'white',
-                cursor: 'pointer',
-                zIndex: 10,
-                transition: 'opacity 4s ease-out',
-                opacity: isFading ? 0 : 1,
-              }}
-            >
-              My apologies, my portfolio is still under construction.
-            </div>
-          )}
           <div className="contact">
             <div className="contact-contain">
               <h2>Let's chat</h2>
