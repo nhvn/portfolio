@@ -40,7 +40,7 @@ function App() {
             <Route path="/projects/:projectId" element={<ProjPage />} />
           </Routes>
         </ProjectsContext.Provider>
-        <hr className="footer-divider" />
+        <div className="footer-divider"></div>
         <Footer />
       </Router>
     </ThemeProvider>

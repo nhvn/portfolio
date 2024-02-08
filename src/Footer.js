@@ -13,7 +13,7 @@ function Footer() {
           </h3>
         </div>
       </div>
-      <hr className="divider"/>
+      <div className="dividerHr"/>
       <div className="footer-section footer-section-2">
         <h3>CONTACT</h3>
         <ul>
@@ -22,7 +22,7 @@ function Footer() {
           <li><a href="mailto: alannhan443@gmail.com" target="_blank">Email</a></li>
         </ul>
       </div>
-      <hr className="divider"/>
+      <div className="dividerHr"/>
       <div className="footer-section footer-section-3">
         <h3>QUICK FIND</h3>
         <ul>

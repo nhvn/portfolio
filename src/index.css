@@ -11,6 +11,12 @@
   border-top: 1.5px solid hsla(50,3%,47%,.5);
   padding-top: 3em;
 }
+.dividerHr {
+  border-left: 1.5px solid hsla(50,3%,47%,.5);
+  height: 100px; /* Adjust this to change the height of the line */
+  width: 0;
+  margin: 20px auto;
+}
 a {
   color: var(--link-color);
 }
@@ -63,8 +69,6 @@ section {
   position: relative;
   right: 20%;
   color: #dda15e;
-  /* margin-right: 10%; */
-  /* padding-left: 0; */
 }
 .navbar .links {
   margin-left: auto;
@@ -241,7 +245,7 @@ footer {
   color: #6a9b8f;
 }
 .footer-divider {
-  border-top: 1px solid #ccc; /* Change color as needed */
+  border-top: 1.5px solid hsla(50,3%,47%,.5);
   width: 80%;
   margin: 20px auto;
 }
