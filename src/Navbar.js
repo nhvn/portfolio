@@ -4,8 +4,9 @@ import { Link, NavLink } from 'react-router-dom';
 import { ThemeProvider, theme } from './ThemeProvider';
 
 const Logo = styled.img`
-  max-width: 10%;
+  width: 10%; /* This is the original size */
 `;
+
 
 const StyledLink = styled(Link)`
   color: ${(props) => props.theme.linkColor};
@@ -29,11 +30,6 @@ const DropdownMenu = styled.div`
   transition: all 0.3s ease-out;
   border-radius: 0 0 20px 20px;
 `;
-
-// const DropdownLink = styled(StyledLink)`
-//   display: block;
-//   margin: 10px 0;
-// `;
 
 const DropdownContainer = styled.div`
   position: relative;
@@ -63,10 +59,12 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
 
   return (
     <nav className="navbar">
-      <a href="/" className="logo">
-        <Logo src="/img/logo.png" alt="Custom logo" />
-      </a>
-      <p id='construction'>*Stay tuned, my portfolio is still in construction 🚧</p>
+      <div className='logo-left'>
+        <a href="/" id="logo">
+          <Logo src="/img/logo.png" alt="Custom logo" />
+        </a>
+      </div>
+      {/* <p id='construction'>*Stay tuned, my portfolio is still in construction 🚧</p> */}
       <div className="links">
         <ThemeProvider isDarkMode={isDarkMode}>
           {/* <StyledLink2 to="/">Home</StyledLink2> */}

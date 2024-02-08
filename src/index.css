@@ -61,9 +61,8 @@ section {
   height: 3em;
   width: 80%;
 }
-.navbar .logo {
+.navbar #logo {
   margin-left: 0;
-  padding-left: 0;
 }
 .navbar #construction {
   position: relative;
@@ -81,11 +80,6 @@ section {
 .navbar a:hover {
   color: #6a9b8f;
 }
-.content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-}
 .navbar .links .dropdown-item {
   display: block;
   text-align: center;
@@ -97,11 +91,6 @@ section {
   margin: 0 auto 5rem;
   width: 80%;
 }
-/* .home .flex {
-  display: flex;
-  flex-direction: row;
-  gap: 6rem;
-} */
 .left {
   flex: 4;
 }
@@ -173,7 +162,7 @@ section {
 }
 .proj {
   height: 25em;
-  width: 35em;
+  width: 30em;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -258,8 +247,7 @@ footer {
   max-width: 20rem;
 }
 .headshot-contain {
-  /* background-color: #73685e;
- */
+
 }
 .img-contain {
   align-content: center;
@@ -271,10 +259,13 @@ footer {
 .img-contain img {
   border-radius: 15px;
   transition: all .3s ease-in-out;
-  width: 16rem;
-  /* flex-grow: 1;
+  max-width: 16rem;
+  /* height: 22rem; */
+  flex-grow: 1;
   flex-shrink: 1;
-  height: auto; */
+  /* height: auto; */
+  object-fit: cover;
+  object-position: center;
 }
 .hobbies-contain {
   display: flex;
@@ -282,7 +273,6 @@ footer {
   align-items: stretch;
 }
 .hob {
-  /* border: 1px solid #0000000f; */
   border-radius: 15px;
   margin: 10px 0;
   padding: 20px;
@@ -321,13 +311,13 @@ footer {
   z-index: 2;
 }
 #foodie::after {
-  content: "FOOD";
+  content: "FOOD.";
 }
 #cafe::after {
   content: "CAFE HOPPING.";
 }
 #travel::after {
-  content: "TRAVEL";
+  content: "TRAVEL.";
 }
 #foodie:hover::after, #cafe:hover::after, #travel:hover::after {
   color: white;
