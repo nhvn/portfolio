@@ -66,6 +66,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
       <a href="/" className="logo">
         <Logo src="/img/logo.png" alt="Custom logo" />
       </a>
+      <p id='construction'>*Stay tuned, my portfolio is still in construction 🚧</p>
       <div className="links">
         <ThemeProvider isDarkMode={isDarkMode}>
           {/* <StyledLink2 to="/">Home</StyledLink2> */}
