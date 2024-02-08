@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 export const projects = [
   { 
@@ -99,6 +99,7 @@ function ProjPage() {
     return (
       <div>
         <div className="projects-box fade">
+        <Link to="/projects" className="back-button">←</Link>
           <div className="flex">
             <div className="left">
               <section className="title">

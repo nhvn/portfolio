@@ -51,6 +51,18 @@ section {
 #titles {
   color: #6a9b8f;
 }
+.back-button {
+  font-size: 30px;
+  color: #000;
+  text-decoration: none; 
+  background-color: lightgray;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.back-button:hover {
+  /* color: #6a9b8f; */
+  background-color: #6a9b8f ;
+}
 /* NAVIGATION BAR */
 .navbar {
   display: flex;
