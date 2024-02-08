@@ -254,24 +254,12 @@ footer {
   margin: 0 auto;
   width: 80%;
 }
-/* .about .flex {
-  display: flex;
-  flex-direction: row;
-  gap: 6rem;
-} */
 .about .right {
   max-width: 20rem;
 }
 .headshot-contain {
   /* background-color: #73685e;
-  border-radius: 2rem;
-  box-shadow: 0 10px 30px -10px rgba(0,0,0,.2); 
-  padding: 2rem; 
-  transition: transform .3s ease-in-out; 
-  will-change: transform; */
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width: 60rem; 
+ */
 }
 .img-contain {
   align-content: center;
@@ -314,35 +302,38 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent; 
+  background-color: rgba(50, 50, 50, 0.95); /* Initial shadowed state */
   transition: background-color 0.7s ease; 
   z-index: 1;
   border-radius: 15px;
 }
-.hob:hover::after {
+.hob:hover::before {
+  background-color: transparent; /* Clear the shadow on hover */
+}
+.hob::after {
   content: ""; 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
-  color: #000;
-  font-size: 20px;
+  color: white;
+  font-size: 50px;
   z-index: 2;
 }
- .hob:hover::before { /* HOVER SHADOW */
-  background-color: rgba(50, 50, 50, 0.9); 
+#foodie::after {
+  content: "FOOD";
+}
+#cafe::after {
+  content: "CAFE HOPPING.";
+}
+#travel::after {
+  content: "TRAVEL";
 }
 #foodie:hover::after, #cafe:hover::after, #travel:hover::after {
   color: white;
 }
-#foodie:hover::after {
-  content: "I find joy in exploring the culinary landscape wherever I go, whenever I go. As a fellow Yelp Elite, I love to discover new hidden gems at renowned eateries, as each experience adds a flavorful chapter to my journey. Camera eats first!";
-}
-#cafe:hover::after {
-  content: "I love to go cafe hopping. There's nothing like the smell of fresh tea and the ambiance of a cozy cafe to make my day. Whether it's for a quick pick-me-up or a leisurely afternoon, you'll often find me in local cafes somewhere in LA/OC, working or just catching up with some friends.";
-}
-#travel:hover::after {
-  content: "Traveling is one of my passions. I love exploring new places, immersing myself in different cultures, and meeting people from all walks of life. Every journey brings with it a wealth of experiences and memories, and I can't wait for my next adventure.";
+#foodie:hover::after, #cafe:hover::after, #travel:hover::after {
+  content: none;
 }
 .hob img {
   border-radius: 15px;

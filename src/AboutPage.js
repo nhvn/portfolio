@@ -34,21 +34,18 @@ const AboutPage = () => {
                 <h2 id="titles">Obsessions</h2>
             <div className="hobbies-contain">
                 <div className="hob" id="foodie">
-                    <h2>foods&nbsp;</h2>
                     <img src={process.env.PUBLIC_URL + '/img/food1.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/food2.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/food3.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/food4.png'} alt="Coming Soon"></img>
                 </div>
                 <div className="hob" id="cafe">
-                <h2>cafes&nbsp;</h2>
                     <img src={process.env.PUBLIC_URL + '/img/cafe1.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/cafe2.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/cafe3.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/cafe4.png'} alt="Coming Soon"></img>
                 </div>
                 <div className="hob" id="travel">
-                <h2>travel&nbsp;</h2>
                     <img src={process.env.PUBLIC_URL + '/img/travel1.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/travel2.png'} alt="Coming Soon"></img>
                     <img src={process.env.PUBLIC_URL + '/img/travel3.png'} alt="Coming Soon"></img>
