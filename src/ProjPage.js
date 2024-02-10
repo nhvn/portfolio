@@ -50,7 +50,7 @@ export const projects = [
     role: 'WEB DEVELOPER',
     description: 'In construction, come back soon!',
     technologies: ['', '', ''],
-    image: '/img/comingSoon.png',
+    image: '/img/oldportfolio.png',
     contribution: '-',
     team: '-',
     problem: '-',
