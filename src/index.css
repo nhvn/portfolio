@@ -174,8 +174,8 @@ section {
   justify-items: center;
 }
 .proj {
-  height: 25em;
-  width: 30em;
+  height: 30em;
+  width: 100%;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
