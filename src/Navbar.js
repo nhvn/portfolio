@@ -29,6 +29,8 @@ const DropdownMenu = styled.div`
   z-index: 1;
   transition: all 0.3s ease-out;
   border-radius: 0 0 20px 20px;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 const DropdownContainer = styled.div`
@@ -59,43 +61,44 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
 
   return (
     <nav className="navbar">
-      <div className='logo-left'>
-        <a href="/" id="logo">
-          <Logo src="/img/logo.png" alt="Custom logo" />
-        </a>
-      </div>
-      <p id='construction'>*Stay tuned, my portfolio is still in construction 🚧</p>
-      <div className="links">
-        <ThemeProvider isDarkMode={isDarkMode}>
-          {/* <StyledLink2 to="/">Home</StyledLink2> */}
-          <StyledLink2 to="/about">About</StyledLink2>
-          <StyledLink2 to="/projects">Projects</StyledLink2>
-          <DropdownContainer ref={dropdownRef}>
-            <StyledLink onClick={toggleDropdown}>Resume</StyledLink>
-            <DropdownMenu isOpen={isOpen}>
-              <a className="dropdown-item" href="/Resume.pdf" target="_blank">Resume.pdf</a>
-              <a className="dropdown-item" href="mailto:alannhan443@gmail.com?subject=Resume Update Request">Update Request</a>
-            </DropdownMenu>
-          </DropdownContainer>
-        </ThemeProvider>
-      </div>
-      <div>
-        <ThemeProvider isDarkMode={isDarkMode}>
+      <div className='nav-container'>
+        <a className='logo-left' href="/">
           <div>
-            <button
-              onClick={toggleDarkMode}
-              style={{
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                fontSize: '24px',
-                marginLeft: '2em',
-              }}
-            >
-              {React.cloneElement(theme[isDarkMode ? 'dark' : 'light'].icon, { color: theme[isDarkMode ? 'dark' : 'light'].color })}
-            </button>
+            <img src="/img/logo.png" alt="Custom logo" className="custom-logo" />
           </div>
-        </ThemeProvider>
+        </a>
+        <div>
+          <p id='construction'>*Portfolio is still in construction 🚧</p>
+          </div>
+        <div className="links">
+          <ThemeProvider isDarkMode={isDarkMode}>
+            <ul>
+              <li><StyledLink2 to="/about">About</StyledLink2></li>
+              <li><StyledLink2 to="/projects">Projects</StyledLink2></li>
+              <li>
+                <DropdownContainer ref={dropdownRef}>
+                  <StyledLink onClick={toggleDropdown}>Resume</StyledLink>
+                  <DropdownMenu isOpen={isOpen}>
+                    <a className="dropdown-item" href="/Resume.pdf" target="_blank">Resume.pdf</a>
+                    <a className="dropdown-item" href="mailto:alannhan443@gmail.com?subject=Resume Update Request">Update Request</a>
+                  </DropdownMenu>
+                </DropdownContainer>
+              </li>
+              <button
+                onClick={toggleDarkMode}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: '24px',
+                  marginLeft: '2em',
+                }}
+              >
+                {React.cloneElement(theme[isDarkMode ? 'dark' : 'light'].icon, { color: theme[isDarkMode ? 'dark' : 'light'].color })}
+              </button>
+            </ul>
+          </ThemeProvider>
+        </div>
       </div>
     </nav>
   );
