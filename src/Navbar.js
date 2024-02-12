@@ -68,7 +68,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
           </div>
         </a>
         <div>
-          <p id='construction'>*Portfolio's still in construction 🚧</p>
+          <p id='construction'>Note: Currently in construction 🚧</p>
           </div>
         <div className="links">
           <ThemeProvider isDarkMode={isDarkMode}>
