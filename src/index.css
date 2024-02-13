@@ -56,13 +56,12 @@ section {
   font-size: 30px;
   color: #000;
   text-decoration: none; 
-  background-color: lightgray;
+  background-color: #e4e4e46d;
   padding: 2px 5px;
   border-radius: 5px;
 }
 .back-button:hover {
-  /* color: #6a9b8f; */
-  background-color: #e4e4e477;
+  background-color: lightgray;
 }
 /* NAVIGATION BAR */
 .nav-container {
