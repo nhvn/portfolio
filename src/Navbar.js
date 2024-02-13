@@ -85,14 +85,8 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                 </DropdownContainer>
               </li>
               <button
+                className="theme-toggle-button"
                 onClick={toggleDarkMode}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontSize: '24px',
-                  marginLeft: '2em',
-                }}
               >
                 {React.cloneElement(theme[isDarkMode ? 'dark' : 'light'].icon, { color: theme[isDarkMode ? 'dark' : 'light'].color })}
               </button>
