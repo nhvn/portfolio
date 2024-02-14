@@ -84,6 +84,7 @@ section {
 }
 #construction {
   color: #c68b49;
+  margin-top: 0;
   margin-left: 10%;
 }
 .navbar a:hover {
@@ -319,12 +320,15 @@ footer {
   opacity: 0.9;
 }
 @media screen and (max-width: 480px) {
-  .home,  .home .title {
+  .home, .title {
     margin-bottom: 0;
   }
-  .home .text-contain p{
+  .home p, .about p, .projects-box p{
     font-size: 18px;
   }
+}
+.title {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 1000px) {
   .project-card-grid {
