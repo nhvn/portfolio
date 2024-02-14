@@ -320,12 +320,12 @@ footer {
   .home, .title {
     margin-bottom: 0;
   }
-  .home p, .about p, .projects-box p{
+  .home p, .about p{
     font-size: 18px;
   }
-}
-.title {
-  margin-bottom: 0;
+  .projects-box p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .project-card-grid {
