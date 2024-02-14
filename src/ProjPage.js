@@ -93,7 +93,7 @@ function ProjPage() {
   const project = projects.find((project) => project.id === projectId);
 
   if (!project) {
-    return <div>Project not found</div>;
+    return <div id='noProj'>404 Error - Project Not Found</div>;
   }
 
     return (

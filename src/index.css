@@ -465,6 +465,10 @@ footer {
   transition: transform .3s ease-in-out; 
   will-change: transform;
 }
+#noProj {
+  color: red;
+  text-align: center;
+}
 
 /* INDIVIDUAL PROJ PAGE */
 .proj-content-container h2 {
