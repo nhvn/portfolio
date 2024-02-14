@@ -552,6 +552,12 @@ footer {
   .proj-content-container {
     display: block;
   }
+  .projects-box .flex {
+    padding-bottom: 0;
+}
+  .final p{
+    margin-bottom: 0;
+  }
 }
 
 
