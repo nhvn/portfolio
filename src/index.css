@@ -323,7 +323,7 @@ footer {
   .home p, .about p{
     font-size: 18px;
   }
-  .projects-box p {
+  .projects-box p, .proj-content-container .right-proj p {
     font-size: 12px;
   }
 }
@@ -552,6 +552,9 @@ footer {
   }
   .proj-content-container .left-proj {
     margin-bottom: 20px;
+  }
+  .proj-content-container .right-proj p{
+    font-size: 12px;
   }
   .proj-content-container {
     display: block;
