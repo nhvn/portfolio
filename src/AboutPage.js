@@ -36,7 +36,7 @@ const AboutPage = () => {
             </div>
             <div className="divider"></div>
             <section className="hobbies">
-                <h2 id="titles">Current obsessions</h2>
+                <h2 id="titles">Obsessions</h2>
                 <div className="hobbies-contain">
                     <div className="hob" id="foodie">
                         <img src={process.env.PUBLIC_URL + '/img/food.png'} alt="Coming Soon"></img>
