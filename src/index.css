@@ -553,7 +553,7 @@ footer {
   .proj-content-container .left-proj {
     margin-bottom: 20px;
   }
-  .proj-content-container .right-proj p{
+  .proj-content-container .right-proj p, .header p{
     font-size: 12px;
   }
   .proj-content-container {
@@ -561,7 +561,7 @@ footer {
   }
   .projects-box .flex {
     padding-bottom: 0;
-}
+  }
   .final p{
     margin-bottom: 0;
   }
