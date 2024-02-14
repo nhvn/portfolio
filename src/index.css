@@ -284,14 +284,14 @@ footer {
   justify-content: space-between;
   justify-items: center;
 }
-.proj {
+.proj, .proj-contain {
   position: relative;
   width: 100%;
   padding-top: 76%; /* Maintain aspect ratio */
   border-radius: 15px;
   overflow: hidden;
 }
-.proj img {
+.proj img, .proj-contain img {
   position: absolute;
   top: 0;
   left: 0;
@@ -474,18 +474,6 @@ footer {
   /* color: red; */
   font-size: 22px;
 }
-.proj-contain {
-  height: 25em;
-  width: 35em;
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
-}
-.proj-contain img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .link-container {
   margin-bottom: 10px;
 }
@@ -524,10 +512,10 @@ footer {
   display: flex;
   flex-direction:column;
   gap: 6rem;
-}.proj-content-container .left-proj{
-  height: 30em;
-  /* width: 35em; */
+}
+.proj-content-container .left-proj {
   position: relative;
+  width: 100%;
   border-radius: 15px;
   overflow: hidden;
   flex: 3;
@@ -544,6 +532,26 @@ footer {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 1000px) {
+  .flex {
+    padding: 0;
+  }
+  .overview-parts {
+    width: 100%;
+  }
+  .overview-parts p{
+    padding: 0;
+  }
+  .final {
+    width: 100%;
+  }
+  .proj-content-container .left-proj {
+    margin-bottom: 20px;
+  }
+  .proj-content-container {
+    display: block;
+  }
 }
 
 
