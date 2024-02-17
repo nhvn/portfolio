@@ -518,6 +518,10 @@ footer {
   flex-direction:column;
   gap: 6rem;
 }
+.botImg {
+  height: 100%;
+}
+
 .proj-content-container .left-proj {
   position: relative;
   width: 100%;

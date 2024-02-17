@@ -69,20 +69,20 @@ export const projects = [
     id: 'smartLights', 
     title: 'Smart Lighting Control System', 
     role: 'IoT Developer',
-    description: 'In construction, come back soon!',
-    technologies: ['', '', ''],
+    description: "An automation solution for precise control of lights. This system enables control of up to 50 lights across 10 rooms with customizable schedules.",
+    technologies: ['Python', 'Flask', 'Raspberry Pi'],
     image: '/img/comingSoon.png',
-    contribution: '-',
-    team: '-',
-    problem: '-',
-    solution: '-',
+    contribution: 'Engineered lighting automation solution using Python and Raspberry Pi to interact with physical GPIO pins. Used multithreading and Flask web framework to enable parallel control of lights. Created web UI with Jinja templates for user management and scheduling.',
+    team: 'Myself, a software engineer, and an electronics engineer.',
+    problem: 'The need for a system that can control multiple lights across different rooms with customizable schedules.',
+    solution: 'Developed a Smart Lighting Control System that allows precise control of lights. The system also provides customizable schedules for each light.',
     sketchImage: '/img/comingSoon.png',
     sketch: 'In construction, come back soon!',
-    methodImage: '/img/comingSoon.png',
+    methodImage: '/img/raspPi.png',
     method: 'In construction, come back soon!',
     resultsImage: '/img/comingSoon.png',
     results: 'In construction, come back soon!',
-    finalThoughts: 'In construction, come back soon!',
+    finalThoughts: "This project was a fascinating journey into the world of IoT and automation. It underscored the transformative potential of technology in everyday life. The ability to control lighting across multiple rooms with customizable schedules not only enhanced convenience but also promoted energy efficiency. The project was a testament to the power of Python and Flask in creating robust and scalable solutions. It was a rewarding experience that highlighted the synergy between software and hardware in creating impactful solutions. I look forward to leveraging these insights in future IoT projects.",
     codeLink: '',
     liveLink: ''
   },
@@ -162,7 +162,7 @@ function ProjPage() {
         <div className="proj-content-container">
           <div className="flex">
             <div className="left-proj">
-              <img src={project.sketchImage} alt={project.title} />
+              <img className="botImg" src={project.sketchImage} alt={project.title} />
             </div>
             <div className='right-proj'>
               <h2>Sketches</h2>
@@ -175,12 +175,12 @@ function ProjPage() {
               <p>{project.method}</p>
             </div>
             <div className='left-proj'> {/* SWAPPED */}
-              <img src={project.methodImage} alt={project.title} />
+              <img className="botImg" src={project.methodImage} alt={project.title} />
             </div>
           </div>
           <div className="flex">
             <div className="left-proj">
-              <img src={project.resultsImage} alt={project.title} />
+              <img className="botImg" src={project.resultsImage} alt={project.title} />
             </div>
             <div className='right-proj'>
               <h2>Results</h2>
