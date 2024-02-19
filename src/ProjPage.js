@@ -19,7 +19,7 @@ export const projects = [
     method: 'My approach was iterative and user-centric. I started with low-fidelity wireframes, gradually refining them based on user feedback and usability testing. I also considered the latest design trends and best practices, ensuring the design was both contemporary and intuitive.',
     resultsImage: '/img/comingSoon.png',
     results: 'The final design effectively balanced functionality and aesthetics. It provided users with a clear and easy-to-navigate interface, improving task management efficiency. The design was well-received by users, demonstrating the effectiveness of the user-centric design approach.',
-    finalThoughts: 'This project reinforced the importance of user-centric design and iterative development. It was a rewarding experience that highlighted the impact of good design on user experience. I look forward to applying these insights to future projects. 😊',
+    finalThoughts: 'This project reinforced the importance of user-centric design and iterative development. It was a rewarding experience that highlighted the impact of good design on user experience. I look forward to applying these insights to future projects.',
     codeLink: 'https://github.com/nhvn/to-do-list',
     liveLink: ''
   },

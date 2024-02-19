@@ -323,11 +323,8 @@ footer {
   .home, .title {
     margin-bottom: 0;
   }
-  .home p, .about p{
+  .home p, .about p, .projects-box p, .proj-content-container .right-proj p{
     font-size: 18px;
-  }
-  .projects-box p, .proj-content-container .right-proj p {
-    font-size: 12px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -560,9 +557,6 @@ footer {
   }
   .proj-content-container .left-proj {
     margin-bottom: 20px;
-  }
-  .proj-content-container .right-proj p, .header p{
-    font-size: 12px;
   }
   .proj-content-container {
     display: block;
