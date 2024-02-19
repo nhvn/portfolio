@@ -32,7 +32,7 @@ function App() {
       <GlobalStyle />
       <Router>
         <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        <p id='construction'>Note: Currently under construction 🚧</p>
+        {/* <p id='construction'>Note: Currently under construction 🚧</p> */}
         <ProjectsContext.Provider value={projects}>
           <Routes>
             <Route path="/" element={<Home />} />

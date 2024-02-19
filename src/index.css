@@ -553,6 +553,9 @@ footer {
   .final {
     width: 100%;
   }
+  .projects-box, .hobbies-contain {
+    margin-bottom: 3rem;
+  }
   .proj-content-container .left-proj {
     margin-bottom: 20px;
   }
