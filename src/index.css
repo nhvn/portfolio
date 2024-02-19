@@ -374,6 +374,7 @@ footer {
   display: flex;
   justify-content: center; 
   gap: 10px; 
+  margin-bottom: 5rem
 }
 .hob {
   position: relative;
@@ -450,9 +451,6 @@ footer {
 .projects-box {
   margin: 0 auto 5rem;
   width: 80%;
-}
-.projects-box .flex {
-  /* padding-bottom: 2em; */
 }
 .project-contain {
   background-color: #4f6d7a;
