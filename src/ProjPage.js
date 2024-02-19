@@ -31,7 +31,7 @@ export const projects = [
     technologies: ['', '', ''],
     image: '/img/oldportfolio.png',
     contribution: '-',
-    team: '-',
+    team: 'Myself.',
     duration: 'Apr 2023 - Jun 2023',
     outcome: '-',
     sketchImage: '/img/comingSoon.png',

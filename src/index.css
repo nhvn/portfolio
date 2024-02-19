@@ -42,7 +42,7 @@ p {
   margin-inline-end: 0px;
 }
 section {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .flex {
   display: flex;
@@ -451,7 +451,7 @@ footer {
   width: 80%;
 }
 .projects-box .flex {
-  padding-bottom: 2em;
+  /* padding-bottom: 2em; */
 }
 .project-contain {
   background-color: #4f6d7a;
@@ -494,7 +494,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%; 
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 .overview-parts {
   display: flex;
