@@ -69,7 +69,7 @@ export const projects = [
     id: 'pumpkin', 
     title: 'Pumpkin Lostte', 
     role: 'GAME DEVELOPER',
-    description: 'This game takes inspiration from the classic game Flappy Bird, where the main objective is to dodge barriers and travel as far as possible. However, our game adds a twist - there is an actual destination to reach. You play as Jerry, on a mission to save his beloved pumpkin lost in the shadows. Your job is to navigate through the barriers with skill and precision to rescue the pumpkin. But beware, danger lurks behind you. This game was born out of a love for the simplicity and nostalgia of classic games.',
+    description: 'This game is a twist on Flappy Bird, where players guide Jerry to rescue his lost pumpkin by skillfully dodging obstacles. It is a nostalgic journey with a meaningful objective, born from a love for classic games.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
     image: '/img/pumpkin.png',
     contribution: 'I designed game elements from scratch, built the game using HTML, CSS, and JavaScript, and handled deployment through Firebase.',
