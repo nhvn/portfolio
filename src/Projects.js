@@ -15,7 +15,8 @@ const Projects = () => {
                 <img src={process.env.PUBLIC_URL + project.image} alt={project.title} />
                 <div className="card-overlay">
                   <div className="header">
-                    <h4>{project.title}</h4>
+                    <h2>{project.title}</h2>
+                    <h4>{project.duration}</h4>
                     <p>{project.description}</p>
                   </div>
                 </div>

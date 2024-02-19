@@ -62,7 +62,7 @@ section {
   color: #000;
   text-decoration: none; 
   background-color: #e4e4e46d;
-  padding: 2px 5px;
+  padding: 5px 5px 0px 5px;
   border-radius: 5px;
 }
 .back-button:hover {
@@ -84,8 +84,7 @@ section {
 }
 #construction {
   color: #c68b49;
-  margin-top: 0;
-  margin-left: 10%;
+  margin: 0 10% 0 10%;
 }
 .navbar a:hover {
   color: #6a9b8f;
