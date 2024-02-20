@@ -191,13 +191,9 @@ footer {
     flex: 3;
     font-size: 8px;
   }
-  .footer-section-2 {
+  .footer-section-2, .footer-section-3 {
     flex: 2;
-    font-size: 12px;
-  }
-  .footer-section-3 {
-    flex: 2;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
