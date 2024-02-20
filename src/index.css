@@ -189,7 +189,7 @@ footer {
 @media screen and (max-width: 480px) {
   .footer-section-1 {
     flex: 3;
-    font-size: 9px;
+    font-size: 8px;
   }
   .footer-section-2 {
     flex: 2;
