@@ -310,6 +310,10 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+.proj:hover img {
+  transform: scale(1.1); /* Scales the image a little bit out */
 }
 .card-overlay {
   position: absolute;
@@ -396,6 +400,9 @@ footer {
   transition: all .3s ease-in-out;
   z-index: 0;
   border-radius: 20px;
+}
+.hob:hover img {
+  transform: scale(1.05);
 }
 .hob::before {
   content: "";
@@ -529,12 +536,9 @@ footer {
   height: 100%;
   transition: transform 0.3s ease-in-out; /* Add this line */
 }
-
 .botImg:hover {
   transform: scale(1.1); /* Add this line */
 }
-
-
 .proj-content-container .left-proj {
   position: relative;
   width: 100%;
