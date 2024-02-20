@@ -340,7 +340,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .project-card-grid .proj p{
-    font-size: 15px;
+    font-size: 12px;
   }
   .home, .title {
     margin-bottom: 0;
