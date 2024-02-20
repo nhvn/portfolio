@@ -22,10 +22,10 @@ const DropdownMenu = styled.div`
   min-width: 160px;
   padding: 12px 16px;
   z-index: 1;
+  transition: all 0.3s ease-out;
   border-radius: 0 0 20px 20px;
   left: 50%;
   transform: translateX(-50%);
-  }
 `;
 
 const DropdownContainer = styled.div`

@@ -8,9 +8,9 @@ const ProjectsPage = () => {
             <div className="left">
               <section className="title">
                 <div className="description">
-                  <p className="small-paragraph">
+                  <h4 className="small-paragraph">
                     CHECK OUT
-                  </p>
+                  </h4>
                   <h1>My work.</h1>
                   <div className="description descr-contain">
                     <div className="text-contain">

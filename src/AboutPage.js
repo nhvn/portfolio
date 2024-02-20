@@ -10,7 +10,7 @@ const AboutPage = () => {
                     <div className="left">
                         <section className="title">
                             <div className="description">
-                                <p className="small-paragraph">MY NAME IS</p>
+                                <h4 className="small-paragraph">MY NAME IS</h4>
                                     <h1>Alan Nhan.</h1>
                                     <div className="description descr-contain">
                                         <div className="text-contain">

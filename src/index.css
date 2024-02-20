@@ -98,6 +98,7 @@ section {
   border-radius: 15px;
   text-align: center;
   padding: 4px 0;
+  margin: 4px 0;
 }
 .navbar a:hover {
   color: #6a9b8f;
@@ -211,9 +212,14 @@ footer {
 .right {
   flex: 2; 
 }
-/* .title .description .small-paragraph {
-  color: rgba(51,51,51,.5);
-} */
+.small-paragraph {
+  /* color: rgba(51,51,51,.5); */
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 .descr-contain p, .overview p {
   margin-bottom: 1rem;
   font-size: 22px;
@@ -312,7 +318,7 @@ footer {
   object-fit: cover;
   transition: all .3s ease-in-out;
 }
-.proj:hover img {
+.proj:hover img, .proj-contain:hover img {
   transform: scale(1.1); /* Scales the image a little bit out */
 }
 .card-overlay {
@@ -333,6 +339,9 @@ footer {
   opacity: 0.9;
 }
 @media screen and (max-width: 480px) {
+  .project-card-grid .proj p{
+    font-size: 15px;
+  }
   .home, .title {
     margin-bottom: 0;
   }

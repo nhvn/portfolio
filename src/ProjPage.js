@@ -107,9 +107,9 @@ function ProjPage() {
           <div className="flex">
             <div className="left">
               <section className="title">
-              {project.ongoing && <p className='construction'>Currently ongoing</p>} {/* Add this line */}
+              {project.ongoing && <h4 className='construction'>Currently ongoing</h4>} {/* Add this line */}
                 <div className="description">
-                  <p className="small-paragraph">{project.role}</p>
+                  <h4 className="small-paragraph">{project.role}</h4>
                   <h1>{project.title}</h1>
                   <div className="description descr-contain">
                     <div className="text-contain">
