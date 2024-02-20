@@ -480,6 +480,9 @@ footer {
   margin: 0 auto 5rem;
   width: 80%;
 }
+.projects-box .flex {
+  margin-bottom: 1em;
+}
 .project-contain {
   background-color: #4f6d7a;
   color: white;
