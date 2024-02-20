@@ -3,11 +3,6 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { ThemeProvider, theme } from './ThemeProvider';
 
-const Logo = styled.img`
-  width: 10%; /* This is the original size */
-`;
-
-
 const StyledLink = styled(Link)`
   color: ${(props) => props.theme.linkColor};
 `;
@@ -27,10 +22,10 @@ const DropdownMenu = styled.div`
   min-width: 160px;
   padding: 12px 16px;
   z-index: 1;
-  transition: all 0.3s ease-out;
   border-radius: 0 0 20px 20px;
   left: 50%;
   transform: translateX(-50%);
+  }
 `;
 
 const DropdownContainer = styled.div`
