@@ -543,7 +543,8 @@ footer {
 }
 .overview-parts p {
   height: calc(100% - 50px);
-  padding: 0 8em;
+  padding: 0 4em;
+  /* text-align: center; */
 }
 .proj-content-container {
   display: flex;
