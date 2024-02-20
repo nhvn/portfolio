@@ -6,6 +6,7 @@ export const projects = [
     id: 'taskmaster', 
     title: 'Task Master', 
     ongoing: true,
+    app: 'Web Application',
     role: 'FULL-STACK DEVELOPER',
     description: 'To-Do List App app allows users to create, edit, and delete tasks with due dates and priorities, as well as mark tasks as complete or incomplete. Users can register, log in, and log out, and their tasks are stored securely in a PostgreSQL database. *Note: Stay tuned for an upcoming revamp.',
     technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'HTML', 'CSS'],
@@ -28,6 +29,7 @@ export const projects = [
     id: 'oldPortfolio', 
     title: 'Old Portfolio',
     ongoing: false, 
+    app: 'Web Application',
     role: 'WEB DEVELOPER',
     description: 'A comprehensive showcase of my skills, experiences, and projects. This simple website was designed to be responsive and user-friendly, providing visitors with easy access to my work and contact information.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -49,7 +51,8 @@ export const projects = [
   { 
     id: 'smartLights', 
     title: 'Smart Lighting Control System',
-    ongoing: false,  
+    ongoing: false,
+    app: 'Physical + Digital Integration Solution',  
     role: 'IoT Developer',
     description: "An automation solution for precise control of lights. This system enables control of up to 50 lights across 10 rooms with customizable schedules.",
     technologies: ['Python', 'Flask', 'Raspberry Pi'],
@@ -71,7 +74,8 @@ export const projects = [
   { 
     id: 'pumpkin', 
     title: 'Pumpkin Lostte Game',
-    ongoing: false,  
+    ongoing: false,
+    app: 'Web Application',  
     role: 'GAME DEVELOPER',
     description: 'This game is a twist on Flappy Bird, where players guide Jerry to rescue his lost pumpkin by skillfully dodging obstacles. It is a nostalgic journey with a meaningful objective, born from a love for classic games. Note: Currently only playable on a Windows computer.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
@@ -113,6 +117,7 @@ function ProjPage() {
                   <h1>{project.title}</h1>
                   <div className="description descr-contain">
                     <div className="text-contain">
+                      <h4><span className='highlight'>{project.app}</span></h4>
                       <p>{project.description}</p>
                       {project.technologies.filter(Boolean).length > 0 && (
                         <p>Tools: {project.technologies.join(', ')}</p>

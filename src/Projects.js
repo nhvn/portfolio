@@ -16,7 +16,7 @@ const Projects = () => {
                 <div className="card-overlay">
                   <div className="header">
                     <h2>{project.title}</h2>
-                    <h4>{project.duration}</h4>
+                    <h4>{project.app}</h4>
                     <p>{project.description}</p>
                   </div>
                 </div>
