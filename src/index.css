@@ -88,10 +88,10 @@ section {
 }
 .construction {
   color: white;
-  background-color: #c68c499b;
+  background-color: #e49c0d8e;
   border-radius: 25px;
   text-align: center;
-  padding: 3px 0;
+  padding: 4px 0;
 }
 .navbar a:hover {
   color: #6a9b8f;
@@ -521,7 +521,13 @@ footer {
 }
 .botImg {
   height: 100%;
+  transition: transform 0.3s ease-in-out; /* Add this line */
 }
+
+.botImg:hover {
+  transform: scale(1.1); /* Add this line */
+}
+
 
 .proj-content-container .left-proj {
   position: relative;

@@ -15,7 +15,7 @@ const HomePage = () => {
               <div className="description descr-contain">
                 <div className="text-contain">
                   <p>I am a dedicated <span className="highlight">full-stack software engineer</span> who's skilled in frontend and backend technologies. My work revolves around creating impactful software solutions, with a keen focus on user experience.</p>
-                  <p>Currently, I'm expanding my knowledge in the fields of Machine Learning and Artificial Intelligence, while actively seeking new opportunities to apply and grow my skillset.</p>
+                  <p>Currently, I'm expanding my knowledge in the fields of <span className='highlight2'>Machine Learning</span> and <span className='highlight2'>Artificial Intelligence</span>, while actively seeking new opportunities to apply and grow my skillset.</p>
                 </div>
               </div>
             </div>
