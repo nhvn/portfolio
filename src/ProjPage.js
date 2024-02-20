@@ -14,7 +14,7 @@ export const projects = [
     team: 'Myself and two other software engineers.',
     duration: 'Apr 2023 - Present',
     outcome: 'We developed a To-Do List App that allows users to perform all these actions. The app also provides secure user registration, login, and logout features, with tasks stored securely in a PostgreSQL database.',
-    sketchImage: '/img/comingSoon.png',
+    sketchImage: '/img/todoSketch.png',
     sketch: 'In the initial design phase, I focused on creating intuitive and user-friendly interfaces. I sketched various layouts, considering factors like usability and aesthetic appeal. The goal was to create a design that would provide a seamless user experience while maintaining a clean and modern look.',
     methodImage: '/img/comingSoon.png',
     method: 'My approach was iterative and user-centric. I started with low-fidelity wireframes, gradually refining them based on user feedback and usability testing. I also considered the latest design trends and best practices, ensuring the design was both contemporary and intuitive.',
