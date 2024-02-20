@@ -111,13 +111,12 @@ function ProjPage() {
           <div className="flex">
             <div className="left">
               <section className="title">
-              {project.ongoing && <h4 className='construction'>Currently ongoing</h4>} {/* Add this line */}
+              {project.ongoing && <h4 className='construction'>Currently ongoing</h4>}
                 <div className="description">
-                  <h4 className="small-paragraph">{project.role}</h4>
+                <h4 className="small-paragraph"><span className='highlight'>{project.role}</span></h4>
                   <h1>{project.title}</h1>
                   <div className="description descr-contain">
                     <div className="text-contain">
-                      <h4><span className='highlight'>{project.app}</span></h4>
                       <p>{project.description}</p>
                       {project.technologies.filter(Boolean).length > 0 && (
                         <p>Tools: {project.technologies.join(', ')}</p>
@@ -142,6 +141,7 @@ function ProjPage() {
                 <div className="proj-contain">
                   <img src={project.image} alt={project.title} />
                 </div>
+                <p id='app1'>{project.app}</p>
               </div>
             </div>
         </div>

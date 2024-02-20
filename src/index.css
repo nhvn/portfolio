@@ -219,6 +219,7 @@ footer {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  margin-bottom: 0;
 }
 .descr-contain p, .overview p {
   margin-bottom: 1rem;
@@ -504,11 +505,15 @@ footer {
 }
 
 /* INDIVIDUAL PROJ PAGE */
+#app1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 22px;
+}
 .proj-content-container h2 {
   color: rgb(74, 164, 209);
 }
 .proj-content-container p {
-  /* color: red; */
   font-size: 22px;
 }
 .link-container {
@@ -544,7 +549,7 @@ footer {
 .overview-parts p {
   height: calc(100% - 50px);
   padding: 0 4em;
-  /* text-align: center; */
+  text-align: center;
 }
 .proj-content-container {
   display: flex;
