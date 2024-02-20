@@ -8,7 +8,7 @@ export const projects = [
     ongoing: true,
     app: 'Web Application',
     role: 'FULL-STACK DEVELOPER',
-    description: 'To-Do List App app allows users to create, edit, and delete tasks with due dates and priorities, as well as mark tasks as complete or incomplete. Users can register, log in, and log out, and their tasks are stored securely in a PostgreSQL database. **Stay tuned for an upcoming revamp.',
+    description: 'To-Do List App app allows users to create, edit, and delete tasks with due dates and priorities, as well as mark tasks as complete or incomplete. Users can register, log in, and log out, and their tasks are stored securely in a PostgreSQL database. Stay tuned for an upcoming revamp.',
     technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'HTML', 'CSS'],
     image: '/img/todo.png',
     contribution: 'I built a secure PostgreSQL database from scratch and developed a robust API using Node.js and Express. I also created an intuitive user interface using React, integrating it with the back-end for seamless functionality.',
