@@ -77,7 +77,7 @@ export const projects = [
     ongoing: false,
     app: 'Web Application',  
     role: 'GAME DEVELOPER',
-    description: 'This game is a twist on Flappy Bird, where players guide Jerry to rescue his lost pumpkin by skillfully dodging obstacles. It is a nostalgic journey with a meaningful objective, born from a love for classic games. **Currently playable on a Windows computer only.',
+    description: 'This game is a twist on Flappy Bird, where players guide Jerry to rescue his lost pumpkin by skillfully dodging obstacles. It is a nostalgic journey with a meaningful objective, born from a love for classic games. Currently playable on Windows.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
     image: '/img/pumpkin.png',
     contribution: 'I designed game elements from scratch, built the game using HTML, CSS, and JavaScript, and handled deployment through Firebase.',
@@ -111,24 +111,25 @@ function ProjPage() {
           <div className="flex">
             <div className="left">
               <section className="title">
-              {project.ongoing && <h4 className='construction'>Currently ongoing</h4>}
+              {project.ongoing && <h4 className='construction'>Currently ongoing.</h4>}
                 <div className="description">
-                <h4 className="small-paragraph"><span className='highlight'>{project.role}</span></h4>
+                <h4 className="small-paragraph">{project.app}</h4>
                   <h1>{project.title}</h1>
+                  <h4 className="small-paragraph"><span className='highlight'>{project.role}</span></h4>
                   <div className="description descr-contain">
                     <div className="text-contain">
                       <p>{project.description}</p>
                       {project.technologies.filter(Boolean).length > 0 && (
-                        <p>Tools: {project.technologies.join(', ')}</p>
+                        <p>Tools: <span className='highlight2'>{project.technologies.join(', ')}</span></p>
                       )}
                       {project.codeLink && 
                       <div className="link-container">
-                        <a href={project.codeLink} target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a href={project.codeLink} target="_blank" rel="noopener noreferrer">→ View Code</a>
                       </div>
                       }
                       {project.liveLink && 
                         <div className="link-container">
-                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">View Live Project</a>
+                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">→ View Live Project</a>
                         </div>
                       }
                     </div>
@@ -141,7 +142,6 @@ function ProjPage() {
                 <div className="proj-contain">
                   <img src={project.image} alt={project.title} />
                 </div>
-                <p id='app1'>{project.app}</p>
               </div>
             </div>
         </div>

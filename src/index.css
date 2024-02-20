@@ -505,11 +505,6 @@ footer {
 }
 
 /* INDIVIDUAL PROJ PAGE */
-#app1 {
-  text-align: center;
-  font-weight: 900;
-  font-size: 22px;
-}
 .proj-content-container h2 {
   color: rgb(74, 164, 209);
 }
@@ -521,6 +516,7 @@ footer {
 }
 .link-container a {
   color:rgb(74, 164, 209);
+  font-weight: 900;
 }
 .overview {
   display: flex;
