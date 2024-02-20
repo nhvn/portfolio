@@ -94,8 +94,8 @@ section {
 }
 .construction {
   color: white;
-  background-color: #e49c0d64;
-  border-radius: 15px;
+  background-color: #e49c0d49;
+  border-radius: 5px;
   text-align: center;
   padding: 4px 0;
   margin: 4px 0;
@@ -319,7 +319,7 @@ footer {
   transition: all .3s ease-in-out;
 }
 .proj:hover img, .proj-contain:hover img {
-  transform: scale(1.1); /* Scales the image a little bit out */
+  transform: scale(1.1);
 }
 .card-overlay {
   position: absolute;
@@ -391,6 +391,9 @@ footer {
   height: auto;
   object-fit: cover;
   object-position: center;
+}
+.img-contain:hover img {
+  transform: scale(1.05);
 }
 .hobbies-contain {
   display: flex;
@@ -489,6 +492,9 @@ footer {
   transition: transform .3s ease-in-out; 
   will-change: transform;
 }
+.project-contain h4 {
+  margin: 10px 0;
+}
 #noProj {
   color: red;
   text-align: center;
@@ -534,7 +540,7 @@ footer {
 }
 .overview-parts p {
   height: calc(100% - 50px);
-  padding: 0 5em;
+  padding: 0 8em;
 }
 .proj-content-container {
   display: flex;
@@ -577,6 +583,7 @@ footer {
   }
   .overview-parts p{
     padding: 0;
+    text-align: center;
   }
   .final {
     width: 100%;
