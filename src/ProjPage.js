@@ -3,6 +3,29 @@ import { useParams, Link } from 'react-router-dom';
 
 export const projects = [
   { 
+    id: 'beFit', 
+    title: 'BeFit v2',
+    ongoing: true,
+    app: 'Mobile Application',  
+    role: 'APP DEVELOPER',
+    description: "Stay tuned!",
+    technologies: ['-', '-', '-'],
+    image: '/img/beFit.png',
+    contribution: '-',
+    team: 'Myself and 2 other software engineers.',
+    duration: 'Feb 2024 - Present',
+    outcome: '-',
+    sketchImage: '/img/comingSoon.png',
+    sketch: '-',
+    methodImage: '/img/comingSoon.png',
+    method: '-',
+    resultsImage: '/img/comingSoon.png',
+    results: '-',
+    finalThoughts: "-",
+    codeLink: 'https://github.com/nhvn/BeFit-v2',
+    liveLink: ''
+  },
+  { 
     id: 'taskmaster', 
     title: 'Task Master', 
     ongoing: true,
