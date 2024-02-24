@@ -1,16 +1,15 @@
 @font-face {
-  font-family: 'Larke Neue Thin';
-  src: url('../public/fonts/LarkeNeueThin.ttf') format('truetype');
+  font-family: 'Quicksand';
+  src: url('../public/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
-
 * {
   margin: 0;
-  font-family: 'Larke Neue Thin', 'Roboto Thin', 'Montserrat Thin', 'Open Sans Thin', 'Nunito Thin', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  /* font-weight: 300; */
 }
-
-.bold-text {
+/* .bold-text {
   font-weight: 100;
-}
+} */
 .divider {
   border-top: 1.5px solid hsla(50,3%,47%,.5);
   padding-top: 3em;
@@ -28,11 +27,18 @@ a {
 h1 {
   font-size: 3.125rem;
   line-height: 122%;
+  font-weight: 600;
 }
 h2 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1rem;
+}
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 500;
 }
 body, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -44,6 +50,7 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-weight: 300;
 }
 p:not(.card-overlay p) {
   transition: transform 0.3s ease-in-out;
@@ -66,6 +73,7 @@ section {
 }
 #titles {
   color: #6a9b8f;
+  padding-bottom: 1em;
 }
 .back-button {
   font-size: 30px;
@@ -198,9 +206,17 @@ footer {
 }
 
 /* HOME PAGE */
+
 .home {
   margin: 0 auto 5rem;
   width: 80%;
+}
+.home h1 {
+  font-size: 5em;
+}
+.center {
+  /* text-align: center; */
+  margin-left: 10%;
 }
 .left {
   flex: 4;
@@ -226,17 +242,17 @@ footer {
   100% {opacity: 1;}
 }
 .highlight {
-  font-weight: bold;
+  font-weight: 500;
   color: #6a9b8f; 
   animation: fadeIn 1.5s ease-in-out 1; 
 }
 .highlight2 {
-  font-weight: bold;
+  font-weight: 500;
   color: rgb(74, 164, 209); 
   animation: fadeIn 1.5s ease-in-out 1; 
 }
 .highlight3 {
-  font-weight: bold;
+  font-weight: 500;
   color: #6a9b8f; 
 }
 .contact-contain {
@@ -289,9 +305,6 @@ footer {
 }
 
 /* PROJECTS */
-#titles {
-  padding-bottom: 1em;
-}
 .project-card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -605,14 +618,3 @@ footer {
     margin-bottom: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-

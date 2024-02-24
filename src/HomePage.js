@@ -8,20 +8,24 @@ const HomePage = () => {
         <div className="left">
           <section className="title">
             <div className="description">
-              <h4 className="small-paragraph">
+              {/* <h4 className="small-paragraph">
                 HELLO THERE,
-              </h4>
-              <h1>I'm Alan.</h1>
+              </h4> */}
+              <div className='center'>
+                <h1><span className='highlight'>Hello there!</span> I'm Alan.</h1>
+                <h1>Software engineer</h1>
+                <h1>Based in Los Angeles.</h1>
+              </div>
               <div className="description descr-contain">
                 <div className="text-contain">
-                  <p>I am a dedicated <span className="highlight">full-stack software engineer</span> who's skilled in frontend and backend technologies. My work revolves around creating impactful software solutions, with a keen focus on user experience.</p>
-                  <p>Currently, I'm expanding my knowledge in the fields of <span className='highlight2'>Machine Learning</span> and <span className='highlight2'>Artificial Intelligence</span>, while actively seeking new opportunities to apply and grow my skillset.</p>
+                  {/* <p>I am a dedicated <span className="highlight">full-stack software engineer</span> who's skilled in frontend and backend technologies. My work revolves around creating impactful software solutions, with a keen focus on user experience.</p> */}
+                  {/* <p>Currently, I'm expanding my knowledge in the fields of <span className='highlight2'>Machine Learning</span> and <span className='highlight2'>Artificial Intelligence</span>, while actively seeking new opportunities to apply and grow my skillset.</p> */}
                 </div>
               </div>
             </div>
           </section>
         </div>
-        <div className="right">
+        {/* <div className="right">
           <div className="contact">
             <div className="contact-contain">
               <h2>Let's chat</h2>
@@ -38,7 +42,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="divider"></div>
       <Projects />
