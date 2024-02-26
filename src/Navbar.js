@@ -73,8 +73,8 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                 <DropdownContainer ref={dropdownRef}>
                   <StyledLink onClick={toggleDropdown}>Resume</StyledLink>
                   <DropdownMenu isOpen={isOpen}>
-                    <a className="dropdown-item" href="/Resume.pdf" target="_blank">Resume.pdf</a>
-                    <a className="dropdown-item" href="mailto:alannhan443@gmail.com?subject=Resume Update Request">Update Request</a>
+                    {/* <a className="dropdown-item" href="/Resume.pdf" target="_blank">Resume.pdf</a> */}
+                    <a className="dropdown-item" href="mailto:alannhan443@gmail.com?subject=Resume Update Request">Request Resume</a>
                   </DropdownMenu>
                 </DropdownContainer>
               </li>
