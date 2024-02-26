@@ -26,7 +26,7 @@ const ProjectsPage = () => {
               <div className="contact">
                 <div className="project-contain">
                 <h2>Technologies</h2>
-                  <h4>HTML, CSS, SASS, JavaScript, React, TypeScript, UX/UI Design, Node.js, Python, Java, C++, Git</h4>
+                  <h4>HTML, CSS, SASS, JavaScript, React, TypeScript, UX/UI Design, Node.js, Python, Java, C++, Git, Figma</h4>
                   <h4>MongoDB, PostgreSQL</h4>
                   <h4>Firebase, AWS</h4>
                 </div>
