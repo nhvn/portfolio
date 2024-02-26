@@ -6,7 +6,6 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 export const theme = {
   light: {
     background: '#f0f0f0',
-    // color: '#333',
     color: 'rgba(51,51,51,.8)',
     linkColor: '#333',
     icon: <FiSun/>,
@@ -34,6 +33,10 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     filter: ${(props) => props.theme.imageFilter};
+  }
+
+  svg text {
+    fill: currentColor;
   }
 `;
 
