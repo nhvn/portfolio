@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-section footer-section-1">
         <div className="yoursTruly">
           <h3>
-            Conceptualized, coded, and deployed with <span className='highlight3'>Vercel</span> by yours truly. 
+            Conceptualized in <span className='highlight3'>Figma</span> and deployed with <span className='highlight3'>Vercel</span> by yours truly. 
             Built with <span className="highlight3">React</span> and <span className="highlight3">Styled Components</span>. 
           </h3>
         </div>
