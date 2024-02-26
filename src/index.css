@@ -71,6 +71,9 @@ section {
   .flex {
     display: block;
   }
+  h2 {
+    font-size: 22px;
+  }
 }
 #titles {
   color: #6a9b8f;
@@ -297,7 +300,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .intro1 {
-    margin: 5vh 0;
+    margin: 25vh 0;
   }
   .left {
     margin-bottom: 0;
