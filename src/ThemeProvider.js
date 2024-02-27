@@ -16,7 +16,8 @@ export const theme = {
     color: '#f0f0f0',
     linkColor: '#f0f0f0',
     icon: <FiMoon/>,
-    imageFilter: 'brightness(0.8)', // Apply a dark filter for dark mode
+    imageFilter: 'brightness(0.8)',
+    shadow: '0 0 10px rgba(0, 0, 0, 1);',
   },
 };
 
@@ -35,9 +36,10 @@ export const GlobalStyle = createGlobalStyle`
     filter: ${(props) => props.theme.imageFilter};
   }
 
-  svg text {
-    fill: currentColor;
+  .intro-text h1 {
+    text-shadow: ${(props) => props.theme.shadow}
   }
+
 `;
 
 export const ThemeProvider = ({ children, isDarkMode }) => (
