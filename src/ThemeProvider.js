@@ -1,4 +1,3 @@
-// ThemeProvider.js
 import { createGlobalStyle, ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { FiSun, FiMoon } from 'react-icons/fi'; 
 

@@ -5,11 +5,11 @@
 * {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  /* font-weight: 500; */
 }
-/* .bold-text {
-  font-weight: 100;
-} */
+.fade, .final {
+  width: 80%;
+  margin: 0 auto;
+}
 .divider {
   border-top: 1.5px solid hsla(50,3%,47%,.5);
   padding-top: 3em;
@@ -33,7 +33,6 @@ h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 1rem;
-  /* color: red; */
 }
 h3 {
   font-weight: 400;
@@ -59,6 +58,28 @@ p:not(.card-overlay p) {
 p:not(.card-overlay p):hover {
   transform: scale(1.05); 
 }
+.highlight {
+  font-weight: 500;
+  color: #6a9b8f; 
+  animation: fadeIn 1.5s ease-in-out 1; 
+}
+.highlight2 {
+  font-weight: 500;
+  color: rgb(74, 164, 209); 
+  animation: fadeIn 1.5s ease-in-out 1; 
+}
+.highlight3 {
+  font-weight: 500;
+  color: #6a9b8f; 
+}
+.small-paragraph {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0;
+}
 section {
   margin-bottom: 2em;
 }
@@ -66,6 +87,16 @@ section {
   display: flex;
   flex-direction: row;
   gap: 6rem;
+}
+#titles {
+  color: #6a9b8f;
+  padding-bottom: 1em;
+}
+.left {
+  flex: 4;
+}
+.right {
+  flex: 2; 
 }
 @media screen and (max-width: 480px) {
   .flex {
@@ -75,21 +106,7 @@ section {
     font-size: 22px;
   }
 }
-#titles {
-  color: #6a9b8f;
-  padding-bottom: 1em;
-}
-.back-button {
-  font-size: 30px;
-  color: #000;
-  text-decoration: none; 
-  background-color: #e4e4e46d;
-  padding: 1px 5px 0px 5px;
-  border-radius: 5px;
-}
-.back-button:hover {
-  background-color: lightgray;
-}
+
 /* NAVIGATION BAR */
 .nav-container {
   display: flex;
@@ -211,7 +228,7 @@ footer {
 }
 
 /* HOME PAGE */
-.intro1 {
+.introCover {
   margin: 10vh 0;
   position: relative;
 }
@@ -227,27 +244,12 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.home {
-  margin: 0 auto 5rem;
-  width: 80%;
+.highlightIntro {
+  font-weight: 500;
+  color: #6a9b8f; 
 }
-.center {
-  /* text-align: center; */
-  margin-left: 10%;
-}
-.left {
-  flex: 4;
-}
-.right {
-  flex: 2; 
-}
-.small-paragraph {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0;
+.highlightIntro2 {
+  animation: fadeIn 3s ease-in-out 1; 
 }
 .descr-contain p, .overview p {
   margin-bottom: 1rem;
@@ -256,54 +258,6 @@ footer {
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
-}
-.highlight {
-  font-weight: 500;
-  color: #6a9b8f; 
-  animation: fadeIn 1.5s ease-in-out 1; 
-}
-.highlight1-1 {
-  font-weight: 500;
-  color: #6a9b8f; 
-}
-.highlight1-2 {
-  animation: fadeIn 3s ease-in-out 1; 
-}
-.highlight2 {
-  font-weight: 500;
-  color: rgb(74, 164, 209); 
-  animation: fadeIn 1.5s ease-in-out 1; 
-}
-.highlight3 {
-  font-weight: 500;
-  color: #6a9b8f; 
-}
-.contact-contain {
-  background-color: #cad2c5; 
-  /* background-color: #adb5bd;  */
-  border-radius: 2rem;
-  box-shadow: 0 10px 30px -10px rgba(0,0,0,.2); 
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width: 60rem; 
-  padding: 3rem; 
-  transition: transform .3s ease-in-out; 
-  will-change: transform; 
-  color: black;
-  /* color: white; */
-}
-.contact-list {
-  display: flex;
-  justify-content: center;
-}
-.contact-list img {
-  width: 3em;
-  height: auto;
-  padding: 30px;
-  transition: opacity 0.3s ease;
-}
-.contact-list img:hover {
-  opacity: 0.6;
 }
 @media screen and (max-width: 1130px) {
   .flex {
@@ -314,19 +268,8 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
-  .intro1 {
+  .introCover {
     margin: 20vh 0;
-  }
-  .left {
-    margin-bottom: 0;
-  }
-  .contact-contain {
-    padding-bottom: 2em;
-  }
-  .contact-list img {
-    width: 2.5em;
-    height: auto;
-    padding: 40px 22px;
   }
 }
 
@@ -341,7 +284,7 @@ footer {
 .proj, .proj-contain {
   position: relative;
   width: 100%;
-  padding-top: 76%; /* Maintain aspect ratio */
+  padding-top: 76%;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -357,6 +300,9 @@ footer {
 .proj:hover img, .proj-contain:hover img {
   transform: scale(1.1);
 }
+.proj:hover .card-overlay {
+  opacity: 0.9;
+}
 .card-overlay {
   position: absolute;
   top: 0;
@@ -371,15 +317,9 @@ footer {
   box-sizing: border-box;
   z-index: 1; 
 }
-.proj:hover .card-overlay {
-  opacity: 0.9;
-}
 @media screen and (max-width: 480px) {
   .project-card-grid .proj p{
     font-size: 12px;
-  }
-  .home, .title {
-    margin-bottom: 0;
   }
   .home p, .about p, .projects-box p, .proj-content-container .right-proj p{
     font-size: 18px;
@@ -393,11 +333,8 @@ footer {
     margin-top: 1em;
   }
 }
+
 /* ABOUT PAGE */
-.about {
-  margin: 0 auto;
-  width: 80%;
-}
 .top {
   display: flex;
 }
@@ -435,7 +372,7 @@ footer {
   display: flex;
   justify-content: center; 
   gap: 10px; 
-  margin-bottom: 5rem
+  margin-bottom: 5rem;
 }
 .hob {
   position: relative;
@@ -459,7 +396,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(50, 50, 50, 0.881); 
+  background-color: rgba(50, 50, 50, 0.9); 
   transition: background-color 0.7s ease; 
   z-index: 1;
   border-radius: 15px;
@@ -478,13 +415,13 @@ footer {
   z-index: 2;
 }
 #foodie::after {
-  content: "FOOD";
+  content: "food";
 }
 #cafe::after {
-  content: "CAFES";
+  content: "cafes";
 }
 #travel::after {
-  content: "TRAVEL";
+  content: "travel";
 }
 #foodie:hover::after, #cafe:hover::after, #travel:hover::after {
   color: white;
@@ -512,10 +449,6 @@ footer {
 }
 
 /* PROJECTS PAGE */
-.projects-box {
-  margin: 0 auto 5rem;
-  width: 80%;
-}
 .projects-box .flex {
   margin-bottom: 1em;
 }
@@ -540,6 +473,17 @@ footer {
 }
 
 /* INDIVIDUAL PROJ PAGE */
+.back-button {
+  font-size: 30px;
+  color: #000;
+  text-decoration: none; 
+  background-color: #e4e4e46d;
+  padding: 1px 5px 0px 5px;
+  border-radius: 5px;
+}
+.back-button:hover {
+  background-color: lightgray;
+}
 .proj-content-container h2 {
   color: rgb(74, 164, 209);
 }
@@ -589,10 +533,10 @@ footer {
 }
 .botImg {
   height: 100%;
-  transition: transform 0.3s ease-in-out; /* Add this line */
+  transition: transform 0.3s ease-in-out;
 }
 .botImg:hover {
-  transform: scale(1.05); /* Add this line */
+  transform: scale(1.05);
 }
 .proj-content-container .left-proj {
   position: relative;

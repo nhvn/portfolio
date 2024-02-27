@@ -16,7 +16,7 @@ const ProjectsWrapper = (props) => <Projects {...props} />;
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedMode = localStorage.getItem('isDarkMode');
-    return savedMode === 'true' ? true : false; // Convert string to boolean
+    return savedMode === 'true' ? true : false;
   });
 
   useEffect(() => {

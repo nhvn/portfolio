@@ -14,9 +14,7 @@ const ProjectsPage = () => {
                   <h1>My work.</h1>
                   <div className="description descr-contain">
                     <div className="text-contain">
-                      <p>
-                      As a <span className="highlight">full-stack software engineer</span>, I seamlessly blend design and development, prioritizing a shared understanding between both worlds. My quick learning and creative problem-solving skills allow me to integrate a designer's perspective into development effortlessly. Meticulous in my approach, I am committed to realizing precise design visions, making me a versatile professional adept at bridging the gap between design and implementation.
-                      </p>
+                      <p>As a <span className="highlight">full-stack software engineer</span>, I seamlessly blend design and development, prioritizing a shared understanding between both worlds. Meticulous in my approach, I am committed to realizing precise design visions, making me a versatile professional adept at bridging the gap between design and implementation.</p>
                     </div>
                   </div>
                 </div>
