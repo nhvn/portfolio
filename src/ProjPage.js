@@ -202,15 +202,17 @@ function ProjPage() {
               <p>{project.sketch}</p>
             </div>
           </div>
+          <div className="divider"></div>
           <div className="flex">
             <div className="right-proj"> {/* SWAPPED */}
               <h2>Methodology</h2>
               <p>{project.method}</p>
             </div>
             <div className='left-proj'> {/* SWAPPED */}
-              <img className="botImg" src={project.methodImage} alt={project.title} />
+              <img className="botImg" id="rightImg" src={project.methodImage} alt={project.title} />
             </div>
           </div>
+          <div className="divider"></div>
           <div className="flex">
             <div className="left-proj">
               <img className="botImg" src={project.resultsImage} alt={project.title} />
@@ -220,6 +222,7 @@ function ProjPage() {
               <p>{project.results}</p>
             </div>
           </div>
+          <div className="divider"></div>
           <div className="flex">
             <div className='right-proj finalThoughts'>
               <div className='final'>
