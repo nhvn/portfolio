@@ -21,10 +21,8 @@ const AboutPage = () => {
                         </section>
                     </div>
                     <div className="right">
-                        <div className="headshot-contain">
-                            <div className="img-contain">
-                            <img src={process.env.PUBLIC_URL + '/img/portrait.png'} alt="Self-Portrait of Alan Nhan"></img>
-                        </div>
+                        <div className="img-contain">
+                            <img src={process.env.PUBLIC_URL + '/img/selfPortrait.png'} alt="Self-Portrait of Alan Nhan"></img>
                         </div>
                     </div>
                 </div>
