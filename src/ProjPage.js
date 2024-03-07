@@ -195,12 +195,12 @@ function ProjPage() {
         <div className="proj-content-container">
         {project.sketch && (
           <div className="flex">
+            <div className="left-proj">
+              <img className="botImg" src={project.sketchImage} alt={project.title} />
+            </div>
             <div className='right-proj'>
               <h2>Sketches</h2>
               <p>{project.sketch}</p>
-            </div>
-            <div className="left-proj">
-              <img className="botImg" src={project.sketchImage} alt={project.title} />
             </div>
           </div>
         )}
