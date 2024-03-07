@@ -16,9 +16,9 @@ function Footer() {
       <div className="footer-section footer-section-2">
         <h3>CONTACT</h3>
         <ul>
-          <li><a href="https://www.linkedin.com/in/alannhans" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/nhvn" target="_blank">GitHub</a></li>
-          <li><a href="mailto: alannhan443@gmail.com" target="_blank">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/alannhans" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/nhvn" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="mailto: alannhan443@gmail.com" target="_blank" rel="noreferrer">Email</a></li>
         </ul>
       </div>
       <div className="dividerHr"/>

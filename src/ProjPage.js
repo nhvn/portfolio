@@ -6,19 +6,19 @@ export const projects = [
     id: 'beFit', 
     title: 'BeFit v2',
     ongoing: true,
-    app: 'Mobile Application',  
+    app: 'Mobile & Web Application',  
     role: 'APP DEVELOPER',
-    description: "Stay tuned!",
-    technologies: ['-', '-', '-'],
+    description: "BeFit v2 is your ultimate fitness companion, offering a seamless way to monitor your gym progress, diet, and workouts. Whether you're new to fitness or a seasoned enthusiast, BeFit v2 empowers you to achieve your wellness goals with ease and precision.",
+    technologies: ['Next.js', 'Shadcn UI', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Stripe'],
     image: '/img/beFit.png',
-    contribution: '-',
+    contribution: 'I introduced the flexibility to add dates and resolved various issues, including a bug related to deleting weights, among others. Looking ahead, I intend to address more bugs and aim to transform this into a mobile application.',
     team: 'Myself and 2 other software engineers.',
     duration: 'Feb 2024 - Present',
-    outcome: '-',
+    outcome: 'Project is in progress. Stay tuned for the completed version and the exciting improvements it will bring!',
     sketchImage: '/img/comingSoon.png',
-    sketch: '-',
+    sketch: '',
     methodImage: '/img/comingSoon.png',
-    method: '-',
+    method: '',
     resultsImage: '/img/comingSoon.png',
     results: '-',
     finalThoughts: "-",
@@ -193,49 +193,71 @@ function ProjPage() {
         <div className="divider"></div>
         {/* BOTTOM PORTION */}
         <div className="proj-content-container">
+        {project.sketch && (
           <div className="flex">
-            <div className="left-proj">
-              <img className="botImg" src={project.sketchImage} alt={project.title} />
-            </div>
             <div className='right-proj'>
               <h2>Sketches</h2>
               <p>{project.sketch}</p>
             </div>
-          </div>
-          <div className="divider"></div>
-          <div className="flex">
-            <div className="right-proj"> {/* SWAPPED */}
-              <h2>Methodology</h2>
-              <p>{project.method}</p>
-            </div>
-            <div className='left-proj'> {/* SWAPPED */}
-              <img className="botImg" id="rightImg" src={project.methodImage} alt={project.title} />
-            </div>
-          </div>
-          <div className="divider"></div>
-          <div className="flex">
             <div className="left-proj">
-              <img className="botImg" src={project.resultsImage} alt={project.title} />
-            </div>
-            <div className='right-proj'>
-              <h2>Results</h2>
-              <p>{project.results}</p>
+              <img className="botImg" src={project.sketchImage} alt={project.title} />
             </div>
           </div>
-          <div className="divider"></div>
-          <div className="flex">
-            <div className='right-proj finalThoughts'>
-              <div className='final'>
-                <h2>Final Thoughts</h2>
-                <p>{project.finalThoughts}</p>
+        )}
+        {project.sketch && project.method && (
+          <>
+            <div className="divider"></div>
+            <div className="flex">
+              <div className="right-proj">
+                <h2>Methodology</h2>
+                <p>{project.method}</p>
+              </div>
+              <div className='left-proj'>
+                <img className="botImg" id="rightImg" src={project.methodImage} alt={project.title} />
               </div>
             </div>
+          </>
+        )}
+        {project.sketch && project.method && project.results && (
+          <>
+            <div className="divider"></div>
+            <div className="flex">
+              <div className="left-proj">
+                <img className="botImg" src={project.resultsImage} alt={project.title} />
+              </div>
+              <div className='right-proj'>
+                <h2>Results</h2>
+                <p>{project.results}</p>
+              </div>
+            </div>
+          </>
+        )}
+        {project.sketch && project.method && project.results && project.finalThoughts && (
+          <>
+            <div className="divider"></div>
+            <div className="flex">
+              <div className='right-proj finalThoughts'>
+                <div className='final'>
+                  <h2>Final Thoughts</h2>
+                  <p>{project.finalThoughts}</p>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+        {(!project.sketch || !project.method || !project.results || !project.finalThoughts) && (
+          <div className="flex">
+            <div className='right-proj tuned'>
+              {/* <h2>Upcoming</h2> */}
+              <p id='stay-tuned'>More exciting details are on the way. Stay tuned!</p>
+            </div>
           </div>
-        </div>
+       )}
       </div>
     </div>
-    );
-  }
+  </div>
+  );
+}
   
 
 export default ProjPage;

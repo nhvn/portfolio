@@ -22,7 +22,7 @@
   }
 }
 .dividerHr {
-  border-left: 1.5px solid hsla(50,3%,47%,.5);
+  border-left: 1.5px solid hsla(50,3%,47%,.25);
   height: 100px; 
   width: 0;
   margin: 20px auto;
@@ -64,6 +64,11 @@ p:not(.card-overlay p) {
 }
 p:not(.card-overlay p):hover {
   transform: scale(1.05); 
+}
+#stay-tuned {
+  text-align: center;
+  font-size: 30px;
+  color: hsla(50,3%,47%,.8);
 }
 .highlight {
   font-weight: 500;
@@ -176,6 +181,7 @@ footer {
   /* padding-bottom: 1em; */
   width: 80%;
   margin: 0 auto;
+  padding: 5em 0 1em 0;
 }
 .footer-section {
   width: 30%;
@@ -192,6 +198,7 @@ footer {
 }
 .footer-section-1 {
   flex: 6;
+  /* align-items: baseline; */
 }
 .footer-section-2 {
   flex: 2;
@@ -216,6 +223,9 @@ footer {
   margin: 20px auto;
 }
 @media screen and (max-width: 480px) {
+  footer {
+    padding: 0;
+  }
   .footer-section-1 {
     flex: 3;
     font-size: 8px;
@@ -326,7 +336,7 @@ footer {
   .project-card-grid .proj p{
     font-size: 12px;
   }
-  .home p, .about p, .projects-box p, .proj-content-container .right-proj p{
+  .home p, .about p, .projects-box p, .proj-content-container .right-proj p, #stay-tuned{
     font-size: 15px;
   }
 }
@@ -565,6 +575,9 @@ footer {
 }
 .final h2 {
   text-align: center;
+}
+.tuned {
+  padding: 7em 0 4em 0;
 }
 @media screen and (max-width: 1000px) {
   .flex {
