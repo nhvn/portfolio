@@ -22,7 +22,7 @@ const AboutPage = () => {
                     </div>
                     <div className="right">
                         <div className="img-contain">
-                            <img src={process.env.PUBLIC_URL + '/img/selfPortrait.png'} alt="Self-Portrait of Alan Nhan"></img>
+                            <img src={process.env.PUBLIC_URL + '/img/portrait.png'} alt="Self-Portrait of Alan Nhan"></img>
                         </div>
                     </div>
                 </div>

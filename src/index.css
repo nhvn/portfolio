@@ -372,7 +372,7 @@ footer {
 }
 .img-contain img {
   transition: all .3s ease-in-out;
-  max-width: 80%;
+  max-width: 60%;
   border-radius: 25%;
 }
 .img-contain:hover img {
