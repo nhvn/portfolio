@@ -23,7 +23,7 @@
 }
 .dividerHr {
   border-left: 1.5px solid hsla(50,3%,47%,.25);
-  height: 100px; 
+  height: 90px; 
   width: 0;
   margin: 20px auto;
 }
@@ -68,7 +68,7 @@ p:not(.card-overlay p):hover {
 #stay-tuned {
   text-align: center;
   font-size: 30px;
-  color: hsla(50,3%,47%,.8);
+  /* color: hsla(50,3%,47%,.8); */
 }
 .highlight {
   font-weight: 500;
@@ -116,6 +116,9 @@ section {
   }
   h2 {
     font-size: 22px;
+  }
+  .dividerHr {
+    height: 60px; 
   }
 }
 

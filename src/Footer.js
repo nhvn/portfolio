@@ -30,7 +30,7 @@ function Footer() {
             <li><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
       </div>
-      {/* <hr /> */}
+      {/* <div className="dividerHr"/> */}
     </footer>
   );
 }
