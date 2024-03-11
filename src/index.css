@@ -543,6 +543,7 @@ footer {
   height: calc(100% - 50px);
   padding: 0 4em;
   text-align: center;
+  font-size: 22px;
 }
 .proj-content-container {
   display: flex;
@@ -592,6 +593,7 @@ footer {
   .overview-parts p{
     padding: 0;
     text-align: center;
+    font-size: 15px;
   }
   .final {
     width: 100%;
