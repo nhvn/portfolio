@@ -16,11 +16,6 @@
   width: 85%;
   margin: 0 auto;
 }
-@media screen and (max-width: 480px) {
-  .divider {
-    padding-top: 2em;
-  }
-}
 .dividerHr {
   border-left: 1.5px solid hsla(50,3%,47%,.25);
   height: 90px; 
@@ -110,17 +105,6 @@ section {
 .right {
   flex: 2; 
 }
-@media screen and (max-width: 480px) {
-  .flex {
-    display: block;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  .dividerHr {
-    height: 60px; 
-  }
-}
 
 /* NAVIGATION BAR */
 .nav-container {
@@ -161,21 +145,7 @@ section {
   font-size: 24px;
   margin-left: 2em;
 }
-@media screen and (max-width: 480px) {
-  .custom-logo {
-    width: 30px;
-    height: auto;
-  }
-  .navbar .nav-container ul {
-    font-size: 13px;
-  }
-  .custom-logo {
-    margin-right: 2em;
-  }
-  .theme-toggle-button {
-    margin-left: 0;
-  }
-}
+
 
 /* FOOTER */
 footer {
@@ -225,22 +195,6 @@ footer {
   width: 80%;
   margin: 20px auto;
 }
-@media screen and (max-width: 480px) {
-  footer {
-    padding: 0;
-  }
-  .footer-section-1 {
-    flex: 3;
-    font-size: 8px;
-  }
-  .footer-section-2, .footer-section-3 {
-    flex: 2;
-    font-size: 11px;
-  }
-  .footer-divider {
-    margin: 0 auto;
-  }
-}
 
 /* HOME PAGE */
 .introCover {
@@ -273,22 +227,6 @@ footer {
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
-}
-@media screen and (max-width: 1130px) {
-  .intro-text h1 {
-    font-size: 6.5vw; 
-  }
-  .flex {
-    display: block;
-  }
-  .right {
-    margin: 2em 0; 
-  }
-}
-@media screen and (max-width: 480px) {
-  .introCover {
-    margin: 20vh 0;
-  }
 }
 
 /* PROJECTS */
@@ -334,22 +272,6 @@ footer {
   padding: 20px;
   box-sizing: border-box;
   z-index: 1; 
-}
-@media screen and (max-width: 480px) {
-  .project-card-grid .proj p{
-    font-size: 12px;
-  }
-  .home p, .about p, .projects-box p, .proj-content-container .right-proj p, #stay-tuned{
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .project-card-grid {
-    display: block;
-  }
-  .proj {
-    margin-top: 1em;
-  }
 }
 
 /* ABOUT PAGE */
@@ -438,24 +360,6 @@ footer {
 }
 #foodie:hover::after, #cafe:hover::after, #travel:hover::after {
   content: none;
-}
-@media screen and (max-width: 1000px) {
-  #foodie::after, #cafe::after, #travel::after {
-    font-size: 2em;
-  }
-  .top {
-    display: block;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hobbies-contain {
-    display: block;
-  }
-  .hob {
-    width: 80%;
-    height: auto;
-    margin: 0 auto 1em;
-  }
 }
 
 /* PROJECTS PAGE */
@@ -554,11 +458,6 @@ footer {
   height: 100%;
   transition: transform 0.3s ease-in-out;
 }
-@media screen and (max-width: 480px) {
-  #rightImg {
-    margin-top: 20px;
-  }
-}
 .botImg:hover {
   transform: scale(1.05);
 }
@@ -583,34 +482,117 @@ footer {
 .tuned {
   padding: 7em 0 4em 0;
 }
+
 @media screen and (max-width: 1000px) {
+  .intro-text h1 {
+    font-size: 6.5vw;
+  }
+  .right {
+      margin: 2em 0;
+  }
   .flex {
-    padding: 0;
+    display: block;
+      padding: 0;
   }
   .overview-parts {
-    width: 100%;
+      width: 100%;
   }
-  .overview-parts p{
-    padding: 0;
-    text-align: center;
-    font-size: 15px;
+  .overview-parts p {
+      padding: 0;
+      text-align: center;
+      font-size: 15px;
   }
   .final {
-    width: 100%;
+      width: 100%;
   }
   .projects-box, .hobbies-contain {
-    margin-bottom: 3rem;
+      margin-bottom: 3rem;
   }
   .proj-content-container .left-proj {
-    margin-bottom: 20px;
+      margin-bottom: 20px;
   }
   .proj-content-container {
-    display: block;
+      display: block;
   }
   .projects-box .flex {
-    padding-bottom: 0;
+      padding-bottom: 0;
   }
-  .final p{
-    margin-bottom: 0;
+  .final p {
+      margin-bottom: 0;
+  }
+  .project-card-grid {
+      display: block;
+  }
+  .proj {
+      margin-top: 1em;
+  }
+  #foodie::after, #cafe::after, #travel::after {
+      font-size: 2em;
+  }
+  .top {
+      display: block;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .divider {
+      padding-top: 2em;
+  }
+  .flex {
+      display: block;
+  }
+  h2 {
+      font-size: 22px;
+  }
+  .dividerHr {
+      height: 60px;
+  }
+  .custom-logo {
+      width: 30px;
+      height: auto;
+  }
+  .navbar .nav-container ul {
+      font-size: 13px;
+  }
+  .custom-logo {
+      margin-right: 2em;
+  }
+  .theme-toggle-button {
+      margin-left: 0;
+  }
+  footer {
+      padding: 0;
+  }
+  .footer-section-1 {
+      flex: 3;
+      font-size: 8px;
+  }
+  .footer-section-2, .footer-section-3 {
+      flex: 2;
+      font-size: 11px;
+  }
+  .footer-divider {
+      margin: 0 auto;
+  }
+  .introCover {
+      margin: 20vh 0;
+  }
+  .project-card-grid .proj p {
+      font-size: 12px;
+  }
+  .home p, .about p, .projects-box p, .proj-content-container .right-proj p, #stay-tuned {
+      font-size: 15px;
+  }
+  .hobbies-contain {
+      display: block;
+  }
+  .hob {
+      width: 80%;
+      height: auto;
+      margin: 0 auto 1em;
+  }
+  #rightImg {
+      margin-top: 20px;
+  }
+}
+
