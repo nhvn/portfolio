@@ -193,66 +193,78 @@ function ProjPage() {
         <div className="divider"></div>
         {/* BOTTOM PORTION */}
         <div className="proj-content-container">
-        {project.sketch && (
-          <div className="flex">
-            <div className="left-proj">
-              <img className="botImg" src={project.sketchImage} alt={project.title} />
-            </div>
-            <div className='right-proj'>
-              <h2>Sketches</h2>
-              <p>{project.sketch}</p>
+          <div className='prob'>
+            <h2>Problem</h2>
+            <div className='descr'>
+              <p>This is a problem. And this is the description of the problem.</p>
             </div>
           </div>
-        )}
-        {project.sketch && project.method && (
-          <>
-            <div className="divider"></div>
-            <div className="flex">
-              <div className="right-proj">
-                <h2>Methodology</h2>
-                <p>{project.method}</p>
-              </div>
-              <div className='left-proj'>
-                <img className="botImg" id="rightImg" src={project.methodImage} alt={project.title} />
-              </div>
+          <div className='prob'>
+            <h2>Solution</h2>
+            <div className='descr'>
+              <p>This is the solution. Woohoo!</p>
             </div>
-          </>
-        )}
-        {project.sketch && project.method && project.results && (
-          <>
-            <div className="divider"></div>
+          </div>
+          {project.sketch && (
             <div className="flex">
               <div className="left-proj">
-                <img className="botImg" src={project.resultsImage} alt={project.title} />
+                <img className="botImg" src={project.sketchImage} alt={project.title} />
               </div>
               <div className='right-proj'>
-                <h2>Results</h2>
-                <p>{project.results}</p>
+                <h2>Sketches</h2>
+                <p>{project.sketch}</p>
               </div>
             </div>
-          </>
-        )}
-        {project.sketch && project.method && project.results && project.finalThoughts && (
-          <>
-            <div className="divider"></div>
-            <div className="flex">
-              <div className='right-proj finalThoughts'>
-                <div className='final'>
-                  <h2>Final Thoughts</h2>
-                  <p>{project.finalThoughts}</p>
+          )}
+          {project.sketch && project.method && (
+            <>
+              {/* <div className="divider"></div> */}
+              <div className="flex">
+                <div className="right-proj">
+                  <h2>Methodology</h2>
+                  <p>{project.method}</p>
+                </div>
+                <div className='left-proj'>
+                  <img className="botImg" id="rightImg" src={project.methodImage} alt={project.title} />
                 </div>
               </div>
+            </>
+          )}
+          {project.sketch && project.method && project.results && (
+            <>
+              {/* <div className="divider"></div> */}
+              <div className="flex">
+                <div className="left-proj">
+                  <img className="botImg" src={project.resultsImage} alt={project.title} />
+                </div>
+                <div className='right-proj'>
+                  <h2>Results</h2>
+                  <p>{project.results}</p>
+                </div>
+              </div>
+            </>
+          )}
+          {project.sketch && project.method && project.results && project.finalThoughts && (
+            <>
+              {/* <div className="divider"></div> */}
+              <div className="flex">
+                <div className='right-proj finalThoughts'>
+                  <div className='final'>
+                    <h2>Final Thoughts</h2>
+                    <p>{project.finalThoughts}</p>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+          {(!project.sketch || !project.method || !project.results || !project.finalThoughts) && (
+            <div className="flex">
+              <div className='right-proj tuned'>
+                {/* <h2>Upcoming</h2> */}
+                <p id='stay-tuned'>More exciting details are on the way. Stay tuned!</p>
+              </div>
             </div>
-          </>
         )}
-        {(!project.sketch || !project.method || !project.results || !project.finalThoughts) && (
-          <div className="flex">
-            <div className='right-proj tuned'>
-              {/* <h2>Upcoming</h2> */}
-              <p id='stay-tuned'>More exciting details are on the way. Stay tuned!</p>
-            </div>
-          </div>
-       )}
       </div>
     </div>
   </div>
