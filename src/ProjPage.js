@@ -11,10 +11,10 @@ export const projects = [
     description: "BeFit v2 is your ultimate fitness companion, offering a seamless way to monitor your gym progress, diet, and workouts. Whether you're new to fitness or a seasoned enthusiast, BeFit v2 empowers you to achieve your wellness goals with ease and precision.",
     technologies: ['Next.js', 'Shadcn UI', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Stripe'],
     image: '/img/beFit.png',
-    contribution: 'I introduced the flexibility to add dates and resolved various issues, including a bug related to deleting weights, among others. Looking ahead, I intend to address more bugs and aim to transform this into a mobile application.',
+    contribution: 'Introduced the flexibility to add dates \n Fixed various bugs including the inability to delete weights \n Currently, transforming this into a mobile application',
     team: 'Myself and 2 other software engineers.',
     duration: 'Feb 2024 - Present',
-    outcome: 'Project is in progress. Stay tuned for the completed version and the exciting improvements it will bring!',
+    outcome: '',
     prob: '',
     sol: '',
     sketchImage1: '/img/fitSketch.png',
@@ -40,7 +40,7 @@ export const projects = [
     description: 'To-Do List App app allows users to create, edit, and delete tasks with due dates and priorities, as well as mark tasks as complete or incomplete. Users can register, log in, and log out, and their tasks are stored securely in a PostgreSQL database.',
     technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'HTML', 'CSS'],
     image: '/img/todo.png',
-    contribution: 'I built a secure PostgreSQL database from scratch and developed a robust API using Node.js and Express. I also created an intuitive user interface using React, integrating it with the back-end for seamless functionality.',
+    contribution: 'I built a secure PostgreSQL database from scratch and developed a robust API using Node.js and Express \n Created an intuitive user interface using React, integrating it with the back-end for seamless functionality',
     team: 'Myself and two other software engineers.',
     duration: 'Apr 2023 - Jun 2023',
     outcome: 'We developed a To-Do List App that allows users to perform all these actions. The app also provides secure user registration, login, and logout features, with tasks stored securely in a PostgreSQL database.',
@@ -69,8 +69,8 @@ export const projects = [
     description: 'A comprehensive showcase of my skills, experiences, and projects. This simple website was designed to be responsive and user-friendly, providing visitors with easy access to my work and contact information.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     image: '/img/oldportfolio.png',
-    contribution: 'Designed and developed the entire website from scratch. Implemented responsive design principles to ensure a seamless experience across different devices. Integrated a contact form for easy communication.',
-    team: 'Myself.',
+    contribution: 'Designed and developed the entire website from scratch \n Implemented responsive design principles to ensure a seamless experience across different devices \n Integrated a contact form for easy communication',
+    team: '',
     duration: 'Apr 2023 - Jun 2023',
     outcome: 'Successfully created a personal portfolio website that effectively showcases my skills, experiences, and projects. The website has helped in networking and opened up new opportunities.',
     prob: '',
@@ -98,8 +98,8 @@ export const projects = [
     description: "An automation solution for precise control of lights. This system enables control of up to 50 lights across 10 rooms with customizable schedules.",
     technologies: ['Python', 'Flask', 'Raspberry Pi'],
     image: '/img/smartLight.png',
-    contribution: 'Engineered lighting automation solution using Python and Raspberry Pi to interact with physical GPIO pins. Used multithreading and Flask web framework to enable parallel control of lights. Created web UI with Jinja templates for user management and scheduling.',
-    team: 'Myself, another software engineer, and an electronics engineer.',
+    contribution: 'Engineered lighting automation solution using Python \n Utilized Raspberry Pi to interact with physical GPIO pins \n Used multithreading and Flask web framework to enable parallel control of lights \n Created web UI with Jinja templates for user management and scheduling',
+    team: 'Two software engineers and an electronics engineer',
     duration: 'Feb 2023 - Mar 2023',
     outcome: 'Developed a Smart Lighting Control System that allows precise control of lights. The system also provides customizable schedules for each light.',
     prob: '',
@@ -127,8 +127,8 @@ export const projects = [
     description: 'This game is a twist on Flappy Bird, where players guide Jerry to rescue his lost pumpkin by skillfully dodging obstacles. It is a nostalgic journey with a meaningful objective, born from a love for classic games. Currently playable on Windows.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
     image: '/img/pumpkin.png',
-    contribution: 'I designed game elements from scratch, built the game using HTML, CSS, and JavaScript, and handled deployment through Firebase.',
-    team: 'Myself.',
+    contribution: 'Designed game elements from scratch \n Built the game using HTML, CSS, and JavaScript \n Handled deployment through Firebase',
+    team: '',
     duration: 'Oct 2022 - Feb 2023',
     outcome: 'I developed ‘Pumpkin Lostte’, where players navigate through barriers to rescue a lost pumpkin, adding an actual destination to reach, unlike the endless gameplay of ‘Flappy Bird’.',
     prob: '',
@@ -200,23 +200,25 @@ function ProjPage() {
         </div>
         <div className="divider"></div>
         {/* MIDDLE PORTION */}
-        <div classname="overview">
-          <div className='flex2'>
-            <div className='overview-parts'>
+        <div className="overview">
+          <div className="flex2">
+            <div className="overview-parts">
               <h2>Duration</h2>
               <p>{project.duration}</p>
             </div>
-            <div className='overview-parts'>
-              <h2>Team</h2>
-              <p>{project.team}</p>
-            </div>
-            <div className='overview-parts'>
-              <h2>Contribution</h2>
-              <p>{project.contribution}</p>
-            </div>
-            <div className='overview-parts'>
-              <h2>Outcome</h2>
-              <p>{project.outcome}</p>
+            {project.team && (
+              <div className="overview-parts">
+                <h2>Team</h2>
+                <p>{project.team}</p>
+              </div>
+            )}
+          </div>
+          <div className="overview-parts contribution">
+            <h2>Contribution</h2>
+            <div className="op-margin">
+              {project.contribution.split('\n').map((line, index) => (
+                <li key={index}>{line.trim()}</li>
+              ))}
             </div>
           </div>
         </div>
