@@ -105,8 +105,8 @@ export const projects = [
     prob: '',
     sol: '',
     sketchImage1: '/img/lightSketch.png',
-    sketchImage2: '/img/lightSketch.png',
-    sketchImage3: '/img/lightSketch.png',
+    sketchImage2: '',
+    sketchImage3: '',
     sketch: 'These sketches illustrate the overall system design, the setup of the Raspberry Pi and its GPIO pin configuration, the process of controlling the lights, the setup of the Flask web server, the design of the user interface, the implementation of scheduling, and the use of multithreading for parallel light control. Each sketch focuses on a key aspect of the project, providing a clear visual representation of the main components and their interactions, making the project’s workings easier to understand.',
     methodImage: '/img/raspPi.png',
     method: 'In this project, we started with a high-level system design that included the Raspberry Pi, the lights, and the user interface. We set up the Raspberry Pi with the necessary software and used its GPIO pins to control the lights. The lights were controlled using signals from the Raspberry Pi. We then set up a Flask web server to handle requests and control the lights. The user interface was designed with main screens for light control and scheduling. Scheduling was implemented to allow users to set schedules for controlling the lights. We used multithreading to enable parallel control of lights, with each thread controlling a different light. Throughout the project, we used Python, Flask, and the Raspberry Pi’s GPIO pins. We also faced and overcame various challenges, demonstrating our problem-solving skills and technical expertise.',
@@ -201,27 +201,39 @@ function ProjPage() {
         <div className="divider"></div>
         {/* MIDDLE PORTION */}
         <div className="overview">
-          <div className="flex2">
-            <div className="overview-parts">
-              <h2>Duration</h2>
-              <p>{project.duration}</p>
-            </div>
-            {project.team && (
-              <div className="overview-parts">
-                <h2>Team</h2>
-                <p>{project.team}</p>
-              </div>
-            )}
-          </div>
-          <div className="overview-parts contribution">
-            <h2>Contribution</h2>
-            <div className="op-margin">
-              {project.contribution.split('\n').map((line, index) => (
-                <li key={index}>{line.trim()}</li>
-              ))}
-            </div>
-          </div>
+  <div className="overview-container">
+    <div className="overview-left">
+      <div className="overview-heading">
+        <h2>Duration</h2>
+      </div>
+      {project.team && (
+        <div className="overview-heading">
+          <h2>Team</h2>
         </div>
+      )}
+      <div className="overview-heading">
+        <h2>Contribution</h2>
+      </div>
+    </div>
+    <div className="overview-right">
+      <div className="overview-content">
+        <p>{project.duration}</p>
+      </div>
+      {project.team && (
+        <div className="overview-content">
+          <p>{project.team}</p>
+        </div>
+      )}
+      <div className="overview-content contribution">
+        <div className="op-margin">
+          {project.contribution.split('\n').map((line, index) => (
+            <li key={index}>{line.trim()}</li>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         <div className="divider"></div>
         {/* BOTTOM PORTION */}
         <div className="proj-content-container">
