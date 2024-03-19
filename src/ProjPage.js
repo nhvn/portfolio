@@ -12,7 +12,7 @@ export const projects = [
     technologies: ['Next.js', 'Shadcn UI', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Stripe'],
     image: '/img/beFit.png',
     contribution: 'Introduced the flexibility to add dates \n Fixed various bugs including the inability to delete weights \n Currently, transforming this into a mobile application',
-    team: 'Myself and 2 other software engineers.',
+    team: 'Two other software engineers',
     duration: 'Feb 2024 - Present',
     outcome: '',
     prob: '',
@@ -41,7 +41,7 @@ export const projects = [
     technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'HTML', 'CSS'],
     image: '/img/todo.png',
     contribution: 'I built a secure PostgreSQL database from scratch and developed a robust API using Node.js and Express \n Created an intuitive user interface using React, integrating it with the back-end for seamless functionality',
-    team: 'Myself and two other software engineers.',
+    team: 'Two other software engineers',
     duration: 'Apr 2023 - Jun 2023',
     outcome: 'We developed a To-Do List App that allows users to perform all these actions. The app also provides secure user registration, login, and logout features, with tasks stored securely in a PostgreSQL database.',
     prob: '',
@@ -99,7 +99,7 @@ export const projects = [
     technologies: ['Python', 'Flask', 'Raspberry Pi'],
     image: '/img/smartLight.png',
     contribution: 'Engineered lighting automation solution using Python \n Utilized Raspberry Pi to interact with physical GPIO pins \n Used multithreading and Flask web framework to enable parallel control of lights \n Created web UI with Jinja templates for user management and scheduling',
-    team: 'Two software engineers and an electronics engineer',
+    team: 'Two other software engineers and an electric engineer',
     duration: 'Feb 2023 - Mar 2023',
     outcome: 'Developed a Smart Lighting Control System that allows precise control of lights. The system also provides customizable schedules for each light.',
     prob: '',
@@ -110,8 +110,8 @@ export const projects = [
     sketch: 'These sketches illustrate the overall system design, the setup of the Raspberry Pi and its GPIO pin configuration, the process of controlling the lights, the setup of the Flask web server, the design of the user interface, the implementation of scheduling, and the use of multithreading for parallel light control. Each sketch focuses on a key aspect of the project, providing a clear visual representation of the main components and their interactions, making the project’s workings easier to understand.',
     methodImage: '/img/raspPi.png',
     method: 'In this project, we started with a high-level system design that included the Raspberry Pi, the lights, and the user interface. We set up the Raspberry Pi with the necessary software and used its GPIO pins to control the lights. The lights were controlled using signals from the Raspberry Pi. We then set up a Flask web server to handle requests and control the lights. The user interface was designed with main screens for light control and scheduling. Scheduling was implemented to allow users to set schedules for controlling the lights. We used multithreading to enable parallel control of lights, with each thread controlling a different light. Throughout the project, we used Python, Flask, and the Raspberry Pi’s GPIO pins. We also faced and overcame various challenges, demonstrating our problem-solving skills and technical expertise.',
-    resultsImage1: '/img/resultLight.png',
-    resultsImage2: '',
+    resultsImage1: '/img/lightResult2.png',
+    resultsImage2: '/img/lightResult.png',
     resultsImage3: '',
     results: 'The Smart Lighting Control System project yielded impressive results. The system successfully enabled precise control of up to 50 lights across 10 rooms, with customizable schedules for each light. The use of Python, Flask, and Raspberry Pi’s GPIO pins allowed for efficient and effective control of the lighting system. The implementation of multithreading ensured parallel control of lights, enhancing the system’s performance. The user-friendly interface facilitated easy management and scheduling of lights. Overall, the project demonstrated the potential of IoT in improving home automation and energy efficiency.',
     finalThoughts: "This project was a fascinating journey into the world of IoT and automation. It underscored the transformative potential of technology in everyday life. The ability to control lighting across multiple rooms with customizable schedules not only enhanced convenience but also promoted energy efficiency. The project was a testament to the power of Python and Flask in creating robust and scalable solutions. It was a rewarding experience that highlighted the synergy between software and hardware in creating impactful solutions. I look forward to leveraging these insights in future IoT projects.",
@@ -127,20 +127,19 @@ export const projects = [
     description: 'This game is a twist on Flappy Bird, where players guide Jerry to rescue his lost pumpkin by skillfully dodging obstacles. It is a nostalgic journey with a meaningful objective, born from a love for classic games. Currently playable on Windows.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
     image: '/img/pumpkin.png',
-    contribution: 'Designed game elements from scratch \n Built the game using HTML, CSS, and JavaScript \n Handled deployment through Firebase',
+    contribution: 'Designed captivating game elements from scratch, ensuring a visually appealing and engaging user experience \n Developed the game using a combination of HTML, CSS, and JavaScript, implementing intricate game mechanics and interactions \n Managed the deployment process through Firebase, ensuring seamless integration and optimal performance across platforms',
     team: '',
     duration: 'Oct 2022 - Feb 2023',
     outcome: 'I developed ‘Pumpkin Lostte’, where players navigate through barriers to rescue a lost pumpkin, adding an actual destination to reach, unlike the endless gameplay of ‘Flappy Bird’.',
     prob: '',
     sol: '',
     sketchImage1: '/img/pumpkinSketch.png',
-    sketchImage2: '',
+    sketchImage2: '/img/pumpkinSketch2.png',
     sketchImage3: '',
     sketch: 'The game design process was centered around crafting an immersive gameplay experience. The focus was on the game mechanics, where the player would have to navigate through a series of hurdles. The player character was constantly pursued, adding a layer of thrill and urgency to the game. This chase element was integral to the gameplay, challenging the player’s skills and decision-making in real-time. The design sketches reflected these mechanics, illustrating the dynamic and interactive nature of the game.',
-    methodImage: '/img/pumpkinMethod.png',
     method: 'The development process was iterative, beginning with a basic game loop and progressively incorporating features such as barrier navigation and game over conditions. A significant focus was placed on the individual designs of the game elements. The character “Jerry”, the “Pumpkin”, the “Chaser”, and the “Black Barriers” were all meticulously designed to enhance the gameplay experience. The designs for the “Chaser” and “Black Barriers” were particularly detailed, crafted carefully on my notes app. User feedback was integrated at each stage, further refining the game and enriching the player’s experience.',
     resultsImage1: '/img/pumpkinResult.png',
-    resultsImage2: '',
+    resultsImage2: '/img/pumpkinResult2.png',
     resultsImage3: '',
     results: 'The final game provides a challenging yet enjoyable gaming experience. The unique twist of having an actual destination adds a new dimension to the gameplay, making it stand out from similar games. The Halloween-themed design was well-received by players, adding to the game’s appeal.',
     finalThoughts: 'This project is my first milestone project from my bootcamp program, and I am proud of what I have accomplished so far. This is a JavaScript browser game built with HTML and CSS. I created this project around Halloween, so I decided to make it Halloween-themed. I designed some elements of the game from scratch, like the black barriers that players should avoid touching, or they lose. The game has room for improvement, but considering my knowledge at the time, I think it is awesome. Please feel free to try it out if you dare. It is a challenging game, so do not hesitate to give it multiple attempts.',
@@ -168,12 +167,16 @@ function ProjPage() {
                 <div className="description">
                 <h4 className="small-paragraph">{project.app}</h4>
                   <h1>{project.title}</h1>
-                  <h4 className="small-paragraph"><span className='highlight'>{project.role}</span></h4>
                   <div className="description descr-contain">
                     <div className="text-contain">
                       <p>{project.description}</p>
+                      <h4 className="small-paragraph"><span className='highlight'>{project.role}</span></h4>
+                      <p><span className='green'>Duration</span>: {project.duration}</p>
+                      {project.team && (
+                        <p><span className='green'>Team</span>: {project.team}</p>
+                      )}
                       {project.technologies.filter(Boolean).length > 0 && (
-                        <p>Tools: <span className='highlight2'>{project.technologies.join(', ')}</span></p>
+                        <p><span className='green'>Tools</span>: {project.technologies.join(', ')}</p>
                       )}
                       {project.codeLink && 
                       <div className="link-container">
@@ -198,42 +201,34 @@ function ProjPage() {
               </div>
             </div>
         </div>
-        <div className="divider"></div>
+        {/* <div className="divider"></div> */}
         {/* MIDDLE PORTION */}
-        <div className="overview">
-  <div className="overview-container">
-    <div className="overview-left">
-      <div className="overview-heading">
-        <h2>Duration</h2>
-      </div>
-      {project.team && (
-        <div className="overview-heading">
-          <h2>Team</h2>
-        </div>
-      )}
-      <div className="overview-heading">
-        <h2>Contribution</h2>
-      </div>
-    </div>
-    <div className="overview-right">
-      <div className="overview-content">
-        <p>{project.duration}</p>
-      </div>
-      {project.team && (
-        <div className="overview-content">
-          <p>{project.team}</p>
-        </div>
-      )}
-      <div className="overview-content contribution">
-        <div className="op-margin">
-          {project.contribution.split('\n').map((line, index) => (
-            <li key={index}>{line.trim()}</li>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        {/* <div className="overview">
+          <div className="flex2">
+            <div className="overview-parts">
+              <h2>Duration</h2>
+              <p>{project.duration}</p>
+            </div>
+            {project.team && (
+              <div className="overview-parts">
+                <h2>Team</h2>
+                <div className='op-margin'>
+                  {project.team.split('\n').map((line, index) => (
+                  <li key={index}>{line.trim()}</li>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="overview-parts contribution">
+            <h2>Contribution</h2>
+            <div className="op-margin">
+              {project.contribution.split('\n').map((line, index) => (
+                <li key={index}>{line.trim()}</li>
+              ))}
+            </div>
+          </div>
+        </div> */}
         <div className="divider"></div>
         {/* BOTTOM PORTION */}
         <div className="proj-content-container">
@@ -254,6 +249,14 @@ function ProjPage() {
             </>
           )}
           {/* <div className="divider"></div> */}
+          <div className="projPics-container">
+              <h2>Contribution</h2>
+              <div className="op-margin">
+                {project.contribution.split('\n').map((line, index) => (
+                  <li key={index}>{line.trim()}</li>
+                ))}
+              </div>
+            </div>
           {project.sketch && (
             <div className="projPics-container">
               <h2>Sketches</h2>
