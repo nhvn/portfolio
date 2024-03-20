@@ -151,7 +151,6 @@ section {
 /* FOOTER */
 footer {
   display: flex;
-  justify-content: space-between;
   /* padding-bottom: 1em; */
   width: 80%;
   margin: 0 auto;
@@ -163,15 +162,17 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* justify-content: space-between; */
 }
 .yoursTruly {
-  width: 70%;
+  width: 80%;
 }
 .footer-section-2 h3, .footer-section-3 h3 {
   color: #6a9b8f;
 }
 .footer-section-1 {
-  flex: 6;
+  flex: 5;
+  align-items: baseline;
 }
 .footer-section-2 {
   flex: 2;
