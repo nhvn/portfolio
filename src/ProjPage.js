@@ -11,7 +11,7 @@ export const projects = [
     description: "BeFit v2 is your ultimate fitness companion, offering a seamless way to monitor your gym progress, diet, and workouts. Whether you're new to fitness or a seasoned enthusiast, BeFit v2 empowers you to achieve your wellness goals with ease and precision.",
     technologies: ['Next.js', 'Shadcn UI', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Stripe'],
     image: '/img/beFit.png',
-    contribution: 'Implemented a feature that allows users to input dates alongside corresponding weight measurements, providing flexibility to track weight changes on different days \n Fixed various bugs including the inability to delete weights \n Currently, transforming this into a mobile application',
+    contribution: 'Enabled users to input dates for varied weight measurements, enhancing tracking versatility \n Fixed various bugs including the inability to delete weights \n Currently, transforming this into a mobile application',
     team: 'Two other software engineers',
     duration: 'Feb 2024 - Present',
     outcome: '',
