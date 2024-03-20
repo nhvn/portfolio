@@ -5,6 +5,7 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 export const theme = {
   light: {
     background: '#f0f0f0',
+    background2: 'rgba(233, 233, 233)',
     color: 'rgba(51,51,51,.8)',
     linkColor: '#333',
     icon: <FiSun/>,
@@ -12,6 +13,7 @@ export const theme = {
   },
   dark: {
     background: '#333',
+    background2: 'rgb(59, 59, 59)',
     color: '#f0f0f0',
     linkColor: '#f0f0f0',
     icon: <FiMoon/>,
@@ -37,6 +39,10 @@ export const GlobalStyle = createGlobalStyle`
 
   .intro-text h1 {
     text-shadow: ${(props) => props.theme.shadow}
+  }
+
+  .contri {
+    background-color: ${(props) => props.theme.background2}
   }
 
 `;

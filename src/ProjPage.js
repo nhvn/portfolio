@@ -7,7 +7,7 @@ export const projects = [
     title: 'BeFit v2',
     ongoing: true,
     app: 'Mobile & Web Application',  
-    role: 'APP DEVELOPER',
+    role: 'APP & WEB DEVELOPER',
     description: "BeFit v2 is your ultimate fitness companion, offering a seamless way to monitor your gym progress, diet, and workouts. Whether you're new to fitness or a seasoned enthusiast, BeFit v2 empowers you to achieve your wellness goals with ease and precision.",
     technologies: ['Next.js', 'Shadcn UI', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Stripe'],
     image: '/img/beFit.png',
@@ -201,34 +201,6 @@ function ProjPage() {
               </div>
             </div>
         </div>
-        {/* <div className="divider"></div> */}
-        {/* MIDDLE PORTION */}
-        {/* <div className="overview">
-          <div className="flex2">
-            <div className="overview-parts">
-              <h2>Duration</h2>
-              <p>{project.duration}</p>
-            </div>
-            {project.team && (
-              <div className="overview-parts">
-                <h2>Team</h2>
-                <div className='op-margin'>
-                  {project.team.split('\n').map((line, index) => (
-                  <li key={index}>{line.trim()}</li>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-          <div className="overview-parts contribution">
-            <h2>Contribution</h2>
-            <div className="op-margin">
-              {project.contribution.split('\n').map((line, index) => (
-                <li key={index}>{line.trim()}</li>
-              ))}
-            </div>
-          </div>
-        </div> */}
         <div className="divider"></div>
         {/* BOTTOM PORTION */}
         <div className="proj-content-container">
@@ -249,7 +221,7 @@ function ProjPage() {
             </>
           )}
           {/* <div className="divider"></div> */}
-          <div className="projPics-container">
+          <div className="projPics-container contri">
               <h2>Contribution</h2>
               <div className="op-margin">
                 {project.contribution.split('\n').map((line, index) => (
