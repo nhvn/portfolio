@@ -580,6 +580,7 @@ footer {
 @media screen and (max-width: 480px) {
   .divider {
       padding-top: 2em;
+      padding-bottom: 1rem;
   }
   .flex {
       display: block;
@@ -643,6 +644,7 @@ footer {
   }
   .proj-content-container .projPics {
     flex-direction: column;
+    margin-bottom: 1rem;
   }
   .projects-box .proj-pic img {
     max-height: 20em;
