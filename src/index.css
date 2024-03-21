@@ -250,7 +250,7 @@ footer {
   object-fit: cover;
   transition: all .3s ease-in-out;
 }
-.proj:hover img, .proj-contain:hover img, .projects-box .proj-pic:hover img, .botImg:hover {
+.proj:hover img, .proj-contain:hover img, .project-contain:hover, .projects-box .proj-pic:hover img, .botImg:hover {
   transform: scale(1.03);
 }
 .proj:hover .card-overlay {
