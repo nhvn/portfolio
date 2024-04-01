@@ -4,7 +4,7 @@ import Navbar from './Navbar.js';
 import Home from './HomePage.js'; 
 import About from './AboutPage.js'; 
 import Projects from './ProjectsPage.js';
-import { projects } from './ProjPage';
+import { projects } from './project';
 import ProjPage from './ProjPage';
 import Footer from './Footer.js'; 
 import { ThemeProvider, theme, GlobalStyle } from './ThemeProvider';
