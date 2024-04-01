@@ -153,7 +153,7 @@ footer {
   /* padding-bottom: 1em; */
   width: 80%;
   margin: 0 auto;
-  padding: 5em 0 1em 0;
+  padding: 3em 0 1em 0;
 }
 .footer-section {
   width: 30%;
@@ -520,6 +520,7 @@ footer {
   display: flex;
   justify-content: center; 
   gap: 10px; 
+  margin-bottom: 1em;
   /* overflow-x: auto; */
 }
 .proj-content-container .projPics img {
