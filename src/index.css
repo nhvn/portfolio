@@ -374,7 +374,7 @@ footer {
   justify-content: flex-end;
 }
 .projects-box .flex {
-  gap: 1rem;
+  gap: 4rem;
 }
 .projects-box .proj-pic img {
   max-height: 23em;
