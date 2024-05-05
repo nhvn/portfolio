@@ -19,7 +19,7 @@ export const projects = [
       sketchImage3: '',
       sketch: 'For the website, I meticulously examined the layout and envisioned its adaptation for a seamless mobile app experience, basing my insights on the sketches I developed. My goal is to ensure consistency between the web and mobile platforms, making navigation effortless and ensuring all features are readily accessible. This approach is particularly crucial for our fitness application, where user engagement and accessibility are paramount.',
       methodImage: '/img/fitMockup.png',
-      method: 'This represents the envisioned design direction for my app. Currently, I am actively developing it using Swift and Xcode to ensure an exceptional user experience. While these designs may evolve, they serve as the foundation for further prototyping. Additionally, we are exploring the integration of these designs with the Apple Watch to expand accessibility and functionality.',
+      method: 'This represents the envisioned design direction for my app. Currently, I am actively developing it using Swift and Xcode to ensure an exceptional user experience. While these designs may evolve, they serve as the foundation for further prototyping.',
       resultsImage1: '',
       resultsImage2: '',
       resultsImage3: '',
