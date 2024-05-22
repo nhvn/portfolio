@@ -36,6 +36,10 @@ export const GlobalStyle = createGlobalStyle`
   img {
     filter: ${(props) => props.theme.imageFilter};
   }
+  
+  img.no-filter {
+    filter: none !important;
+  }
 
   .intro-text h1 {
     text-shadow: ${(props) => props.theme.shadow}

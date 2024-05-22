@@ -59,7 +59,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
       <div className='nav-container'>
         <a className='logo-left' href="/">
           <div>
-            <img src="/img/logo.png" alt="Custom logo" className="custom-logo" />
+            <img src="/img/logo.png" alt="Custom logo" className="custom-logo no-filter" />
           </div>
         </a>
         <div>
