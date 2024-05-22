@@ -31,22 +31,24 @@ function App() {
     <ThemeProvider theme={isDarkMode ? theme.dark : theme.light}>
       <GlobalStyle />
       <Router>
-        <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        {/* <p className="construction">Note: Currently under construction 🚧</p> */}
-        <ProjectsContext.Provider value={projects}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<ProjectsWrapper />} />
-            <Route path="/projects/:projectId" element={<ProjPage />} />
-          </Routes>
-        </ProjectsContext.Provider>
-        {/* <div className="footer-divider"></div> */}
-        <Footer />
+        {/* Main content */}
+        <div className="main-content">
+          <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+          {/* <p className="construction">Note: Currently under construction 🚧</p> */}
+          <ProjectsContext.Provider value={projects}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<ProjectsWrapper />} />
+              <Route path="/projects/:projectId" element={<ProjPage />} />
+            </Routes>
+          </ProjectsContext.Provider>
+          {/* <div className="footer-divider"></div> */}
+          <Footer />
+        </div>
       </Router>
     </ThemeProvider>
   );
 }
 
 export default App;
-

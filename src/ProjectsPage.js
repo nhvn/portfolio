@@ -1,9 +1,11 @@
 import React from 'react';
 import Projects from './Projects';
+import Sidebar from './Sidebar';
 
 const ProjectsPage = () => {
     return (
       <div className="projects-box fade">
+        <Sidebar />
           <div className="flex">
             <div className="left">
               <section className="title">

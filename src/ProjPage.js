@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {projects} from './project';
+import Sidebar from './Sidebar';
+
 
 function ProjPage() {
   const { projectId } = useParams();
@@ -12,6 +14,7 @@ function ProjPage() {
 
     return (
       <div>
+        <Sidebar />
         <div className="projects-box fade">
         <Link to="/projects" className="back-button">←</Link>
           <div className="flex">

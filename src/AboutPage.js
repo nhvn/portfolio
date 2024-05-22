@@ -1,4 +1,5 @@
 import React from 'react';
+import Sidebar from './Sidebar';
 
 class AboutPage extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class AboutPage extends React.Component {
 
     return (
       <div>
+        <Sidebar />
         <div className="about fade">
           <div className="flex">
             <div className="top">
@@ -39,6 +41,7 @@ class AboutPage extends React.Component {
                         <p>
                           Currently expanding my knowledge in the fields of Machine Learning and Artificial Intelligence, while
                           seeking new opportunities to apply and grow my skillset.
+                          Additionally, I'm creating TikTok tutorials for LeetCode problems, aiming to share my problem-solving approaches and coding techniques with a wider audience.
                         </p>
                       </div>
                     </div>

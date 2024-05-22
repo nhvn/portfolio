@@ -146,6 +146,28 @@ section {
   margin-left: 2em;
 }
 
+/* SIDE BAR */
+.sidebar {
+  position: fixed;
+  top: 14%;
+  left: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; 
+  padding: 15px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 10px 0;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 30px;
+}
 
 /* FOOTER */
 footer {
@@ -591,6 +613,12 @@ footer {
   .top {
       display: block;
   }
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  .sidebar ul li a {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -610,6 +638,9 @@ footer {
   .custom-logo {
       width: 30px;
       height: auto;
+  }
+  .sidebar {
+    display: none;
   }
   .navbar .nav-container ul {
       font-size: 13px;
