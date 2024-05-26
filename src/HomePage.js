@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className="home fade">
       <div className='introCover'>
-        <object type="image/svg+xml" data="img/IntroOld4.svg">Your browser does not support SVG</object>
+        <object type="image/svg+xml" data="img/IntroNOW.svg">Your browser does not support SVG</object>
         <div className='intro-text'>
           <h1><span className='highlightIntro'>Hey there!</span> <span className='highlight1-2'>I'm Alan</span></h1>
           <h1><span className='highlightIntro2'>Software Engineer</span></h1>
