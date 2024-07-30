@@ -26,7 +26,7 @@ export const projects = [
       results: '',
       finalThoughts: "",
       codeLink: 'https://github.com/nhvn/BeFit-v2',
-      liveLink: ''
+      liveLink: 'https://befit-v2.zachuri.com/login'
     },
     { 
       id: 'taskmaster', 
