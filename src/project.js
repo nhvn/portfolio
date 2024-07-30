@@ -17,7 +17,7 @@ export const projects = [
       sketchImage1: '/img/fitSketch.png',
       sketchImage2: '/img/beFitArch.png',
       sketchImage3: '',
-      sketch: 'For the website, I meticulously examined the layout and envisioned its adaptation for a seamless mobile app experience, basing my insights on the sketches I developed. My goal is to ensure consistency between the web and mobile platforms, making navigation effortless and ensuring all features are readily accessible. This approach is particularly crucial for our fitness application, where user engagement and accessibility are paramount.',
+      sketch: 'For the website, I analyzed the layout and adapted it for a seamless mobile experience, focusing on consistency and ease of navigation across platforms. This is crucial for our fitness app, where user engagement and accessibility are key. I created a detailed architecture diagram to illustrate the interactions between UI, ViewModels, Data Management, and Networking. This diagram highlights key interactions, ensuring a cohesive and efficient user experience on both web and mobile.',
       methodImage: '',
       method: 'This represents the envisioned design direction for my app. Currently, I am actively developing it using Swift and Xcode to ensure an exceptional user experience. While these designs may evolve, they serve as the foundation for further prototyping.',
       resultsImage1: '',
