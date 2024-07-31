@@ -104,6 +104,12 @@ function ProjPage() {
               <div className="projPics-container box-hover">
                 <h2>Methodology</h2>
                 <p>{project.method}</p>
+                <div className="projPics">
+                {/* temporarily not using alt='' */}
+                <img className="botImg" src={project.methodImage} alt=''/>
+                <img className="botImg" src={project.methodImage2} alt=''/>
+                {/* <img className="botImg" src={project.sketchImage3} alt=''/> */}
+              </div>
               </div>
             </>
           )}
