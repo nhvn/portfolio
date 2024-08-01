@@ -108,7 +108,7 @@ function ProjPage() {
                 {/* temporarily not using alt='' */}
                 <img className="botImg" src={project.methodImage} alt=''/>
                 <img className="botImg" src={project.methodImage2} alt=''/>
-                {/* <img className="botImg" src={project.sketchImage3} alt=''/> */}
+                <img className="botImg" src={project.methodImage3} alt=''/>
               </div>
               </div>
             </>
