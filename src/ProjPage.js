@@ -24,8 +24,11 @@ function ProjPage() {
     if (!sectionTitle || !sectionContent) return null;
 
     return (
-      <div className="projPics-container box-hover">
+      <div className="section-wrapper">
+      <div className="section-heading">
         <h2>{sectionTitle}</h2>
+      </div>
+      <div className="section-content">
         <p>{sectionContent}</p>
         {sectionImages.length > 0 && (
           <div className="projPics">
@@ -35,12 +38,14 @@ function ProjPage() {
           </div>
         )}
       </div>
+    </div>
     );
   };
 
   return (
     <div>
       <Sidebar />
+      {/* TOP SECTION */}
       <div className="projects-box fade">
         <Link to="/projects" className="back-button">←</Link>
         <div className="flex">
@@ -87,31 +92,36 @@ function ProjPage() {
         <div className="divider"></div>
         
         <div className="proj-content-container">
+          <div className="projPics-container contri">
+              <h2>Contributions</h2>
+              <div className="op-margin">
+                {project.contribution.split('\n').map((line, index) => (
+                  <li key={index}>{line.trim()}</li>
+                ))}
+              </div>
+            </div>
+
+          {/* MIDDLE SECTION */}
           {(project.prob || project.sol) && (
             <>
-              <div className='prob'>
-                <h2>Problem</h2>
-                <div className='descr'>
+              <div className='section-wrapper'>
+                <div className='section-heading'>
+                  <h2>Problem</h2>
+                </div>
+                <div className='section-content'>
                   <p>{project.prob}</p>
                 </div>
               </div>
-              <div className='prob'>
-                <h2>Solution</h2>
-                <div className='descr'>
+              <div className='section-wrapper'>
+                <div className='section-heading'>
+                  <h2>Solution</h2>
+                </div>
+                <div className='section-content'>
                   <p>{project.sol}</p>
                 </div>
               </div>
             </>
           )}
-          
-          <div className="projPics-container contri">
-            <h2>Contribution</h2>
-            <div className="op-margin">
-              {project.contribution.split('\n').map((line, index) => (
-                <li key={index}>{line.trim()}</li>
-              ))}
-            </div>
-          </div>
 
           {/* Render customizable sections */}
           {renderSection(1)}
@@ -121,14 +131,16 @@ function ProjPage() {
           {project.sect1 && project.sect2 && project.sect3 && project.sect4 && renderSection(5)}
           {project.sect1 && project.sect2 && project.sect3 && project.sect4 && project.sect5 && renderSection(6)}
 
-          {project.finalThoughts && (
-            <div className='final box-hover'>
-              <h2>Final Thoughts</h2>
-              <p>{project.finalThoughts}</p>
+          {project.finalThoughts ? (
+            <div className="section-wrapper">
+              <div className="section-heading">
+                <h2>Final Thoughts</h2>
+              </div>
+              <div className="section-content">
+                <p>{project.finalThoughts}</p>
+              </div>
             </div>
-          )}
-
-          {!project.sect1 && (
+          ) : (
             <div className="flex">
               <div className='tuned'>
                 <p id='stay-tuned'>More exciting details are on the way. Stay tuned!</p>
