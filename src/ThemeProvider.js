@@ -10,6 +10,7 @@ export const theme = {
     linkColor: '#333',
     icon: <FiSun/>,
     imageFilter: 'none', 
+    hoverColor: 'rgba(0, 0, 0, 0.9)', // Darker color for hover in light mode
   },
   dark: {
     background: '#333',
@@ -19,6 +20,7 @@ export const theme = {
     icon: <FiMoon/>,
     imageFilter: 'brightness(0.8)',
     shadow: '0 0 10px rgba(0, 0, 0, 1);',
+    hoverColor: 'rgba(255, 255, 255, 1)', // Lighter color for hover in dark mode
   },
 };
 
@@ -47,6 +49,15 @@ export const GlobalStyle = createGlobalStyle`
 
   .contri {
     background-color: ${(props) => props.theme.background2}
+  }
+    
+  p:not(.card-overlay p) {
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  p:not(.card-overlay p):hover {
+    transform: scale(1.03);
+    color: ${(props) => props.theme.hoverColor};
   }
 
 `;
