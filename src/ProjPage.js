@@ -19,6 +19,9 @@ function ProjPage() {
       project[`sect${sectionNumber}img1`],
       project[`sect${sectionNumber}img2`],
       project[`sect${sectionNumber}img3`],
+      project[`sect${sectionNumber}img4`],
+      project[`sect${sectionNumber}img5`],
+      project[`sect${sectionNumber}img6`],
     ].filter(Boolean);
 
     if (!sectionTitle || !sectionContent) return null;
