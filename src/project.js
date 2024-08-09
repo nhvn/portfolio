@@ -175,6 +175,6 @@ export const projects = [
   //   sect3img1: '',
   //   sect3img2: '',
   //   sect3img3: '', (... currently goes up to 6 sections)
-  // sect4: 'Final Thoughts',
-  // sect4content: "",
+  //   sect4: 'Final Thoughts',
+  //   sect4content: "",
   // },
