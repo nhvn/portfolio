@@ -10,8 +10,6 @@ function ProjPage() {
   if (!project) {
     return <div id='noProj'>404 Error - Project Not Found</div>;
   }
-
-  // Helper function to render a section
   const renderSection = (sectionNumber) => {
     const sectionTitle = project[`sect${sectionNumber}`];
     const sectionContent = project[`sect${sectionNumber}content`];
@@ -23,25 +21,46 @@ function ProjPage() {
       project[`sect${sectionNumber}img5`],
       project[`sect${sectionNumber}img6`],
     ].filter(Boolean);
-
-    if (!sectionTitle || !sectionContent) return null;
-
+  
+    // Updated: Add subsections with images
+    const subsections = [1, 2, 3].map(subNumber => {
+      const title = project[`sect${sectionNumber}sub${subNumber}`];
+      const content = project[`sect${sectionNumber}sub${subNumber}content`];
+      const image = project[`sect${sectionNumber}sub${subNumber}img1`];
+      
+      // Only return the subsection if it has a title and either content or an image
+      return (title && (content || image)) ? { title, content, image } : null;
+    }).filter(Boolean);
+  
+    if (!sectionTitle || (!sectionContent && subsections.length === 0)) return null;
+  
     return (
       <div className="section-wrapper">
-      <div className="section-heading">
-        <h2>{sectionTitle}</h2>
+        <div className="section-heading">
+          <h2>{sectionTitle}</h2>
+        </div>
+        <div className="section-content">
+          {sectionContent && <p>{sectionContent}</p>}
+          {subsections.map((subsection, index) => (
+            <div key={index} className="subsection">
+              <h3>{subsection.title}</h3>
+              {subsection.content && <p>{subsection.content}</p>}
+              {subsection.image && (
+                <div className="subsection-image">
+                  <img src={subsection.image}className="botImg" alt={subsection.title} />
+                </div>
+              )}
+            </div>
+          ))}
+          {sectionImages.length > 0 && (
+            <div className="projPics">
+              {sectionImages.map((img, index) => (
+                <img key={index} className="botImg" src={img} alt="" />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-      <div className="section-content">
-        <p>{sectionContent}</p>
-        {sectionImages.length > 0 && (
-          <div className="projPics">
-            {sectionImages.map((img, index) => (
-              <img key={index} className="botImg" src={img} alt="" />
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
     );
   };
 
@@ -134,22 +153,14 @@ function ProjPage() {
           {project.sect1 && project.sect2 && project.sect3 && project.sect4 && renderSection(5)}
           {project.sect1 && project.sect2 && project.sect3 && project.sect4 && project.sect5 && renderSection(6)}
 
-          {project.finalThoughts ? (
-            <div className="section-wrapper">
-              <div className="section-heading">
-                <h2>Final Thoughts</h2>
-              </div>
-              <div className="section-content">
-                <p>{project.finalThoughts}</p>
-              </div>
-            </div>
-          ) : (
+          {!project.sect1 && (
             <div className="flex">
               <div className='tuned'>
                 <p id='stay-tuned'>More exciting details are on the way. Stay tuned!</p>
               </div>
             </div>
           )}
+          
         </div>
       </div>
     </div>

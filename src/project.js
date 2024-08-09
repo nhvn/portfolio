@@ -17,6 +17,9 @@ export const projects = [
     image: '/img/beFit.png',
     sect1: 'Sketches',
     sect1content: 'For the website, I analyzed the layout and adapted it for a seamless mobile experience, focusing on consistency and ease of navigation across platforms. This is crucial for our fitness app, where user engagement and accessibility are key.',
+    // sect1sub1: 'Drawings',
+    // sect1sub1content: 'Subsection 1 content',
+    // sect1sub1img1: '/img/beFit-Sketch.png',
     sect1img1: '/img/beFit-Sketch.png',
     sect2: 'Methodology',
     sect2content: 'I created a detailed architecture diagram to illustrate the interactions between UI, ViewModels, Data Management, and Networking. This diagram highlights key interactions, ensuring a cohesive and efficient user experience on both web and mobile.',
@@ -27,7 +30,8 @@ export const projects = [
     sect3img2: '/img/beFit-dashboard.png',
     sect3img3: '/img/beFit-workouts.png',
     sect3img4: '/img/beFit-dietweight.png',
-    finalThoughts: "Working on the BeFit v2 project was an enriching experience that allowed me to leverage my skills in mobile and web application development to create a comprehensive fitness companion app. Through a user-centric design approach, I focused on developing an intuitive and cohesive interface that seamlessly integrates essential features such as workout logging, dietary tracking, weight monitoring, and social interaction.\n\nThe iterative design process was crucial in ensuring the app met the real needs of fitness enthusiasts, providing them with a reliable tool to track their progress and stay motivated. Collaboration with my team members was invaluable, as we combined our expertise to tackle challenges and enhance the app's functionality and user experience.\n\nThis project reinforced the importance of meticulous attention to detail, agile development methodologies, and continuous user feedback in creating software solutions that are both practical and engaging. Overall, BeFit v2 aims to empower users on their fitness journeys, making it easier and more enjoyable to achieve their wellness goals.",
+    sect4: 'Final Thoughts',
+    sect4content: "Working on the BeFit v2 project was an enriching experience that allowed me to leverage my skills in mobile and web application development to create a comprehensive fitness companion app. Through a user-centric design approach, I focused on developing an intuitive and cohesive interface that seamlessly integrates essential features such as workout logging, dietary tracking, weight monitoring, and social interaction.\n\nThe iterative design process was crucial in ensuring the app met the real needs of fitness enthusiasts, providing them with a reliable tool to track their progress and stay motivated. Collaboration with my team members was invaluable, as we combined our expertise to tackle challenges and enhance the app's functionality and user experience.\n\nThis project reinforced the importance of meticulous attention to detail, agile development methodologies, and continuous user feedback in creating software solutions that are both practical and engaging. Overall, BeFit v2 aims to empower users on their fitness journeys, making it easier and more enjoyable to achieve their wellness goals.",
   },
   {
     id: 'taskmaster',
@@ -53,7 +57,8 @@ export const projects = [
     sect3content: 'The final design effectively balanced functionality and aesthetics. It provided users with a clear and easy-to-navigate interface, improving task management efficiency. The design was well-received by users, demonstrating the effectiveness of the user-centric design approach.',
     sect3img1: '/img/todoResult.png',
     sect3img2: '/img/todoResult2.png',
-    finalThoughts: "Working on the Task Master project was a rewarding experience that allowed me to apply my full-stack development skills to create a practical and user-friendly application. Through an iterative and user-centric design process, I was able to develop an intuitive interface that seamlessly combines essential features like to-do lists, agendas, objectives, and a versatile bulletin board. The integration of these functionalities aimed to provide users with a comprehensive workspace that fosters productivity, organization, and customization. Throughout the project, I valued collaboration with my team members, leveraging our collective expertise to overcome challenges and deliver a polished final product. Overall, this project reinforced the importance of user-centered design, agile development methodologies, and attention to detail in creating effective software solutions that meet real-world needs.",
+    sect4: 'Final Thoughts',
+    sect4content: "Working on the Task Master project was a rewarding experience that allowed me to apply my full-stack development skills to create a practical and user-friendly application. Through an iterative and user-centric design process, I was able to develop an intuitive interface that seamlessly combines essential features like to-do lists, agendas, objectives, and a versatile bulletin board. The integration of these functionalities aimed to provide users with a comprehensive workspace that fosters productivity, organization, and customization. Throughout the project, I valued collaboration with my team members, leveraging our collective expertise to overcome challenges and deliver a polished final product. Overall, this project reinforced the importance of user-centered design, agile development methodologies, and attention to detail in creating effective software solutions that meet real-world needs.",
   },
   {
     id: 'oldPortfolio',
@@ -77,7 +82,8 @@ export const projects = [
     sect3content: 'The portfolio website project yielded positive results. The website effectively showcases my skills, experiences, and projects, providing visitors with a comprehensive view of my capabilities. The responsive design ensures a seamless experience across different devices.',
     sect3img1: '/img/portfolioResult.png',
     sect3img2: '/img/portfolioResult2.png',
-    finalThoughts: 'This is my first personal portfolio that I have ever made, after completing my program. It not only allowed me to showcase my skills and experiences but also gave me a platform to share my work with others. The project was a great opportunity to apply my full stack development skills in a real-world scenario.',
+    sect4: 'Final Thoughts',
+    sect4content: 'This is my first personal portfolio that I have ever made, after completing my program. It not only allowed me to showcase my skills and experiences but also gave me a platform to share my work with others. The project was a great opportunity to apply my full stack development skills in a real-world scenario.',
   },
   {
     id: 'smartLights',
@@ -102,7 +108,8 @@ export const projects = [
     sect3content: 'The Smart Lighting Control System was successfully developed and implemented. It provided precise control of lights, allowing users to customize schedules and manage up to 50 lights across 10 rooms. The system was reliable and user-friendly, meeting the project’s goals.',
     sect3img1: '/img/lightResult.png',
     sect3img2: '/img/lightResult2.png',
-    finalThoughts: "Working on the Smart Lighting Control System project was a valuable experience that allowed me to apply my IoT development skills in a practical context. I learned a lot about integrating hardware and software to create a seamless and efficient solution. The project's success demonstrated the importance of iterative prototyping, thorough testing, and user-centric design.",
+    sect4: 'Final Thoughts',
+    sect4content: "Working on the Smart Lighting Control System project was a valuable experience that allowed me to apply my IoT development skills in a practical context. I learned a lot about integrating hardware and software to create a seamless and efficient solution. The project's success demonstrated the importance of iterative prototyping, thorough testing, and user-centric design.",
   },
   {
     id: 'pumpkin',
@@ -112,6 +119,8 @@ export const projects = [
     role: 'GAME DEVELOPER',
     description: 'This game is a twist on Flappy Bird, where players guide Jerry to rescue his lost pumpkin by skillfully dodging obstacles. It is a nostalgic journey with a meaningful objective, born from a love for classic games. Currently playable on Windows.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
+    codeLink: 'https://github.com/nhvn/first-browser-game',
+    liveLink: 'https://pumpkin-lost-te.web.app/',
     image: '/img/pumpkin.png',
     contribution: 'Designed captivating game elements from scratch, ensuring a visually appealing and engaging user experience \n Developed the game using a combination of HTML, CSS, and JavaScript, implementing intricate game mechanics and interactions \n Managed the deployment process through Firebase, ensuring seamless integration and optimal performance across platforms',
     duration: 'Oct 2022 - Feb 2023',
@@ -126,9 +135,8 @@ export const projects = [
     sect3content: 'The final game provides a challenging yet enjoyable gaming experience. The unique twist of having an actual destination adds a new dimension to the gameplay, making it stand out from similar games. The Halloween-themed design was well-received by players, adding to the game’s appeal.',
     sect3img1: '/img/pumpkinResult.png',
     sect3img2: '/img/pumpkinResult2.png',
-    finalThoughts: 'This project is my first milestone project from my bootcamp program, and I am proud of what I have accomplished so far. This is a JavaScript browser game built with HTML and CSS. I created this project around Halloween, so I decided to make it Halloween-themed. I designed some elements of the game from scratch, like the black barriers that players should avoid touching, or they lose. The game has room for improvement, but considering my knowledge at the time, I think it is awesome. Please feel free to try it out if you dare. It is a challenging game, so do not hesitate to give it multiple attempts.',
-    codeLink: 'https://github.com/nhvn/first-browser-game',
-    liveLink: 'https://pumpkin-lost-te.web.app/'
+    sect4: 'Final Thoughts',
+    sect4content: 'This project is my first milestone project from my bootcamp program, and I am proud of what I have accomplished so far. This is a JavaScript browser game built with HTML and CSS. I created this project around Halloween, so I decided to make it Halloween-themed. I designed some elements of the game from scratch, like the black barriers that players should avoid touching, or they lose. The game has room for improvement, but considering my knowledge at the time, I think it is awesome. Please feel free to try it out if you dare. It is a challenging game, so do not hesitate to give it multiple attempts.',
   },
   ];
 
@@ -149,11 +157,14 @@ export const projects = [
   //   contribution: '',
   //   team: '',
   //   image: '',
-  //   sect1: '',
+  //   sect1: '', SECTIONS
   //   sect1content: '',
   //   sect1img1: '',
   //   sect1img2: '',
   //   sect1img3: '',
+  //   sect1sub1: '', SUBSECTIONS
+  //   sect1sub1content: '',
+  //   sect1sub1img1: '',
   //   sect2: '',
   //   sect2content: '',
   //   sect2img1: '',
@@ -163,7 +174,7 @@ export const projects = [
   //   sect3content: '',
   //   sect3img1: '',
   //   sect3img2: '',
-  //   sect3img3: '',
-  //   (... currently goes up to 6 sections)
-  //   finalThoughts: "",
+  //   sect3img3: '', (... currently goes up to 6 sections)
+  // sect4: 'Final Thoughts',
+  // sect4content: "",
   // },

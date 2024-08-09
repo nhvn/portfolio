@@ -703,6 +703,7 @@ footer {
 .section-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .section-heading {
@@ -715,21 +716,33 @@ footer {
 
 .section-wrapper p {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-.proj-content-container .projPics {
+.proj-content-container .projPics,
+.proj-content-container {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
   margin-top: 1em;
 }
 
-.proj-content-container .projPics img {
+.proj-content-container .projPics img,
+.subsection-image img {
   width: 100%;
-  height: auto; 
+  max-width: 100%;
+  height: auto;
   transition: all .3s ease-in-out;
   z-index: 0;
   border-radius: 20px;
+}
+
+.subsection {
+  margin-bottom: 1.5rem;
+}
+
+.subsection h3 {
+  margin-bottom: 0.5rem;
 }
 
 /* Cornell note style for larger screens */
