@@ -13,52 +13,66 @@ function ProjPage() {
   const renderSection = (sectionNumber) => {
     const sectionTitle = project[`sect${sectionNumber}`];
     const sectionContent = project[`sect${sectionNumber}content`];
-    const sectionImages = [
-      project[`sect${sectionNumber}img1`],
-      project[`sect${sectionNumber}img2`],
-      project[`sect${sectionNumber}img3`],
-      project[`sect${sectionNumber}img4`],
-      project[`sect${sectionNumber}img5`],
-      project[`sect${sectionNumber}img6`],
-    ].filter(Boolean);
+    const sectionImages = Array.from({ length: 10 }, (_, i) => project[`sect${sectionNumber}img${i + 1}`]).filter(Boolean);
+    const sectionLink = project[`sect${sectionNumber}link`];
+    const sectionLinkText = project[`sect${sectionNumber}linkText`];
   
-    // Updated: Add subsections with images
-    const subsections = [1, 2, 3].map(subNumber => {
+    const subsections = Array.from({ length: 10 }, (_, i) => {
+      const subNumber = i + 1;
       const title = project[`sect${sectionNumber}sub${subNumber}`];
       const content = project[`sect${sectionNumber}sub${subNumber}content`];
-      const image = project[`sect${sectionNumber}sub${subNumber}img1`];
+      const images = Array.from({ length: 10 }, (_, j) => project[`sect${sectionNumber}sub${subNumber}img${j + 1}`]).filter(Boolean);
+      const link = project[`sect${sectionNumber}sub${subNumber}link`];
+      const linkText = project[`sect${sectionNumber}sub${subNumber}linkText`];
       
-      // Only return the subsection if it has a title and either content or an image
-      return (title && (content || image)) ? { title, content, image } : null;
+      return (title && (content || images.length > 0 || link)) ? { title, content, images, link, linkText } : null;
     }).filter(Boolean);
   
-    if (!sectionTitle || (!sectionContent && subsections.length === 0)) return null;
+    if (!sectionTitle && !sectionContent && subsections.length === 0 && !sectionLink) return null;
   
     return (
       <div className="section-wrapper">
-        <div className="section-heading">
-          <h2>{sectionTitle}</h2>
-        </div>
+        {sectionTitle && (
+          <div className="section-heading">
+            <h2>{sectionTitle}</h2>
+          </div>
+        )}
         <div className="section-content">
           {sectionContent && <p>{sectionContent}</p>}
+          {sectionImages.length > 0 && (
+            <div className="projPics">
+              {sectionImages.map((img, index) => (
+                <img key={index} className="botImg" src={img} alt={`Section ${sectionNumber} image ${index + 1}`} />
+              ))}
+            </div>
+          )}
+          {sectionLink && (
+            <div className="link-container">
+              <a href={sectionLink} target="_blank" rel="noopener noreferrer" className="custom-link">
+                {sectionLinkText || "View Link"}
+              </a>
+            </div>
+          )}
           {subsections.map((subsection, index) => (
-            <div key={index} className="subsection">
+            <div key={index} className="subsection projPics">
               <h3>{subsection.title}</h3>
               {subsection.content && <p>{subsection.content}</p>}
-              {subsection.image && (
-                <div className="subsection-image">
-                  <img src={subsection.image}className="botImg" alt={subsection.title} />
+              {subsection.images.length > 0 && (
+                <div className="subsection-images">
+                  {subsection.images.map((img, imgIndex) => (
+                    <img key={imgIndex} className="botImg" src={img} alt={`Subsection ${index + 1} image ${imgIndex + 1}`} />
+                  ))}
+                </div>
+              )}
+              {subsection.link && (
+                <div className="link-container">
+                  <a href={subsection.link} target="_blank" rel="noopener noreferrer" className="custom-link">
+                    {subsection.linkText || "View Link"}
+                  </a>
                 </div>
               )}
             </div>
           ))}
-          {sectionImages.length > 0 && (
-            <div className="projPics">
-              {sectionImages.map((img, index) => (
-                <img key={index} className="botImg" src={img} alt="" />
-              ))}
-            </div>
-          )}
         </div>
       </div>
     );
@@ -124,7 +138,7 @@ function ProjPage() {
             </div>
 
           {/* MIDDLE SECTION */}
-          {(project.prob || project.sol) && (
+          {/* {(project.prob || project.sol) && (
             <>
               <div className='section-wrapper'>
                 <div className='section-heading'>
@@ -143,15 +157,10 @@ function ProjPage() {
                 </div>
               </div>
             </>
-          )}
+          )} */}
 
           {/* Render customizable sections */}
-          {renderSection(1)}
-          {project.sect1 && renderSection(2)}
-          {project.sect1 && project.sect2 && renderSection(3)}
-          {project.sect1 && project.sect2 && project.sect3 && renderSection(4)}
-          {project.sect1 && project.sect2 && project.sect3 && project.sect4 && renderSection(5)}
-          {project.sect1 && project.sect2 && project.sect3 && project.sect4 && project.sect5 && renderSection(6)}
+          {Array.from({ length: 10 }, (_, i) => renderSection(i + 1))}
 
           {!project.sect1 && (
             <div className="flex">
