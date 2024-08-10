@@ -102,16 +102,18 @@ function ProjPage() {
                     {project.technologies.filter(Boolean).length > 0 && (
                       <p><span className='green'>Tools</span>: {project.technologies.join(', ')}</p>
                     )}
-                    {project.codeLink && 
-                      <div className="link-container">
-                        <a href={project.codeLink} target="_blank" rel="noopener noreferrer">→ View Code</a>
-                      </div>
-                    }
-                    {project.liveLink && 
-                      <div className="link-container">
-                        <a href={project.liveLink} target="_blank" rel="noopener noreferrer">→ View Live Project</a>
-                      </div>
-                    }
+                    <div className="custom-links-container">
+                      {project.codeLink && 
+                        <div className="custom-link-wrapper">
+                          <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="custom-link">View Code</a>
+                        </div>
+                      }
+                      {project.liveLink && 
+                        <div className="custom-link-wrapper">
+                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="custom-link">View Live Project</a>
+                        </div>
+                      }
+                    </div>
                   </div>
                 </div>
               </div>
@@ -136,28 +138,6 @@ function ProjPage() {
                 ))}
               </div>
             </div>
-
-          {/* MIDDLE SECTION */}
-          {/* {(project.prob || project.sol) && (
-            <>
-              <div className='section-wrapper'>
-                <div className='section-heading'>
-                  <h2>Problem</h2>
-                </div>
-                <div className='section-content'>
-                  <p>{project.prob}</p>
-                </div>
-              </div>
-              <div className='section-wrapper'>
-                <div className='section-heading'>
-                  <h2>Solution</h2>
-                </div>
-                <div className='section-content'>
-                  <p>{project.sol}</p>
-                </div>
-              </div>
-            </>
-          )} */}
 
           {/* Render customizable sections */}
           {Array.from({ length: 10 }, (_, i) => renderSection(i + 1))}
