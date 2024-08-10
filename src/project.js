@@ -26,7 +26,7 @@ export const projects = [
     sect4sub1linkText: "Link to Survey",
     sect4sub2: 'Color Schemes & Font',
     sect4sub2content: "The color palette chosen for this project emphasizes contrast and readability, with a sleek, modern look. In dark mode, a black background is paired with white text and accents for a clean interface, while the light mode uses a white background with black text. The buttons are styled in black and white, with additional elements in blue and soft gray to guide user interaction and maintain visual harmony. The narrative section's text color is a soft blue-gray, creating a calming effect that aligns with the app's goal of promoting wellness.",
-    sect4sub2img1: '/img/befit-colors.png',
+    sect4sub2img1: '/img/beFit-colors.png',
     sect5: 'Early Concepts',
     sect5content: 'For the website, I analyzed the layout and adapted it for a seamless mobile experience, focusing on consistency and ease of navigation across platforms. This is crucial for our fitness app, where user engagement and accessibility are key.',
     sect5sub1: 'Sketches',
