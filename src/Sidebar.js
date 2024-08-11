@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaYoutube, FaTiktok, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaYoutube, FaTiktok, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiX } from 'react-icons/si';
 import './index.css';
 
 const Sidebar = () => {
@@ -10,7 +11,7 @@ const Sidebar = () => {
         <li><a href="https://github.com/nhvn" target="_blank" rel="noreferrer"><FaGithub /></a></li>
         <li><a href="https://www.tiktok.com/@totezalan?is_from_webapp=1&sender_device=pc" target="_blank" rel="noreferrer"><FaTiktok /></a></li>
         {/* <li><a href="https://www.youtube.com/channel/UCeq4B3hUh6C-sDbvtQPiwjA" target="_blank" rel="noreferrer"><FaYoutube /></a></li> */}
-        <li><a href="https://twitter.com/totezalan" target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+        <li><a href="https://x.com/totezalan" target="_blank" rel="noreferrer"><SiX /></a></li>
       </ul>
     </div>
   );

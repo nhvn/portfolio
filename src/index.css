@@ -152,10 +152,10 @@ section {
   top: 14%;
   left: 0;
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px; 
-  padding: 15px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-  z-index: 1000; 
+  border-bottom-right-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 .sidebar ul {
   list-style: none;
@@ -167,6 +167,10 @@ section {
 .sidebar ul li a {
   text-decoration: none;
   font-size: 30px;
+  transition: color 0.3s ease; 
+}
+.sidebar ul li a:hover {
+  color: #6a9b8f; 
 }
 
 /* FOOTER */
