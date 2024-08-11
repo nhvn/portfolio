@@ -31,9 +31,9 @@ export const projects = [
     sect5content: 'For the website, I analyzed the layout and adapted it for a seamless mobile experience, focusing on consistency and ease of navigation across platforms. This is crucial for our fitness app, where user engagement and accessibility are key.',
     sect5sub1: 'Sketches',
     sect5sub1img1: '/img/beFit-Sketch.png',
-    sect5sub1img2: '/img/beFit-Sketch2.jpg',
     sect5sub2: 'Wireframing',
     sect5sub2content: "Created low-fidelity sketches and digital wireframes to map out the app's structure and user flow, ensuring a logical and intuitive layout before moving to detailed design.",
+    sect5sub2img2: '/img/beFit-Sketch2.jpg',
     sect6: 'Design Development',
     sect6sub1: 'Prototyping',
     sect6sub1content: "Developed interactive prototypes using tools like Figma to visualize the user interface and interactions, allowing for early testing of the app's functionality and user experience.",
@@ -54,7 +54,7 @@ export const projects = [
     sect8sub4: 'Diet Overview & Weight Tracking',
     sect8sub4img1: '/img/beFit-weight.png',
     sect9: 'Future Steps',
-    sect9sub1: 'Future Plans',
+    sect9sub1: 'Potential Ideas',
     sect9sub1content:       <ul>
     <li>Implementing AI-powered workout recommendations based on user progress and goals</li>
     <li>Integrating with popular fitness wearables and smart scales for automatic data syncing</li>
