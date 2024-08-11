@@ -37,6 +37,7 @@ export const projects = [
     sect6: 'Design Development',
     sect6sub1: 'Prototyping',
     sect6sub1content: "Developed interactive prototypes using tools like Figma to visualize the user interface and interactions, allowing for early testing of the app's functionality and user experience.",
+    sect6sub1img1: '/img/beFit-proto.png',
     sect6sub2: 'Iterative Design',
     sect6sub2content: "Continuously refined the app's design based on testing results, making incremental improvements to enhance usability and meet user needs more effectively.",
     sect7: 'Technical Architecture',
