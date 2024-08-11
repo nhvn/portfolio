@@ -773,17 +773,15 @@ footer {
 
 .custom-link {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 4px 8px;
   background-color: #6a9b8f; 
   color: rgb(232, 232, 232) !important; 
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-link:hover,
-.custom-link:visited,
 .custom-link:active {
   background-color: #507d71; /* A slightly darker shade for hover effect */
   text-decoration: none;
