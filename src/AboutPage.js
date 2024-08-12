@@ -39,9 +39,9 @@ class AboutPage extends React.Component {
                           Program at <span className="highlight2">CSULB</span>.
                         </p>
                         <p>
-                          Currently expanding my knowledge in the fields of Machine Learning and Artificial Intelligence, while
+                          Currently working as a code coach at theCoderSchool, expanding my knowledge in the fields of Machine Learning and AI, while
                           seeking new opportunities to apply and grow my skillset.
-                          Additionally, I'm creating TikTok tutorials for LeetCode problems, aiming to share my problem-solving approaches and coding techniques with a wider audience.
+                          Additionally, on my spare time, I'm creating TikTok tutorials for LeetCode problems, aiming to share my problem-solving approaches with a wider audience.
                         </p>
                       </div>
                     </div>
