@@ -448,7 +448,7 @@ footer {
   border-radius: 5px;
 }
 .back-button:hover {
-  background-color: lightgray;
+  background-color: #6a9b8f;
 }
 .proj-content-container h2 {
   color: #6a9b8f;
@@ -590,7 +590,7 @@ footer {
   border-radius: 20px;
 }
 .subsection h3 {
-  color: #6a9b8f;
+  color: rgb(74, 164, 209);
   font-weight: 500;
 }
 /* Cornell note style for larger screens */
