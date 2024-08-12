@@ -446,6 +446,7 @@ footer {
   background-color: #e4e4e46d;
   padding: 1px 5px 0px 5px;
   border-radius: 5px;
+  transition: background-color 0.3s ease; /* Adds a transition effect */
 }
 .back-button:hover {
   background-color: #6a9b8f;
