@@ -70,7 +70,7 @@ export const projects = [
     title: 'Task Master',
     ongoing: false,
     app: 'Web Application',
-    description: 'To-Do List App app allows users to create, edit, and delete tasks with due dates and priorities, as well as mark tasks as complete or incomplete. Users can register, log in, and log out, and their tasks are stored securely in a PostgreSQL database.',
+    description: 'Task Master is a to-do list app that allows users to create, edit, and delete tasks, set due dates and priorities, and mark tasks as complete or incomplete. The app also features an ability to add sticky notes, a registration and login system, and secure data storage in a PostgreSQL database.',
     role: 'FULL-STACK DEVELOPER',
     duration: 'Apr 2023 - Jun 2023',
     technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'HTML', 'CSS'],
