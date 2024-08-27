@@ -295,6 +295,9 @@ footer {
   box-sizing: border-box;
   z-index: 1; 
 }
+.card-overlay p {
+  font-size: 26px;
+}
 
 /* ABOUT PAGE */
 .top {
