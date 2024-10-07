@@ -10,6 +10,7 @@ function ProjPage() {
   if (!project) {
     return <div id='noProj'>404 Error - Project Not Found</div>;
   }
+
   const renderSection = (sectionNumber) => {
     const sectionTitle = project[`sect${sectionNumber}`];
     const sectionContent = project[`sect${sectionNumber}content`];
@@ -31,7 +32,7 @@ function ProjPage() {
     if (!sectionTitle && !sectionContent && subsections.length === 0 && !sectionLink) return null;
   
     return (
-      <div className="section-wrapper">
+      <div className="section-wrapper" key={`section-${sectionNumber}`}>
         {sectionTitle && (
           <div className="section-heading">
             <h2>{sectionTitle}</h2>
@@ -87,7 +88,7 @@ function ProjPage() {
         <div className="flex">
           <div className="left">
             <section className="title">
-              {project.ongoing && <h4 className='construction'>Currently ongoing</h4>}
+              {project.ongoing && <h4 className='construction'>Currently in progress</h4>}
               <div className="description">
                 <h4 className="small-paragraph">{project.app}</h4>
                 <h1>{project.title}</h1>
@@ -140,7 +141,7 @@ function ProjPage() {
             </div>
 
           {/* Render customizable sections */}
-          {Array.from({ length: 10 }, (_, i) => renderSection(i + 1))}
+          {Array.from({ length: 20 }, (_, i) => renderSection(i + 1))}
 
           {!project.sect1 && (
             <div className="flex">
