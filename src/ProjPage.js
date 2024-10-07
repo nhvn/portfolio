@@ -104,16 +104,34 @@ function ProjPage() {
                       <p><span className='green'>Tools</span>: {project.technologies.join(', ')}</p>
                     )}
                     <div className="custom-links-container">
-                      {project.codeLink && 
+                      {project.codeLink && (
                         <div className="custom-link-wrapper">
-                          <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="custom-link">View Code</a>
+                          <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="custom-link">
+                            View Code
+                          </a>
                         </div>
-                      }
-                      {project.liveLink && 
+                      )}
+                      {project.liveLink && (
                         <div className="custom-link-wrapper">
-                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="custom-link">View Live Project</a>
+                          <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="custom-link">
+                            View Live Project
+                          </a>
                         </div>
-                      }
+                      )}
+                      {project.customLink1 && project.customLinkText1 && (
+                        <div className="custom-link-wrapper">
+                          <a href={project.customLink1} target="_blank" rel="noopener noreferrer" className="custom-link">
+                            {project.customLinkText1}
+                          </a>
+                        </div>
+                      )}
+                      {project.customLink2 && project.customLinkText2 && (
+                        <div className="custom-link-wrapper">
+                          <a href={project.customLink2} target="_blank" rel="noopener noreferrer" className="custom-link">
+                            {project.customLinkText2}
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
