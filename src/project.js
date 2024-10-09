@@ -58,7 +58,7 @@ export const projects = [
     sect8sub1content: 'The web interface allows users to easily start the augmentation process. Once the images are uploaded, the user simply clicks the "Augment" button to begin the augmentation process. This intuitive interface streamlines the workflow, providing a user-friendly experience for quickly generating augmented datasets.',
     sect8sub1img1: '/img/augmentHome.png',
     sect8sub2: 'Early Results',
-    sect8sub2content: 'The results from the image augmentation process display four 64x64 pixel images compared side by side. Each image shows slight color variations, with minimal differences beyond subtle changes in hue and brightness. These augmentations highlight the model’s ability to make minor adjustments to the dataset while maintaining the overall structure of the images. However this is an early model, there is still a very significant room for improvement in creating more diverse and noticeable transformations.',
+    sect8sub2content: 'The results from the image augmentation process display four 64x64 pixel images compared side by side. Each image shows slight color variations, with minimal differences beyond subtle changes in hue and brightness. These augmentations highlight the model’s ability to make minor adjustments to the dataset while maintaining the overall structure of the images. However this is an early model and there is still a very significant room for improvement in creating more diverse and noticeable transformations.',
     sect8sub2img1: '/img/augmentEx.png',
     sect9: 'Future Steps',
     sect9sub1: 'Potential Ideas',
