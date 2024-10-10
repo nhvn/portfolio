@@ -45,7 +45,7 @@ export const projects = [
     sect5sub3: 'Data Preparation and Augmentation',
     sect5sub3content: 'The dataset consists of nature images, which are resized, normalized, and preprocessed for training. Basic augmentation techniques like flipping, rotation, and color adjustments are applied to diversify the dataset.',
     sect6: 'Model Training',
-    sect6content: 'The training process involved tuning hyperparameters such as learning rates and batch size to optimize the GAN’s performance. However, due to GPU limitations on the MacBook Air M2, training times were extended and the resolution was capped at 64x64 pixels.',
+    sect6content: 'The training process involved tuning hyperparameters such as learning rates and batch size to optimize the GAN’s performance. The model was trained using 900 nature photos from a Kaggle dataset. However, due to GPU limitations on the MacBook Air M2, training times were extended and the resolution was capped at 64x64 pixels.',
     sect6sub1: 'Metrics used to evaluate model performance',
     sect6sub1content: 'Discriminator loss (d_loss) and Generator loss (g_loss) were tracked to evaluate model performance. A balance between these losses indicated the convergence of the model and the ability to generate realistic synthetic images.',
     sect6sub1img1: '/img/augmentTrain.png',
