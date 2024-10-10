@@ -107,7 +107,7 @@ function ProjPage() {
                       {project.codeLink && (
                         <div className="custom-link-wrapper">
                           <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="custom-link">
-                            View Code
+                            See GitHub
                           </a>
                         </div>
                       )}
