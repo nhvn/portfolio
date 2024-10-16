@@ -13,7 +13,7 @@ export const projects = [
     customLink1: 'https://devpost.com/software/data-augmentation-no-name-yet',
     customLinkText1: 'View on Devpost',
     customLink2: 'https://www.youtube.com/watch?v=yqzinpLBngc',
-    customLinkText2: 'Watch Demo Video',
+    customLinkText2: 'Watch Demo on Youtube',
     prob: 'Data scarcity and diversity are significant challenges in machine learning, particularly for small to mid-sized projects. Many AI models require large, diverse datasets to achieve high accuracy. However, collecting and labeling these datasets is often time-consuming and expensive. Without sufficient data, models may suffer from bias, overfitting, or underperformance in real-world applications, limiting their generalization capabilities.',
     sol: 'AugmentAI provides an innovative solution by leveraging Generative Adversarial Networks (GANs) to generate synthetic images that expand and diversify datasets. By applying a variety of augmentation techniques like rotation, flipping, and color jittering, the platform helps users create enriched datasets with minimal effort. Integrated with NVIDIA AI Workbench, AugmentAI enables efficient and scalable model training, offering a user-friendly web interface where users can upload their datasets and receive augmented or synthetic images, dramatically enhancing their machine learning workflows.',
     contribution: 'Implemented a user-friendly web interface allowing users to upload datasets and receive synthetic images \n Developed a GAN-based model, enhancing dataset diversity for machine learning tasks \n Utilized NVIDIA AI Workbench for efficient model training, optimizing GPU resources and scalability',
