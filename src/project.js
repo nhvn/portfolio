@@ -2,7 +2,7 @@ export const projects = [
   { 
     id: 'augmentai',
     title: 'AugmentAI',
-    ongoing: false,
+    ongoing: true,
     app: 'Web Application',
     description: <> A generative AI platform for data augmentation and synthetic image generation, submitted for the {' '} <strong>Dell x NVIDIA HackAI Hackathon</strong> {' '}to showcase the potential of generative AI in data augmentation.</>,
     role: 'Full Stack Developer',
@@ -68,8 +68,8 @@ export const projects = [
     <li>Integrate with cloud services for large-scale data processing</li>
     <li>Add support for various GAN architectures to provide different types of synthetic data</li>
   </ul>,
-    sect9sub2: 'Final Thoughts',
-    sect9sub2content: 'AugmentAI was a rewarding project that pushed my skills in generative AI and web development. The project demonstrates how GANs can solve real-world problems like data scarcity in machine learning. Moving forward, I aim to refine the platform’s features, improve the model’s output quality, and explore new avenues for data augmentation beyond images.'
+    // sect9sub2: 'Final Thoughts',
+    // sect9sub2content: 'AugmentAI was a rewarding project that pushed my skills in generative AI and web development. The project demonstrates how GANs can solve real-world problems like data scarcity in machine learning. Moving forward, I aim to refine the platform’s features, improve the model’s output quality, and explore new avenues for data augmentation beyond images.'
   },
   {
     id: 'beFit',

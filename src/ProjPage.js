@@ -161,14 +161,13 @@ function ProjPage() {
           {/* Render customizable sections */}
           {Array.from({ length: 20 }, (_, i) => renderSection(i + 1))}
 
-          {!project.sect1 && (
+          {project.ongoing && (
             <div className="flex">
               <div className='tuned'>
-                <p id='stay-tuned'>More exciting details are on the way. Stay tuned!</p>
+                <p id='stay-tuned'>More exciting details are on the way, so stay tuned!</p>
               </div>
             </div>
           )}
-          
         </div>
       </div>
     </div>
