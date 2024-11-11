@@ -12,7 +12,7 @@ export const projects = [
     liveLink: '',
     customLink1: 'https://devpost.com/software/data-augmentation-no-name-yet',
     customLinkText1: 'View on Devpost',
-    customLink2: 'https://www.youtube.com/watch?v=yqzinpLBngc',
+    // customLink2: 'https://www.youtube.com/watch?v=yqzinpLBngc',
     customLinkText2: 'Watch Demo on Youtube',
     prob: 'Data scarcity and diversity are significant challenges in machine learning, particularly for small to mid-sized projects. Many AI models require large, diverse datasets to achieve high accuracy. However, collecting and labeling these datasets is often time-consuming and expensive. Without sufficient data, models may suffer from bias, overfitting, or underperformance in real-world applications, limiting their generalization capabilities.',
     sol: 'AugmentAI provides an innovative solution by leveraging Generative Adversarial Networks (GANs) to generate synthetic images that expand and diversify datasets. By applying a variety of augmentation techniques like rotation, flipping, and color jittering, the platform helps users create enriched datasets with minimal effort. Integrated with NVIDIA AI Workbench, AugmentAI enables efficient and scalable model training, offering a user-friendly web interface where users can upload their datasets and receive augmented or synthetic images, dramatically enhancing their machine learning workflows.',
@@ -26,50 +26,56 @@ export const projects = [
     sect3content: 'AugmentAI provides a solution by using GANs to generate synthetic images that expand the diversity of datasets. The platform includes augmentation techniques such as rotation, flipping, and color adjustments to further enhance the dataset. AugmentAI integrates with NVIDIA AI Workbench for efficient model training and scalability.',
     sect3img1: '/img/augmentSol.png',
     sect4: 'Project Overview',
-    sect4content: 'AugmentAI combines the power of GANs with a user-friendly web interface to automate the process of dataset augmentation. Users can upload images and receive both augmented and synthetic data for machine learning applications.',
+    sect4content: 'AugmentAI merges GAN technology with an easy-to-use web application for streamlined dataset augmentation. Users can upload their images and receive both augmented and synthetic outputs suitable for various machine learning applications.',
     sect4sub1: 'Key Features of AugmentAI',
     sect4sub1content: <ul>
-        <li>GAN-powered synthetic image generation</li>
-        <li>Web interface for easy image uploading and augmentation</li>
-        <li>Supports a variety of augmentation techniques (rotation, flipping, color jittering)</li>
-        <li>Integrated with NVIDIA AI Workbench for scalable model training</li>
+        <li>High-Quality Synthetic Image Generation - Uses the Stability AI API for high-resolution, realistic image creation</li>
+        <li>User-Centric Web Interface - Simple, accessible image upload and augmentation process</li>
+        <li>Diverse Augmentation Techniques - Offers transformations like rotation, flipping, and color adjustments to maximize dataset variety</li>
+        <li>Scalable Training and Inference - Integrated with NVIDIA AI Workbench to ensure efficient processing for larger datasets</li>
       </ul>,
     sect4sub2: 'Current capabilities and limitations',
-    sect4sub2content: 'Currently, AugmentAI generates 64x64 pixel images and allows for basic augmentation techniques. Due to hardware limitations, the model is trained on smaller datasets and produces lower-resolution images. Plans for future improvements include generating higher resolution images and supporting larger datasets.',
-    sect5: 'Deep Dive',
-    sect5sub1: 'Explanation of GAN components (Generator and Discriminator)',
-    sect5sub1content: 'The Generator creates synthetic images, while the Discriminator tries to distinguish between real and generated images. Over time, both improve through adversarial training, allowing the Generator to produce more realistic images and the Discriminator to better detect fake images.',
+    sect4sub2content: 'Currently, AugmentAI produces images up to 64x64 pixels when using the fallback local GAN, with plans to expand resolutions and augmentations for richer datasets. Future improvements aim to support broader applications, including text and tabular data.',
+    sect5: 'Initial Phase (Using GANs)',
+    sect5sub1: 'The Local GAN Approach',
+    sect5sub1content: 'In the early stages of AugmentAI, I implemented a custom GAN with convolutional layers for both the Generator and Discriminator. This model was trained locally on a CPU using my M2 MacBook Air, which presented several resource limitations. Despite utilizing techniques like batch normalization and Leaky ReLU activation functions to stabilize training, the model could only produce low-resolution (64x64 pixel) synthetic images due to hardware constraints. This setup, while functional, resulted in longer training times and limited scalability.',
     sect5sub1img1: '/img/augmentGan.png',
-    sect5sub2: 'Details on the specific architecture used in this project',
-    sect5sub2content: 'The GAN model used in AugmentAI employs convolutional layers in both the Generator and Discriminator. Batch normalization and activation functions like Leaky ReLU are used to stabilize training and improve performance.',
-    sect5sub3: 'Data Preparation and Augmentation',
-    sect5sub3content: 'The dataset consists of nature images, which are resized, normalized, and preprocessed for training. Basic augmentation techniques like flipping, rotation, and color adjustments are applied to diversify the dataset.',
-    sect6: 'Model Training',
-    sect6content: 'The training process involved tuning hyperparameters such as learning rates and batch size to optimize the GAN’s performance. The model was trained using 900 nature photos from a Kaggle dataset. However, due to GPU limitations on the MacBook Air M2, training times were extended and the resolution was capped at 64x64 pixels.',
-    sect6sub1: 'Metrics used to evaluate model performance',
-    sect6sub1content: 'Discriminator loss (d_loss) and Generator loss (g_loss) were tracked to evaluate model performance. A balance between these losses indicated the convergence of the model and the ability to generate realistic synthetic images.',
-    sect6sub1img1: '/img/augmentTrain.png',
-    sect6sub2: 'Integration with Web Application',
-    sect6sub2content: 'The Flask backend manages user interactions, handling file uploads, image augmentation, and the display of results. The trained GAN model is integrated into the backend to generate and serve synthetic images on demand.',
-    sect8: 'Final Designs',
-    sect8content: 'The final design prioritizes simplicity and ease of use, enabling users to generate augmented images in just a few steps. The GAN model is optimized for performance, producing 64x64 pixel images within a short processing time. The user interface is clean, with clear prompts guiding users through the augmentation process.',
-    sect8contentimg1: '/img/comingSoon.png',
-    sect8sub1: 'Web Interface',
-    sect8sub1content: 'The web interface allows users to easily start the augmentation process. Once the images are uploaded, the user simply clicks the "Augment" button to begin the augmentation process. This intuitive interface streamlines the workflow, providing a user-friendly experience for quickly generating augmented datasets.',
-    sect8sub1img1: '/img/augmentHome.png',
-    sect8sub2: 'Early Results',
-    sect8sub2content: 'The results from the image augmentation process display four 64x64 pixel images compared side by side. Each image shows slight color variations, with minimal differences beyond subtle changes in hue and brightness. These augmentations highlight the model’s ability to make minor adjustments to the dataset while maintaining the overall structure of the images. However this is an early model and there is still a very significant room for improvement in creating more diverse and noticeable transformations.',
-    sect8sub2img1: '/img/augmentEx.png',
-    sect9: 'Future Steps',
-    sect9sub1: 'Potential Ideas',
-    sect9sub1content:       <ul>
+    
+    sect5sub2: 'Data Preparation and Augmentation',
+    sect5sub2content: 'The dataset consists of nature images, resized, normalized, and preprocessed for training. Initial augmentations included flipping, rotation, and color adjustments to increase dataset diversity.',
+    sect5sub3: 'Model Training and Metrics',
+    sect5sub3content: 'The custom GAN model was trained on a subset of 900 nature photos from a Kaggle dataset. With the local model, I tracked metrics like Discriminator loss (d_loss) and Generator loss (g_loss) to evaluate performance. A balanced loss indicated convergence and realistic synthetic outputs, but output resolution remained low on the CPU setup.',
+    sect5sub4: 'Metrics used to evaluate model performance',
+    sect5sub4content: 'Discriminator loss (d_loss) and Generator loss (g_loss) were tracked to evaluate model performance. A balance between these losses indicated the convergence of the model and the ability to generate realistic synthetic images.',
+    sect5sub4img1: '/img/augmentTrain.png',
+
+    sect6: 'Second Phase (Using APIs)',
+    sect6sub1: 'Transition to Stability AI API',
+    sect6sub1content: 'To overcome the resolution and resource limitations of the local GAN, I integrated the Stability AI API for high-quality image generation. This transition allowed AugmentAI to maintain the original image dimensions and drastically improve processing times and output quality. The API now handles the bulk of synthetic image generation, making AugmentAI more robust and suitable for production environments.',
+    sect6sub2: 'Web Application Integration',
+    sect6sub2content: 'The Flask backend manages user interactions, including file uploads, image augmentation, and result displays. Initially integrated with the local GAN, the backend now utilizes the Stability AI API to generate and serve high-resolution synthetic images on demand, allowing for smoother user experience and quicker results.',
+    sect7: 'Final Designs',
+    sect7content: 'The final design prioritizes simplicity and ease of use, enabling users to generate augmented images in just a few steps. The GAN model is optimized for performance, producing 64x64 pixel images within a short processing time. The user interface is clean, with clear prompts guiding users through the augmentation process.',
+    sect7contentimg1: '/img/comingSoon.png',
+    sect7sub1: 'Web Interface',
+    sect7sub1content: 'The web interface allows users to easily start the augmentation process. Once the images are uploaded, the user simply clicks the "Augment" button to begin the augmentation process. This intuitive interface streamlines the workflow, providing a user-friendly experience for quickly generating augmented datasets.',
+    sect7sub1img1: '/img/augmentHome.png',
+    sect7sub2: 'Initial GAN Results',
+    sect7sub2content: 'Using a custom-trained GAN model on limited hardware, the initial results were modest, displaying low-resolution images at 64x64 pixels. These images exhibit only minor color shifts, with minimal variation beyond subtle changes in hue and brightness. While functional, this early model’s adjustments were limited by the CPU-based setup, resulting in simple augmentations and leaving significant room for improvement in generating diverse and higher-quality transformations.',
+    sect7sub2img1: '/img/augmentEx.png',
+    sect7sub3: 'Stability AI API Results',
+    sect7sub3content: 'With the transition to the Stability AI API, the augmentation results improved dramatically. Now, images maintain their original resolution and present diverse transformations with high visual fidelity. The API integration enables AugmentAI to generate production-ready, high-quality synthetic images quickly, overcoming prior resolution and diversity constraints. This enhancement elevates the platform’s capability to provide meaningful data augmentation for machine learning applications.',
+    sect7sub3img1: '/img/augmentEx2.png',
+    sect8: 'Future Steps',
+    sect8sub1: 'Potential Ideas',
+    sect8sub1content:       <ul>
     <li>Expand augmentation capabilities to include text and other data types</li>
-    <li>Improve image resolution for higher-quality outputs</li>
+    <li>Improve image resolution for even higher-quality outputs</li>
     <li>Integrate with cloud services for large-scale data processing</li>
     <li>Add support for various GAN architectures to provide different types of synthetic data</li>
   </ul>,
-    // sect9sub2: 'Final Thoughts',
-    // sect9sub2content: 'AugmentAI was a rewarding project that pushed my skills in generative AI and web development. The project demonstrates how GANs can solve real-world problems like data scarcity in machine learning. Moving forward, I aim to refine the platform’s features, improve the model’s output quality, and explore new avenues for data augmentation beyond images.'
+    sect8sub2: 'Final Thoughts',
+    sect8sub2content: <p>AugmentAI began as a solution to a fundamental challenge in machine learning: the scarcity and diversity of quality data. This project represents my first foray into combining full-stack development with AI-driven applications, and the journey has been one of growth and discovery. Moving from a custom-built, CPU-trained GAN to an API-powered solution reflects the challenges and rewards of pushing a project to its full potential. I'm proud of the progress made and excited to continue evolving AugmentAI, expanding its features and capabilities to serve a broader audience.</p>
   },
   {
     id: 'beFit',
