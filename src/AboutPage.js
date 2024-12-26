@@ -34,15 +34,12 @@ class AboutPage extends React.Component {
                       <div className="text-contain">
                         <p>
                           I am a <span className="highlight">full-stack software engineer</span> with a passion for
-                          problem-solving and a versatile skillset. I graduated from <span className="highlight2">UCI</span>{' '}
-                          with a Bachelor of Science in Natural Sciences and I also finished a Full-Stack Software Development
-                          Program at <span className="highlight2">CSULB</span>.
+                          problem-solving and a versatile skillset. I am currently pursuing a Master of Science in Computer Science at <span className="highlight2">USC</span>.
                         </p>
                         <p>
-                          Currently working as a code coach at theCoderSchool, while
-                          seeking new opportunities to apply and grow my skillset.
-                          Additionally, I'm creating TikTok tutorials for LeetCode problems, aiming to share my problem-solving approaches with a wider audience on my spare time.
+                          I actively practice LeetCode to enhance my problem-solving abilities, participate in hackathons during my free time, and am seeking new opportunities to apply and grow my skillset.
                         </p>
+
                       </div>
                     </div>
                   </div>
