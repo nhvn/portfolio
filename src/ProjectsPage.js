@@ -26,9 +26,9 @@ const ProjectsPage = () => {
               <div className="contact">
                 <div className="project-contain">
                 <h2>Technologies</h2>
-                  <h4>JavaScript, React, TypeScript, Node.js, Python, Flask, PyTorch, GANs, C++, Git, Swift, Jira</h4>
-                  <h4>MongoDB, PostgreSQL, Supabase, Firebase, Vercel, AWS, NVIDIA AI Workbench</h4>
-                  <h4>Adobe Photoshop, Figma, Canva, SVGator</h4>
+                  <h4>JavaScript, React, TypeScript, Node.js, Python, Flask, PyTorch, GANs, C++, Git, Swift, Jira, Devvit</h4>
+                  <h4>MongoDB, PostgreSQL, Supabase, Firebase, Vercel, AWS</h4>
+                  {/* <h4>Adobe Photoshop, Figma, Canva, SVGator</h4> */}
                 </div>
               </div>
             </div>
