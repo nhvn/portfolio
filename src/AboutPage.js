@@ -37,7 +37,7 @@ class AboutPage extends React.Component {
                           problem-solving and a versatile skillset. I am currently pursuing a Master of Science in Computer Science at <span className="highlight2">USC</span>.
                         </p>
                         <p>
-                          I actively practice LeetCode to enhance my problem-solving abilities, participate in hackathons during my free time, and am seeking new opportunities to apply and grow my skillset.
+                          I am currently working on personal projects, participating in hackathons during my free time and seeking new opportunities to apply and grow my skillset.
                         </p>
 
                       </div>
