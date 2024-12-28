@@ -4,7 +4,7 @@ export const projects = [
     title: 'Karma Maze',
     ongoing: true,
     app: 'Platform-based Application',
-    description: <>Karma Maze was developed for the {' '} <strong>Reddit Puzzles & Games Hackathon</strong>, blending creativity and innovation into a Reddit-integrated game. Players embark on an adventure as daring Snoos, navigating mysterious, procedurally generated mazes."</>,
+    description: <>Karma Maze was developed for the {' '} <strong>Reddit Puzzles & Games Hackathon</strong>, blending creativity and innovation into a Reddit-integrated game. Players embark on an adventure as daring Snoos, navigating mysterious, procedurally generated mazes.</>,
     role: 'Platform Integration Developer',
     duration: 'Nov 2024 - Current',
     technologies: ['Devvit', 'JavaScript', 'Node.js', 'React', 'Redis', 'Typescript'],
