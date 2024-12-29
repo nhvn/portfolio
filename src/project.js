@@ -1,10 +1,10 @@
 export const projects = [
-  { 
+  {
     id: 'karmamaze',
     title: 'Karma Maze',
-    ongoing: true,
+    ongoing: false,
     app: 'Platform-based Application',
-    description: <>Karma Maze was developed for the {' '} <strong>Reddit Puzzles & Games Hackathon</strong>, blending creativity and innovation into a Reddit-integrated game. Players embark on an adventure as daring Snoos, navigating mysterious, procedurally generated mazes.</>,
+    description: <>Karma Maze was developed for the {' '} <strong>Reddit Puzzles & Games Hackathon</strong>, blending creativity and innovation into a Reddit-integrated game. Players embark on an adventure as daring Snoos, navigating mysterious, procedurally generated mazes while collecting karma and overcoming challenges.</>,
     role: 'Platform Integration Developer',
     duration: 'Nov 2024 - Current',
     technologies: ['Devvit', 'JavaScript', 'Node.js', 'React', 'Redis', 'Typescript'],
@@ -12,42 +12,48 @@ export const projects = [
     liveLink: 'https://www.reddit.com/r/KarmaMaze/',
     customLink1: 'https://devpost.com/software/karma-maze',
     customLinkText1: 'View on Devpost',
-    contribution: "Designed the entire game concept and mechanics, ensuring an engaging experience for Reddit users \n Created custom game assets and illustrations using Procreate, blending creativity with functionality \n Independently built the game, implementing all functionality and integrating it seamlessly with Reddit's platform \n Utilized Reddit's API and features to create a game accessible on both desktop and mobile versions of Reddit",
+    contribution: "Designed the entire game concept and mechanics, ensuring an engaging and immersive experience for Reddit users \n Created custom game assets and illustrations using Procreate, blending creativity with functionality \n Independently built the game, implementing all functionality and integrating it seamlessly with Reddit's platform \n Utilized Reddit's API for player authentication, leaderboard management, and real-time karma tracking, ensuring smooth integration with the Reddit ecosystem.",
     image: '/img/karma.png',
     sect1: 'Project Overview',
-    sect1content: "Karma Maze is a Reddit-integrated game that blends platform mechanics with Reddit's karma system. Players navigate through procedurally generated mazes, using karma as a resource to unlock doors and overcome obstacles, creating a unique gaming experience native to the Reddit platform.",
-    // sect1img1: '/img/karmaGameplay.png', 
-
-    // sect2: 'Game Design Process',
-    // sect2content: "The game's visual assets were created using Procreate, focusing on a style that complements Reddit's aesthetic. Each game element, from the karma orbs to power-ups, was carefully designed to be recognizable and functional across both desktop and mobile platforms.",
-    // sect2img1: '/img/karmaProcreate.png', 
-
-    // sect3: 'Development Journey',
-    // sect3content: "Built using Devvit, Reddit's new development platform, Karma Maze required innovative solutions to implement game mechanics within Reddit's constraints. The development process involved creating procedural maze generation algorithms, implementing touch controls for mobile users, and designing an intuitive UI that works seamlessly across all devices.",
-    // sect3img1: '/img/karmaEarly.png', 
-
-    // sect4: 'Technical Implementation',
-    // sect4content: 'The game utilizes Redis for leaderboard management and TypeScript for type-safe development. The maze generation system ensures each maze is both solvable and challenging, while the progressive difficulty system keeps players engaged as they improve.',
-    // sect4img1: '/img/karmaTech.png',
-
-    // sect5: 'Features and Mechanics',
-    // sect5sub1: 'Core Gameplay',
-    // sect5sub1content: 'Players navigate through procedurally generated mazes using WASD keys or touch controls, collecting karma to unlock doors and overcome obstacles.',
-    // sect5sub2: 'Power-Up System',
-    // sect5sub2content: 'Various power-ups including karma orbs, maps, and crystal balls provide strategic choices for players as they navigate the maze.',
-    // sect5sub3: 'Progression System',
-    // sect5sub3content: 'As players complete more mazes, they unlock new challenges including traps, fake exits, and tighter time constraints, creating an evolving difficulty curve.',
-
-    // sect6: 'Visual Evolution',
-    // sect6content: 'The visual design evolved from basic wireframes to polished assets, with each iteration focusing on clarity and user experience.',
-    // sect6img1: '/img/karmaVisualProgress.png', 
-
-    // sect7: 'Future Development',
-    // sect7content: 'Planned features include daily challenges, enhanced power-ups, and additional visual polish to further engage the Reddit community.',
-
-    // sect8: 'Final Thoughts',
-    // sect8content: 'Karma Maze represents a unique intersection of game development and platform integration, demonstrating how traditional game mechanics can be adapted to enhance social platform engagement.'
-},
+    sect1content: "Karma Maze is a Reddit-integrated game that blends platform mechanics with Reddit's karma system. Developed as a unique entry for the Reddit Puzzles & Games Hackathon, it offers players procedurally generated mazes where karma serves as both a resource and a reward. Players navigate these mazes, solving challenges and competing for leaderboard positions in a game experience tailored specifically for Reddit users.",
+    sect1img1: '/img/karmaGameplay.png', // gameplay
+  
+    sect2: 'Design and Development Process',
+    sect2content: "Karma Maze’s design and development process focused on creating an engaging experience tailored for Reddit users. Inspired by Reddit’s Snoo and its karma-driven culture, the project combined thoughtful design with technical innovation to resonate with its audience.",
+    
+    sect2sub1: 'Early Development',
+    sect2sub1content: "The development began with wireframes and prototypes to establish the core mechanics and gameplay flow. The maze generation algorithm was designed to ensure solvable and procedurally generated mazes, offering players a unique experience every time. Early stages involved implementing intuitive UI elements and optimizing game performance.",
+    sect2sub1img1: '/img/karmaEarly.png', // Early development screenshots
+    
+    sect2sub2: 'Procreate and Visual Design',
+    sect2sub2content: "Custom assets were meticulously crafted using Procreate to enhance the visual appeal and gameplay experience. From karma orbs to intricate maze tiles, each element was designed to balance functionality with aesthetics while maintaining compatibility with Reddit's interface. The visuals aim to immerse players in the adventurous theme of the game while ensuring clarity for intuitive navigation.",
+    sect2sub2img2: '/img/karmaProcreate.png', // Procreate    
+  
+    sect3: 'Challenges Faced',
+    sect3content: "The development of Karma Maze was not without its hurdles. The initial maze generation algorithm often produced unsolvable mazes, requiring iterative testing and debugging to ensure reliability. Integration with Reddit’s API presented unique challenges, particularly in managing real-time karma updates and authentication for seamless gameplay. Additionally, balancing performance across devices was demanding, as the game needed to run efficiently on both high-end desktops and mobile devices. On the visual front, translating Procreate designs into compatible in-game assets required multiple iterations to maintain clarity and functionality. These challenges were overcome through persistence, research, and testing, ultimately resulting in a polished product.",
+    
+    sect4: 'Technical Implementation',
+    sect4content: "Karma Maze was built using Devvit, Reddit’s emerging development platform, which facilitated close integration with Reddit’s ecosystem. The game uses procedural maze generation to ensure unique and solvable mazes for each playthrough. TypeScript was employed to ensure maintainability, with Redis powering real-time score tracking and competitive leaderboards. Seamless integration with Reddit APIs enables player authentication, leaderboard updates, and karma tracking, creating a holistic Reddit-native gaming experience.",
+    
+    sect5: 'Game Features',
+    sect5sub1: 'Core Gameplay Mechanics',
+    sect5sub1content: 'Players navigate mazes using keyboard or touch controls, collecting karma to unlock doors and bypass challenges. Each maze introduces progressively difficult obstacles, including traps and fake exits.',
+    sect5sub2: 'Progression and Replayability',
+    sect5sub2content: 'With procedurally generated mazes and evolving difficulty, players are encouraged to strategize, adapt, and compete for high scores on the leaderboard.',
+    sect5sub3: 'Platform Integration',
+    sect5sub3content: 'The game seamlessly integrates with Reddit, allowing players to enjoy Karma Maze directly from their Reddit profile. Reddit users can easily access and interact with the game, enhancing community engagement and accessibility.',
+    
+    sect6: 'Visual Evolution',
+    sect6content: 'The game’s visual design evolved from wireframes to polished assets, emphasizing readability and user engagement. Custom visuals, such as karma orbs and doors, were created to enrich the gaming experience. These assets were crafted in Procreate, balancing aesthetics with functionality for the Reddit platform.',
+    sect6img1: '/img/karmaVisual.png', // Visual evolution screenshots
+    sect6img2: '/img/karmaVisual2.png',
+  
+    sect7: 'Future Development',
+    sect7content: 'Planned enhancements include daily challenges, new power-ups, and advanced traps to deepen player engagement. Additionally, improved visual effects, expanded maze themes, and accessibility features will broaden the game’s appeal. These features are aimed at increasing replayability and providing more diverse experiences for the player base.',
+  
+    sect8: 'Final Thoughts',
+    sect8content: 'Karma Maze exemplifies the synergy between creative game design and platform-specific development. The project demonstrates the potential for integrating traditional game mechanics into social platforms, providing a unique and engaging experience that’s both fun and distinctly Reddit-centric.'
+  },
   { 
     id: 'augmentai',
     title: 'AugmentAI',
