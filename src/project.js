@@ -59,7 +59,7 @@ export const projects = [
     title: 'AugmentAI',
     ongoing: false,
     app: 'Web Application',
-    description: <> A generative AI platform for data augmentation and synthetic image generation, submitted for the {' '} <strong>Dell x NVIDIA HackAI Hackathon</strong> {' '}to showcase the potential of generative AI in data augmentation.</>,
+    description: <> A generative AI platform for data augmentation and synthetic image generation, awarded honorable mention at the {' '} <strong>Dell x NVIDIA HackAI Hackathon</strong>, showcasing the potential of generative AI in data augmentation.</>,
     role: 'Full Stack Developer',
     duration: 'Aug 2024 - Nov 2024',
     technologies: ['Python', 'PyTorch', 'Flask', 'NVIDIA AI Workbench', 'JavaScript'],
