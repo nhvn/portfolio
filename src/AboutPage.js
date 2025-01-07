@@ -32,7 +32,9 @@ class AboutPage extends React.Component {
                     <h1>Alan Nhan.</h1>
                     <div className="description descr-contain">
                       <div className="text-contain">
+                        <p>
                         I am a <span className="highlight">full-stack software engineer</span> with a passion for problem-solving and a versatile skill set. Currently, I am pursuing a Master of Science in Computer Science at <span className="highlight2">USC</span> while working on personal projects, participating in hackathons, and seeking new opportunities to apply and expand my skills.
+                        </p>
                       </div>
                     </div>
                   </div>
