@@ -6,7 +6,7 @@ export const projects = [
     app: 'Platform-based Application',
     description: <>Karma Maze was developed for the {' '} <strong>Reddit Puzzles & Games Hackathon</strong>, blending creativity and innovation into a Reddit-integrated game. Players embark on an adventure as daring Snoos, navigating mysterious, procedurally generated mazes while collecting karma and overcoming challenges.</>,
     role: 'Platform Integration Developer',
-    duration: 'Nov 2024 - Current',
+    duration: 'Nov 2024 - Jan 2025',
     technologies: ['Devvit', 'JavaScript', 'Node.js', 'React', 'Redis', 'Typescript'],
     codeLink: 'https://github.com/nhvn/karmamaze',
     customLink1: 'https://devpost.com/software/karma-maze',
